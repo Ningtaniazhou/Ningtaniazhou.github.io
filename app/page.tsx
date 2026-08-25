@@ -1422,7 +1422,7 @@ export default function Home() {
 
         {stage === "intro" && (
           <div className="intro-content">
-            <p className="lede">一柄摇铃，一条从里斯本通往北京的航线，<br />以及一笔永远无法还清的债。</p>
+            <p className="lede">一柄摇铃，一场去往远东的旅行，<br />以及一笔永远无法还清的债。</p>
             <button className="primary-action bell-action" onClick={() => { sound.enable(); go("office"); }}>
               <span>进入故事世界</span>
             </button>
