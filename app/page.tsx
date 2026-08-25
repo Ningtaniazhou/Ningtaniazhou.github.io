@@ -1882,7 +1882,7 @@ export default function Home() {
               zh="一天夜里，我独自走在一条荒无人烟的街上，忽然看见前方有个一身黑衣、腋下夹着雨伞的人——正是他，他曾在孔塞桑巷那间幸福的小屋里，让我随着摇铃的一声轻响继承了可憎的千万财富。"
             />
             <p>煤气灯的微光落在他的礼帽和黑色外套上。他仍然像第一次出现时那样庄重、平静，仿佛并没有对我做过任何可怕的事情。</p>
-            <button className="primary-action dangerous-action" onClick={() => go("supplication")}>追上他 <span>→</span></button>
+            <button className="primary-action" onClick={() => go("supplication")}>追上他 <span>→</span></button>
           </div>
         )}
 

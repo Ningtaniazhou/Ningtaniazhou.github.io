@@ -37,7 +37,6 @@
 }
 
 .street,
-.waitingTableau,
 .streetShade,
 .gasGlow {
   position: absolute;
@@ -53,22 +52,6 @@
   transition: filter 1.4s ease;
 }
 
-.waitingTableau {
-  z-index: 3;
-  object-fit: cover;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.35s ease;
-}
-
-.waiting .waitingTableau {
-  opacity: 1;
-}
-
-.waiting .street,
-.waiting .streetShade,
-.waiting .gasGlow,
-.waiting .devil,
 .waiting .teodoro {
   opacity: 0;
 }
@@ -527,8 +510,7 @@
     aspect-ratio: auto;
   }
 
-  .street,
-  .waitingTableau {
+  .street {
     object-position: 62% center;
   }
 
@@ -579,7 +561,7 @@
 
   .devil {
     right: 0;
-    height: 54%;
+    height: 64%;
   }
 
   .devil img {
