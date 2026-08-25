@@ -1263,6 +1263,10 @@ export default function Home() {
       setStage("devilReturn");
       setStageHistory([]);
     }
+    if (preview === "night-road") {
+      setStage("prison");
+      setStageHistory([]);
+    }
     if (preview === "supplication") {
       setStage("supplication");
       setStageHistory([]);
