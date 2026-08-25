@@ -3842,27 +3842,37 @@ blockquote {
 
 .testament-body {
   position: relative;
+  z-index: 20;
   max-width: 610px;
   padding: 26px 28px;
   border: 1px solid rgba(184, 149, 82, 0.32);
   background: rgba(5, 11, 11, 0.72);
   box-shadow: 0 22px 70px rgba(0, 0, 0, 0.34);
+  pointer-events: auto;
 }
 
 .final-artifact-progress {
+  position: relative;
+  z-index: 21;
   display: flex;
   margin: 24px 0 8px;
   gap: 9px;
+  pointer-events: auto;
 }
 
 .final-artifact-progress button {
-  padding: 8px 11px;
+  min-height: 44px;
+  padding: 10px 14px;
   border: 1px solid rgba(184, 149, 82, 0.32);
   background: transparent;
   color: rgba(229, 213, 180, 0.58);
   font: 700 10px Arial, "Noto Sans CJK SC", sans-serif;
   letter-spacing: 0.08em;
   cursor: pointer;
+  pointer-events: auto;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(184, 149, 82, 0.2);
   transition: border-color 160ms ease, background 160ms ease, color 160ms ease, transform 160ms ease;
 }
 
@@ -3873,7 +3883,8 @@ blockquote {
 }
 
 .final-artifact-progress button:hover,
-.final-artifact-progress button:focus-visible {
+.final-artifact-progress button:focus-visible,
+.final-artifact-progress button:active {
   border-color: rgba(184, 149, 82, 0.78);
   background: rgba(184, 149, 82, 0.08);
   color: #f0e1c0;
