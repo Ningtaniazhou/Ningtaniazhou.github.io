@@ -661,6 +661,59 @@ button:focus-visible {
   transform: translateY(9px);
 }
 
+.scene-loading-curtain {
+  position: fixed;
+  z-index: 120;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 32px;
+  overflow: hidden;
+  background: rgba(2, 4, 3, 0.9);
+  color: #e8dfca;
+  text-align: center;
+  animation: loading-curtain-in 520ms ease-out both;
+}
+
+.scene-loading-curtain::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.12;
+  background-image: radial-gradient(rgba(232, 223, 202, 0.22) 0.6px, transparent 0.7px);
+  background-size: 5px 5px;
+  pointer-events: none;
+}
+
+.scene-loading-error {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 20px;
+  justify-items: center;
+  max-width: 520px;
+}
+
+.scene-loading-error strong {
+  font-family: var(--chapter-title-font);
+  font-size: clamp(22px, 3vw, 38px);
+  font-weight: 400;
+}
+
+.scene-loading-error button {
+  position: relative;
+  z-index: 1;
+  margin-top: 24px;
+  padding: 13px 24px;
+  border: 1px solid rgba(207, 170, 91, 0.62);
+  background: rgba(7, 12, 11, 0.94);
+  color: #e8dfca;
+  cursor: pointer;
+  font: inherit;
+}
+
+@keyframes loading-curtain-in { from { opacity: 0; } to { opacity: 1; } }
+
 .scene-kicker,
 .chapter-kicker {
   margin-bottom: 12px;

@@ -159,6 +159,86 @@ const stageMusic: Record<Stage, { src: string; volume: number }> = {
   testament: musicCues.mystery,
 };
 
+const stageOrder: Stage[] = ["intro", "office", "market", "room", "book", "bell", "tiDeath", "inheritance", "luxury", "ghost", "map", "beijing", "repose", "camilloffDeparture", "camilloffIntercut", "camilloffReturn", "tienho", "mission", "letter", "return", "reckoning", "renounce", "prison", "devilReturn", "supplication", "testament"];
+
+const stageBackgrounds: Record<Stage, string> = {
+  intro: "/intro-cover-v1.webp", office: "/ministry-office-awake-v1.webp", market: "/feira-da-ladra-v1.webp",
+  room: "/lisbon-room-v3.webp", book: "/lisbon-room-v3.webp", bell: "/lisbon-room-v3.webp",
+  tiDeath: "/ti-chin-fu-death-garden-v1.webp", refusalEnding: "/lisbon-room-v3.webp", inheritance: "/inheritance-messenger-v1.webp",
+  luxury: "/palace-ghost.webp", ghost: "/palace-ghost.webp", map: "/east-journey.webp", beijing: "/pequim-arrival-v1.webp",
+  repose: "/pequim-litter-interior-v1.webp", camilloffDeparture: "/camilloff-departure-v1.webp", camilloffIntercut: "/camilloff-day1-mansion.webp",
+  camilloffReturn: "/camilloff-return-map-v1.webp", tienho: "/tienho-reality-v1.webp", mission: "/mission-cloister-v7.webp",
+  letter: "/mission-room-v1.webp", return: "/lisbon-room-v3.webp", reckoning: "/palace-ghost.webp", renounce: "/renounce-room-v1.webp",
+  prison: "/loreto-restored-v1.webp", devilReturn: "/supplication-street-v1.webp", supplication: "/devil-alone-street-v2.webp",
+  testament: "/testament-study-v2.webp",
+};
+
+const stageExtraImages: Partial<Record<Stage, string[]>> = {
+  office: ["/ministry-office-dozing-v1.webp", "/dream-cloud.webp"],
+  bell: ["/bell-v1.webp", "/devil-seated-cutout-v2.webp"],
+  tiDeath: ["/ti-chin-fu-alive-v3.webp", "/ti-chin-fu-corpse-v3.webp"],
+  map: ["/journey-transport-train-v1.webp", "/journey-transport-mail-steamer-v1.webp", "/journey-transport-river-steamer-v1.webp", "/journey-transport-flatboat-v1.webp", "/journey-transport-pony-v1.webp"],
+  repose: ["/curtain-prototype-interior-v1.webp", "/curtain-prototype-panel-v1.webp", "/curtain-prototype-hand-v1.webp", "/pequim-tartar-city-v1.webp", "/pequim-chinese-quarter-v1.webp"],
+  camilloffReturn: ["/camilloff-map-hand-v1.webp"],
+  devilReturn: ["/devil-standing-v1.webp"],
+  supplication: ["/supplication-street-v1.webp", "/devil-standing-v1.webp", "/teodoro-run-v1.webp", "/teodoro-kneel-v1.webp", "/teodoro-fallen-v1.webp"],
+};
+
+const stagePreloadBranches: Partial<Record<Stage, Stage[]>> = { bell: ["tiDeath", "refusalEnding"], beijing: ["repose"] };
+const imagePreloadCache = new Map<string, Promise<void>>();
+const audioPreloadCache = new Map<string, Promise<void>>();
+
+function preloadImage(src: string) {
+  const cached = imagePreloadCache.get(src);
+  if (cached) return cached;
+  const request = new Promise<void>((resolve, reject) => {
+    const image = new Image();
+    image.onload = async () => {
+      try { if (typeof image.decode === "function") await image.decode(); } catch { /* load already succeeded */ }
+      resolve();
+    };
+    image.onerror = () => reject(new Error(`无法载入图片：${src}`));
+    image.src = src;
+  }).catch((error) => { imagePreloadCache.delete(src); throw error; });
+  imagePreloadCache.set(src, request);
+  return request;
+}
+
+function preloadAudio(src: string) {
+  const cached = audioPreloadCache.get(src);
+  if (cached) return cached;
+  const request = new Promise<void>((resolve, reject) => {
+    const audio = new Audio();
+    let settled = false;
+    let timeout = 0;
+    const finish = (error?: Error) => {
+      if (settled) return;
+      settled = true;
+      window.clearTimeout(timeout);
+      audio.removeEventListener("canplaythrough", ready);
+      audio.removeEventListener("canplay", ready);
+      audio.removeEventListener("error", failed);
+      if (error) reject(error); else resolve();
+    };
+    const ready = () => finish();
+    const failed = () => finish(new Error(`无法载入音频：${src}`));
+    timeout = window.setTimeout(ready, 12000);
+    audio.preload = "auto";
+    audio.addEventListener("canplaythrough", ready, { once: true });
+    audio.addEventListener("canplay", ready, { once: true });
+    audio.addEventListener("error", failed, { once: true });
+    audio.src = src;
+    audio.load();
+  }).catch((error) => { audioPreloadCache.delete(src); throw error; });
+  audioPreloadCache.set(src, request);
+  return request;
+}
+
+async function preloadStage(stage: Stage) {
+  const images = [stageBackgrounds[stage], ...(stageExtraImages[stage] ?? [])];
+  await Promise.all([...images.map(preloadImage), preloadAudio(stageMusic[stage].src)]);
+}
+
 const refusalLines = [
   "你把良心称作原则，不过是因为今晚的价钱还没有说得足够具体。",
   "别急着自豪，我亲爱的先生。饥饿很会替哲学修改措辞。",
@@ -808,6 +888,9 @@ function LetterOfExcuses({ onTone, onReturn }: { onTone: (frequency: number, dur
 
 export default function Home() {
   const [stage, setStage] = useState<Stage>("intro");
+  const [preparedStage, setPreparedStage] = useState<Stage>("intro");
+  const [loadingStage, setLoadingStage] = useState<Stage | null>(null);
+  const [loadingError, setLoadingError] = useState("");
   const [transitioning, setTransitioning] = useState(false);
   const [roomFinds, setRoomFinds] = useState<string[]>([]);
   const [officeDocumentsRead, setOfficeDocumentsRead] = useState<string[]>([]);
@@ -849,40 +932,12 @@ export default function Home() {
   const info = stageInfo[stage];
   const nextReturnStop = returnPlaces.find((place) => !returnStops.includes(place));
   const isEast = ["map", "beijing", "repose", "camilloffDeparture", "camilloffIntercut", "camilloffReturn", "tienho", "mission", "letter"].includes(stage);
-  const backgrounds: Record<Stage, string> = {
-    intro: "/intro-cover-v1.webp",
-    office: "/ministry-office-awake-v1.webp",
-    market: "/feira-da-ladra-v1.webp",
-    room: "/lisbon-room-v3.webp",
-    book: "/lisbon-room-v3.webp",
-    bell: "/lisbon-room-v3.webp",
-    tiDeath: "/ti-chin-fu-death-garden-v1.webp",
-    refusalEnding: "/lisbon-room-v3.webp",
-    inheritance: "/inheritance-messenger-v1.webp",
-    luxury: "/palace-ghost.webp",
-    ghost: "/palace-ghost.webp",
-    map: "/east-journey.webp",
-    beijing: "/pequim-arrival-v1.webp",
-    repose: "/pequim-litter-interior-v1.webp",
-    camilloffDeparture: "/camilloff-departure-v1.webp",
-    camilloffIntercut: "/camilloff-day1-mansion.webp",
-    camilloffReturn: "/camilloff-return-map-v1.webp",
-    tienho: "/tienho-reality-v1.webp",
-    mission: "/mission-cloister-v7.webp",
-    letter: "/mission-room-v1.webp",
-    return: "/lisbon-room-v3.webp",
-    reckoning: "/palace-ghost.webp",
-    renounce: "/renounce-room-v1.webp",
-    prison: "/loreto-restored-v1.webp",
-    devilReturn: "/supplication-street-v1.webp",
-    supplication: "/devil-alone-street-v2.webp",
-    testament: "/testament-study-v2.webp",
-  };
   const beijingStreetBackgrounds: Record<Exclude<BeijingDestination, "">, string> = {
     tartar: "/pequim-tartar-city-v1.webp",
     chinese: "/pequim-chinese-quarter-v1.webp",
   };
-  const background = backgrounds[stage];
+  const background = stageBackgrounds[stage];
+  const stageIsReady = preparedStage === stage;
   const ghostIntensity = stage === "luxury" ? chosenLuxuries.length : corpsePresenceStages.includes(stage) ? 3 : 0;
   const currentHotspots = sceneHotspots[stage] ?? [];
   const currentVisited = visualFinds[stage] ?? [];
@@ -927,36 +982,57 @@ export default function Home() {
     }
   };
 
-  const go = (next: Stage) => {
+  const enterPreparedStage = async (next: Stage, updateHistory: () => void) => {
+    if (transitioning) return;
     resetRevisitableStage(next);
     setTransitioning(true);
-    setStageHistory((history) => [...history, stage]);
-    window.setTimeout(() => {
+    setLoadingStage(next);
+    setLoadingError("");
+    updateHistory();
+    try {
+      await Promise.all([preloadStage(next), new Promise((resolve) => window.setTimeout(resolve, 360))]);
+      setPreparedStage(next);
       setStage(next);
       setSelectedHotspot(null);
       setGhostRevealed(true);
-      setTransitioning(false);
-    }, 280);
+      window.requestAnimationFrame(() => window.requestAnimationFrame(() => {
+        setTransitioning(false);
+        setLoadingStage(null);
+      }));
+    } catch {
+      setLoadingError("场景暂时没有显影，请检查网络后重试。");
+    }
+  };
+
+  const go = (next: Stage) => {
+    void enterPreparedStage(next, () => setStageHistory((history) => [...history, stage]));
   };
 
   const goBack = () => {
     const previous = stageHistory.at(-1);
     if (!previous) return;
-    resetRevisitableStage(previous);
-    setTransitioning(true);
-    setStageHistory((history) => history.slice(0, -1));
-    window.setTimeout(() => {
-      setStage(previous);
-      setSelectedHotspot(null);
-      setGhostRevealed(true);
-      setTransitioning(false);
-    }, 280);
+    void enterPreparedStage(previous, () => setStageHistory((history) => history.slice(0, -1)));
   };
 
-  const beginMissionAwakening = () => {
+  const retryLoadingStage = () => {
+    if (!loadingStage) return;
+    setLoadingError("");
+    void preloadStage(loadingStage).then(() => {
+      setPreparedStage(loadingStage);
+      setStage(loadingStage);
+      setSelectedHotspot(null);
+      setGhostRevealed(true);
+      window.requestAnimationFrame(() => window.requestAnimationFrame(() => {
+        setTransitioning(false);
+        setLoadingStage(null);
+      }));
+    }).catch(() => setLoadingError("仍未能载入场景，请稍后再试。"));
+  };
+
+  const beginMissionAwakening = async () => {
     missionWakeTimers.current.forEach((timer) => window.clearTimeout(timer));
     missionWakeTimers.current = [];
-    go("mission");
+    await enterPreparedStage("mission", () => setStageHistory((history) => [...history, stage]));
     setMissionWaking(true);
     setMissionWakeAttempt(1);
     setMissionWakePhase("closing");
@@ -987,6 +1063,9 @@ export default function Home() {
 
   const reset = () => {
     setStage("intro");
+    setPreparedStage("intro");
+    setLoadingStage(null);
+    setLoadingError("");
     setTransitioning(false);
     setRoomFinds([]);
     setOfficeDocumentsRead([]);
@@ -1026,9 +1105,14 @@ export default function Home() {
   };
 
   const progress = useMemo(() => {
-    const order: Stage[] = ["intro", "office", "market", "room", "book", "bell", "tiDeath", "inheritance", "luxury", "ghost", "map", "beijing", "repose", "camilloffDeparture", "camilloffIntercut", "camilloffReturn", "tienho", "mission", "letter", "return", "reckoning", "renounce", "prison", "devilReturn", "supplication", "testament"];
-    const value = order.indexOf(stage);
-    return Math.max(2, ((value < 0 ? 2 : value + 1) / order.length) * 100);
+    const value = stageOrder.indexOf(stage);
+    return Math.max(2, ((value < 0 ? 2 : value + 1) / stageOrder.length) * 100);
+  }, [stage]);
+
+  useEffect(() => {
+    const currentIndex = stageOrder.indexOf(stage);
+    const targets = stagePreloadBranches[stage] ?? (currentIndex >= 0 && currentIndex < stageOrder.length - 1 ? [stageOrder[currentIndex + 1]] : []);
+    targets.forEach((target) => { void preloadStage(target).catch(() => undefined); });
   }, [stage]);
 
   useEffect(() => {
@@ -1047,6 +1131,7 @@ export default function Home() {
   }, [stage]);
 
   useEffect(() => {
+    if (!stageIsReady) return;
     if (stage === "tienho") {
       sound.fadeTrack(500);
       return;
@@ -1056,7 +1141,7 @@ export default function Home() {
     else sound.playTrack(cue.src, cue.volume);
     // Track transitions follow narrative stages; the sound controller persists between renders.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [stage]);
+  }, [stage, stageIsReady]);
 
   useEffect(() => {
     if (activeOfficeDocument === null) return;
@@ -1068,7 +1153,7 @@ export default function Home() {
   }, [activeOfficeDocument]);
 
   useEffect(() => {
-    if (stage !== "tiDeath") return;
+    if (stage !== "tiDeath" || !stageIsReady) return;
     // Reset the one-shot animation whenever this scene is entered or replayed.
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setDeathAnimationDone(false);
@@ -1086,7 +1171,7 @@ export default function Home() {
     };
     // The sound controller intentionally persists between narrative stages.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [stage, deathAnimationRun]);
+  }, [stage, deathAnimationRun, stageIsReady]);
 
   const inspectHotspot = (item: HotspotItem) => {
     const existing = visualFinds[stage] ?? [];
@@ -1224,73 +1309,27 @@ export default function Home() {
 
   useEffect(() => {
     const preview = new URLSearchParams(window.location.search).get("preview");
-    if (preview === "ti-death") {
-      // The preview route intentionally selects its isolated demonstration scene on mount.
-      // eslint-disable-next-line react-hooks/set-state-in-effect
-      setStage("tiDeath");
+    const previews: Record<string, Stage> = {
+      "ti-death": "tiDeath", office: "office", bell: "bell", journey: "map",
+      "camilloff-departure": "camilloffDeparture", "camilloff-return": "camilloffReturn",
+      "camilloff-sequence": "camilloffDeparture", "camilloff-intercut": "camilloffIntercut",
+      "devil-return": "devilReturn", "night-road": "prison", supplication: "supplication",
+      tienho: "tienho", "mission-awakening": "tienho", mission: "mission",
+      "letter-excuses": "letter", testament: "testament",
+    };
+    const previewStage = preview ? previews[preview] : undefined;
+    if (!previewStage) return;
+    setTransitioning(true);
+    setLoadingStage(previewStage);
+    void preloadStage(previewStage).then(() => {
+      setPreparedStage(previewStage);
+      setStage(previewStage);
       setStageHistory([]);
-    }
-    if (preview === "office") {
-      setStage("office");
-      setStageHistory([]);
-    }
-    if (preview === "bell") {
-      setStage("bell");
-      setStageHistory([]);
-    }
-    if (preview === "journey") {
-      setStage("map");
-      setStageHistory([]);
-    }
-    if (preview === "camilloff-departure") {
-      // This preview target supports isolated visual and interaction QA for the new transition scene.
-      setStage("camilloffDeparture");
-      setStageHistory([]);
-    }
-    if (preview === "camilloff-return") {
-      setStage("camilloffReturn");
-      setStageHistory([]);
-    }
-    if (preview === "camilloff-sequence") {
-      setStage("camilloffDeparture");
-      setStageHistory([]);
-    }
-    if (preview === "camilloff-intercut") {
-      setStage("camilloffIntercut");
-      setStageHistory([]);
-    }
-    if (preview === "devil-return") {
-      setStage("devilReturn");
-      setStageHistory([]);
-    }
-    if (preview === "night-road") {
-      setStage("prison");
-      setStageHistory([]);
-    }
-    if (preview === "supplication") {
-      setStage("supplication");
-      setStageHistory([]);
-    }
-    if (preview === "tienho") {
-      setStage("tienho");
-      setStageHistory([]);
-    }
-    if (preview === "mission-awakening") {
-      setStage("tienho");
-      setStageHistory([]);
-    }
-    if (preview === "mission") {
-      setStage("mission");
-      setStageHistory([]);
-    }
-    if (preview === "letter-excuses") {
-      setStage("letter");
-      setStageHistory([]);
-    }
-    if (preview === "testament") {
-      setStage("testament");
-      setStageHistory([]);
-    }
+      window.requestAnimationFrame(() => window.requestAnimationFrame(() => {
+        setTransitioning(false);
+        setLoadingStage(null);
+      }));
+    }).catch(() => setLoadingError("测试场景暂时没有显影，请检查网络后重试。"));
   }, []);
 
   return (
@@ -1300,6 +1339,11 @@ export default function Home() {
         <strong>请将手机横过来</strong>
         <p>《满大人》的场景与物件交互需要横屏显示。</p>
       </div>
+      {(transitioning || !stageIsReady) && (
+        <div className={`scene-loading-curtain ${loadingError ? "has-error" : ""}`} role="status" aria-live="polite" aria-busy="true">
+          {loadingError && <div className="scene-loading-error"><strong>{loadingError}</strong><button type="button" onClick={retryLoadingStage}>重新准备场景</button></div>}
+        </div>
+      )}
       <div className="scene-image" style={{ backgroundImage: `url(${background})` }} aria-hidden="true" />
       {stage === "office" && <div className={`office-doze-image ${officeDozing ? "is-visible" : ""}`} aria-hidden="true" />}
       <div className="scene-vignette" aria-hidden="true" />
@@ -1535,7 +1579,7 @@ export default function Home() {
           </div>
         )}
 
-        {stage === "tiDeath" && (
+        {stage === "tiDeath" && stageIsReady && (
           <div className="ti-death-scene" key={deathAnimationRun}>
             <div className="death-mist death-mist-back" aria-hidden="true" />
             <div className="death-character-stage" aria-label="狄鑫福在花园溪流旁的草岸上听见铃声后倒地身亡的剪纸动画">
