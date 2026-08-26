@@ -4939,7 +4939,7 @@ blockquote {
   }
 }
 
-@media (orientation: landscape) and (max-height: 540px) {
+@media (orientation: landscape) and (max-height: 540px) and (hover: none) and (pointer: coarse) {
   .game-shell {
     height: auto;
     min-height: 100svh;
@@ -5120,7 +5120,7 @@ blockquote {
 
 /* Final phone-landscape pass. Keep this after the general phone rules: every
    interactive stage gets its own reserved visual and reading zones. */
-@media (orientation: landscape) and (max-height: 540px) {
+@media (orientation: landscape) and (max-height: 540px) and (hover: none) and (pointer: coarse) {
   .game-shell {
     min-height: 100svh;
     overflow-x: hidden;
@@ -5351,7 +5351,7 @@ blockquote {
 /* Short landscape screens need fixed reading and interaction zones. These
    overrides deliberately come last so stage changes never leave controls or
    captions behind an earlier phone rule. */
-@media (orientation: landscape) and (max-height: 540px) {
+@media (orientation: landscape) and (max-height: 540px) and (hover: none) and (pointer: coarse) {
   .stage-tiDeath {
     overflow: hidden;
   }
@@ -6389,7 +6389,7 @@ blockquote {
 
 /* Phone rules above are intentionally broad. This last cascade restores the
    compact landscape composition after those portrait-oriented defaults. */
-@media (orientation: landscape) and (max-height: 540px) {
+@media (orientation: landscape) and (max-height: 540px) and (hover: none) and (pointer: coarse) {
   .topbar { height: 54px; padding: 0 18px; }
   .progress-track { top: 53px; }
 
@@ -6741,7 +6741,7 @@ blockquote {
   -webkit-touch-callout: none;
 }
 
-@media (orientation: landscape) and (max-height: 540px) {
+@media (orientation: landscape) and (max-height: 540px) and (hover: none) and (pointer: coarse) {
   .stage-camilloffIntercut .intercut-controls {
     right: 8px;
   }
@@ -6825,5 +6825,37 @@ blockquote {
     bottom: 0;
     width: 22vw;
     height: calc(100svh - 54px);
+  }
+}
+
+/*
+ * Desktop safety net: a short viewport (Windows display scaling, browser zoom,
+ * a non-maximised window, etc.) must never turn an ordinary narrative scene
+ * into a clipped fixed-height stage. Interactive full-screen sequences keep
+ * their own overflow rules; every other scene grows with its copy so the
+ * document can always scroll far enough to reach the actions.
+ */
+@media (hover: hover) and (pointer: fine) {
+  html,
+  body {
+    min-height: 100%;
+  }
+
+  body {
+    overflow-y: auto;
+  }
+
+  .game-shell:not(.stage-tienho):not(.stage-camilloffIntercut):not(.stage-supplication) {
+    height: auto !important;
+    min-height: 100dvh;
+    overflow-x: hidden;
+    overflow-y: visible;
+  }
+
+  .game-shell:not(.stage-tienho):not(.stage-camilloffIntercut):not(.stage-supplication) .scene-card {
+    height: auto !important;
+    min-height: 100dvh;
+    max-height: none !important;
+    overflow: visible !important;
   }
 }

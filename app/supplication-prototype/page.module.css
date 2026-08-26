@@ -497,7 +497,7 @@
   }
 }
 
-@media (orientation: landscape) and (max-height: 540px) {
+@media (orientation: landscape) and (max-height: 540px) and (hover: none) and (pointer: coarse) {
   .integratedPage {
     inset: 54px 0 0;
     display: block;
@@ -583,6 +583,28 @@
   .teodoroAftermath {
     left: 53%;
     height: 30%;
+  }
+}
+
+/*
+ * On desktop, keep one obvious scrolling surface. A nested, short excerpt
+ * scroller is easy to miss and can strand the action below the fold when the
+ * browser is zoomed or Windows display scaling leaves a shallow viewport.
+ */
+@media (hover: hover) and (pointer: fine) {
+  .integratedPanel {
+    top: clamp(14px, 4vh, 48px);
+    bottom: clamp(14px, 4vh, 48px);
+    max-height: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scrollbar-color: rgba(191, 147, 75, 0.52) transparent;
+  }
+
+  .integratedPanel .dialogueExcerpt {
+    max-height: none;
+    overflow: visible;
   }
 }
 
