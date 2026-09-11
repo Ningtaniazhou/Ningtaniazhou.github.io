@@ -236,7 +236,10 @@ function preloadAudio(src: string) {
 
 async function preloadStage(stage: Stage) {
   const images = [stageBackgrounds[stage], ...(stageExtraImages[stage] ?? [])];
-  await Promise.all([...images.map(preloadImage), preloadAudio(stageMusic[stage].src)]);
+  // Audio is optional: unsupported codecs, autoplay restrictions and failed
+  // audio requests must never prevent the next scene from opening.
+  void preloadAudio(stageMusic[stage].src).catch(() => undefined);
+  await Promise.all(images.map(preloadImage));
 }
 
 const refusalLines = [
@@ -736,6 +739,11 @@ function LetterOfExcuses({ onTone, onReturn }: { onTone: (frequency: number, dur
     onTone(98, 1.1, 0.065);
   };
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+    document.querySelector<HTMLElement>(".game-shell")?.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, [letterPhase, letterFolded]);
+
   const reasonById = (reasonId: LetterReasonId | null) => letterReasons.find((reason) => reason.id === reasonId);
   const openRoomLetter = () => {
     setLetterPhase("envelope");
@@ -1116,6 +1124,41 @@ export default function Home() {
   }, [stage]);
 
   useEffect(() => {
+    // Register hotspots to the actual covered artwork, including its crop and
+    // subtle scale, instead of assuming that the viewport is a 16:9 image.
+    const shell = document.querySelector<HTMLElement>(".game-shell");
+    const backdrop = document.querySelector<HTMLElement>(".scene-image");
+    if (!shell || !backdrop) return;
+    const artwork = new Image();
+    const align = () => {
+      if (!artwork.naturalWidth) return;
+      const rect = backdrop.getBoundingClientRect();
+      const scale = Math.max(rect.width / artwork.naturalWidth, rect.height / artwork.naturalHeight);
+      const width = artwork.naturalWidth * scale;
+      const height = artwork.naturalHeight * scale;
+      const position = getComputedStyle(backdrop).backgroundPosition.split(" ");
+      const x = parseFloat(position[0]) / 100;
+      const y = parseFloat(position[1]) / 100;
+      shell.style.setProperty("--art-width", `${width}px`);
+      shell.style.setProperty("--art-height", `${height}px`);
+      shell.style.setProperty("--art-left", `${rect.left + (rect.width - width) * x}px`);
+      shell.style.setProperty("--art-top", `${rect.top + (rect.height - height) * y}px`);
+    };
+    artwork.onload = align;
+    artwork.src = stageBackgrounds[stage];
+    const observer = new ResizeObserver(align);
+    observer.observe(backdrop);
+    window.addEventListener("resize", align);
+    window.visualViewport?.addEventListener("resize", align);
+    return () => {
+      artwork.onload = null;
+      observer.disconnect();
+      window.removeEventListener("resize", align);
+      window.visualViewport?.removeEventListener("resize", align);
+    };
+  }, [stage]);
+
+  useEffect(() => {
     const resetScrollPosition = () => {
       window.scrollTo({ top: 0, left: 0, behavior: "auto" });
       document.scrollingElement?.scrollTo({ top: 0, left: 0, behavior: "auto" });
@@ -1317,7 +1360,9 @@ export default function Home() {
       tienho: "tienho", "mission-awakening": "tienho", mission: "mission",
       "letter-excuses": "letter", testament: "testament",
     };
-    const previewStage = preview ? previews[preview] : undefined;
+    const previewStage = preview
+      ? previews[preview] ?? [...stageOrder, "refusalEnding" as Stage].find((value) => value === preview)
+      : undefined;
     if (!previewStage) return;
     setTransitioning(true);
     setLoadingStage(previewStage);

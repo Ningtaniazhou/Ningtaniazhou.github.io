@@ -381,3 +381,21 @@
     padding: 10px 12px;
   }
 }
+
+/* Keep the scene fixed while its copy scrolls, including on shallow tablets. */
+.overlay {
+  position: fixed;
+  inset: calc(var(--game-header-height, 74px) + env(safe-area-inset-top, 0px)) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px);
+  min-height: 0;
+  overflow-y: auto;
+}
+.copy { min-height: 0; overflow-y: auto; overscroll-behavior: contain; }
+.copy > * { flex-shrink: 0; }
+.copyScroll { overflow: visible; }
+.departButton { flex-shrink: 0; min-height: 44px; }
+@media (orientation: landscape) {
+  .overlay { grid-template-columns: minmax(210px, 44%) minmax(0, 1fr); overflow: hidden; }
+  .copy { padding: 24px; }
+  .copy h1 { font-size: clamp(30px, 4vw, 64px); }
+  .stage { min-height: 0; }
+}

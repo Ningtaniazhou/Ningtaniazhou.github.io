@@ -134,6 +134,7 @@ function later(fn, delay) {
 
 function setPhase(next) {
   phase = next;
+  document.querySelector("#narrativeCard").scrollTop = 0;
   scene.classList.remove("phase-coin", "phase-rice", "phase-lantern", "dreaming", "bridge", "reality", "identity", "escape", "wilderness", "mission", "collapsed", "blinking", "is-gripping", "is-running");
   if (["coin", "rice", "lantern"].includes(next)) scene.classList.add("dreaming", `phase-${next}`);
   if (["bridge", "reality", "identity", "escape", "wilderness", "mission"].includes(next)) scene.classList.add(next);
@@ -910,9 +911,9 @@ function coinPointerDown(event) {
 
 function coinPointerMove(event) {
   if (!drag || event.pointerId !== drag.id) return;
-  const sceneRect = scene.getBoundingClientRect();
-  coinSource.style.left = `${event.clientX - sceneRect.left - drag.x}px`;
-  coinSource.style.top = `${event.clientY - sceneRect.top - drag.y}px`;
+  const layerRect = coinSource.offsetParent.getBoundingClientRect();
+  coinSource.style.left = `${event.clientX - layerRect.left - drag.x}px`;
+  coinSource.style.top = `${event.clientY - layerRect.top - drag.y}px`;
 }
 
 function coinPointerUp(event) {

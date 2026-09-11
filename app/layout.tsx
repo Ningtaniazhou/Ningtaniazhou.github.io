@@ -1,8 +1,14 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { headers } from "next/headers";
 import "./globals.css";
 
 const shareDescription = "《满大人》是一部根据葡萄牙作家埃萨·德·凯罗斯同名小说改编的交互叙事游戏。如果你能让一个遥远国度的陌生人立刻死去，并继承他的千万遗产，你会毫不犹豫地杀掉这个素未谋面的人吗？那么，代价又会是什么呢？建议开启声音，并使用横屏或电脑游玩。";
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+};
 
 export async function generateMetadata(): Promise<Metadata> {
   const requestHeaders = await headers();

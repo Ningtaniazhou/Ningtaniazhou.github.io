@@ -9,7 +9,7 @@ test("turns the final artifacts into an automatic address to the reader", async 
   const versionCopy = await readFile(new URL("../app/version-copy.ts", import.meta.url), "utf8");
 
   assert.match(page, /FinalReaderAddress/);
-  assert.match(page, /preview === "testament"/);
+  assert.match(page, /testament: "testament"/);
   assert.match(page, /onRing=\{sound\.handbell\}/);
   assert.match(page, /onEndingMusic=\{\(\) => sound\.restartTrack\(musicCues\.mystery\.src, 0\.58\)\}/);
   assert.match(page, /creditsOnly=\{stage === "refusalEnding"\}/);

@@ -6859,3 +6859,94 @@ blockquote {
     overflow: visible !important;
   }
 }
+
+/* Cross-device layout contract: geometry follows the viewport, not input type.
+   Keep this after chapter-specific rules so tablet and hybrid devices share it. */
+:root { --game-header-height: 74px; }
+@media (max-width: 760px) { :root { --game-header-height: 62px; } }
+@media (orientation: landscape) and (max-height: 540px) {
+  :root { --game-header-height: 54px; }
+}
+html { -webkit-text-size-adjust: 100%; }
+.topbar {
+  height: calc(var(--game-header-height) + env(safe-area-inset-top, 0px));
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-left: max(18px, env(safe-area-inset-left, 0px));
+  padding-right: max(18px, env(safe-area-inset-right, 0px));
+}
+.progress-track { top: calc(var(--game-header-height) + env(safe-area-inset-top, 0px) - 1px); }
+.game-footer { pointer-events: none; bottom: max(8px, env(safe-area-inset-bottom, 0px)); }
+.scene-card { min-width: 0; overflow-wrap: anywhere; }
+.game-shell:not(.is-transitioning) .scene-card { transform: none; }
+.game-shell:not(.stage-tienho):not(.stage-camilloffIntercut):not(.stage-supplication) {
+  height: auto;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+.scene-card > *, .scene-body > * { flex-shrink: 0; }
+.scene-card button { max-width: 100%; white-space: normal; }
+.hotspot-layer, .office-document-hotspots, .office-dream-layer {
+  inset: auto;
+  top: var(--art-top, 0px);
+  left: var(--art-left, 0px);
+  width: var(--art-width, 100vw);
+  height: var(--art-height, 100vh);
+}
+.tienho-prototype-frame {
+  top: calc(var(--game-header-height) + env(safe-area-inset-top, 0px));
+  height: calc(100dvh - var(--game-header-height) - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px));
+  left: env(safe-area-inset-left, 0px);
+  width: calc(100% - env(safe-area-inset-left, 0px) - env(safe-area-inset-right, 0px));
+}
+.office-document-overlay, .artifact-overlay, .modal-backdrop {
+  padding-left: max(14px, env(safe-area-inset-left, 0px));
+  padding-right: max(14px, env(safe-area-inset-right, 0px));
+  padding-bottom: max(16px, env(safe-area-inset-bottom, 0px));
+}
+.office-document-sheet, .will-sheet, .info-modal {
+  max-height: calc(100dvh - var(--game-header-height) - 40px - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px));
+  overscroll-behavior: contain;
+}
+.camilloff-letter {
+  height: auto;
+  min-height: min(470px, calc(100dvh - 90px));
+  overflow: visible;
+}
+.camilloff-letter-panels { height: auto; min-height: 0; }
+.letter-fact-panel { min-width: 0; overflow-wrap: anywhere; }
+.letter-fact-panel p { font-size: clamp(14px, 1.1vw, 16px); line-height: 1.65; }
+.letter-unfold-control {
+  position: relative;
+  right: auto;
+  bottom: auto;
+  min-height: 44px;
+  margin: 12px 0 0 auto;
+  font-size: 14px;
+}
+.map-workbench, .intercut-stage {
+  top: calc(var(--game-header-height) + env(safe-area-inset-top, 0px));
+  bottom: env(safe-area-inset-bottom, 0px);
+}
+.map-conversation, .intercut-copy { overscroll-behavior: contain; }
+@media (orientation: landscape) and (max-height: 540px) {
+  .scene-card { padding-bottom: max(34px, env(safe-area-inset-bottom, 0px)); }
+  .camilloff-letter { padding-bottom: 8px; }
+  .intercut-stage { min-height: 0; }
+  .intercut-copy { top: 132px; bottom: 12px; min-height: 0; }
+}
+
+/* The generic official-paper decoration used overflow:hidden after the dialog
+   rule; restore a real scroller so the bottom of each document is readable. */
+.office-document-sheet { overflow-y: auto; }
+.office-document-sheet::after { pointer-events: none; }
+
+/* Reserve the display cutout without replacing each chapter's own padding. */
+.scene-card, .intercut-stage, .map-workbench {
+  border-left: env(safe-area-inset-left, 0px) solid transparent;
+  border-right: env(safe-area-inset-right, 0px) solid transparent;
+}
+@media (orientation: landscape) and (max-height: 540px) and (pointer: coarse) {
+  .stage-tiDeath .scene-card > .scene-kicker,
+  .stage-tiDeath .scene-card > h1,
+  .stage-tiDeath .scene-card > .scene-pt { left: max(3vw, env(safe-area-inset-left, 0px)); }
+}

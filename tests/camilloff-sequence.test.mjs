@@ -9,7 +9,7 @@ test("connects departure, abstract intercut, and return map", async () => {
   const styles = await readFile(new URL("../app/globals.css", import.meta.url), "utf8");
 
   assert.match(page, /go\("camilloffIntercut"\)/);
-  assert.match(page, /preview === "camilloff-intercut"[\s\S]*setStage\("camilloffIntercut"\)/);
+  assert.match(page, /"camilloff-intercut": "camilloffIntercut"/);
   assert.match(page, /onComplete=\{\(\) => go\("camilloffReturn"\)\}/);
   assert.match(page, /allBeijingStopsVisited[\s\S]*go\("camilloffDeparture"\)/);
   assert.match(page, /"confession" \| "briefing" \| "leaving" \| "gone"/);
@@ -26,14 +26,14 @@ test("connects departure, abstract intercut, and return map", async () => {
   assert.match(page, /camilloffReturn: musicCues\.mapMeeting/);
   assert.match(intercut, /<span className="chapter-kicker">第五幕 · 北京<\/span>/);
   assert.match(intercut, /<h2 className="chapter-title">府邸内外<\/h2>/);
-  assert.match(intercut, /推进到下一段/);
+  assert.match(intercut, /点击怀表，让时间推移/);
   assert.doesNotMatch(intercut, /四日|下一日|同一天|这一天/);
   assert.doesNotMatch(intercut, /第一小章|印章与茶杯|名单与扇子|门槛与门扉|消息与痕迹/);
-  assert.match(intercut, /if \(progress >= 1\)/);
-  assert.match(intercut, /watchAdvanced\.current = true;[\s\S]*advanceDay\(\);/);
+  assert.match(intercut, /if \(!seenBoth\) return/);
+  assert.match(intercut, /if \(seenBoth\) advanceDay\(\);/);
   assert.doesNotMatch(intercut, /watch-turn-hint|watch-turn-arc|watch-turn-arrow/);
-  assert.match(intercut, /day === 0 && <span className="intercut-control-hint"[^>]*><small>左右拖动<\/small>旋转地球仪<\/span>/);
-  assert.match(intercut, /day === 0 && <span className=\{`intercut-control-hint \$\{seenBoth \? "is-ready" : "is-waiting"\}`\}[^>]*><small>顺时针拨动<\/small>怀表指针<\/span>/);
+  assert.match(intercut, /day === 0 && <span className="intercut-control-hint"[^>]*><small>点击地球仪<\/small>穿梭于府邸内外<\/span>/);
+  assert.match(intercut, /day === 0 && <span className=\{`intercut-control-hint \$\{seenBoth \? "is-ready" : "is-waiting"\}`\}[^>]*><small>点击怀表<\/small>让时间推移<\/span>/);
   assert.match(intercut, /她离开时把一只浅色的手套忘在了我的桌上/);
   assert.match(map, /看向桌角的女士手套/);
   assert.match(map, /mapRoutes\.length/);

@@ -123,6 +123,15 @@ export default function CamilloffReturnMap({ onContinue, onTone }: { onContinue:
 
   useEffect(() => () => timers.current.forEach(window.clearTimeout), []);
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+    document.querySelector<HTMLElement>(".game-shell")?.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, [phase]);
+
+  useEffect(() => {
+    document.querySelector<HTMLElement>(".map-conversation")?.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, [mapStep]);
+
   const inspectGlove = () => {
     setGloveInspected(true);
     setGloveFocus(true);

@@ -636,3 +636,33 @@ blockquote { margin: 0; font-size: clamp(18px, 1.55vw, 27px); line-height: 1.8; 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; }
 }
+
+/* Match the hotspot canvas to the covered 1672 x 941 artwork on every ratio. */
+.dreaming .interaction-layer {
+  inset: auto;
+  top: 50%;
+  left: 50%;
+  width: max(100%, calc(100dvh * 1672 / 941));
+  height: max(100%, calc(100vw * 941 / 1672));
+  transform: translate(-50%, -50%);
+}
+/* Tall tablets show the whole dream artwork, with the same contained canvas
+   for its props. Cropping would otherwise place the widow or lanterns offscreen. */
+@media (max-aspect-ratio: 4 / 3) {
+  .dreaming .dream-image { object-fit: contain; object-position: center; }
+  .dreaming .interaction-layer { width: 100%; height: calc(100vw * 941 / 1672); }
+}
+.narrative-card, .identity-panel { overflow-y: auto; overscroll-behavior: contain; }
+.narrative-card { max-height: calc(72% - 20px); }
+.identity-panel { max-height: calc(100% - 17vh - 20px); }
+@media (orientation: landscape) and (max-height: 540px) {
+  .narrative-card { max-height: calc(100% - 98px); }
+  .identity-panel { max-height: calc(100% - 20px); }
+}
+
+.wall-gate { max-height: calc(100% - 24px); overflow-y: auto; overscroll-behavior: contain; }
+
+/* On the smallest screens the bowl's large hit area overlaps the coin.
+   Keep the draggable coin on top so grabbing it cannot click the bowl instead. */
+.coin-source { z-index: 2; }
+.coin-source.is-dragging { z-index: 3; }

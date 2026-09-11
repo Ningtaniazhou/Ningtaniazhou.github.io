@@ -619,3 +619,47 @@
     animation-iteration-count: 1;
   }
 }
+
+/* One bounded reading surface on mouse, touch and hybrid devices. The artwork
+   and character cutouts retain the same 16:9 coordinate system when resized. */
+.integratedPage {
+  inset: calc(var(--game-header-height, 74px) + env(safe-area-inset-top, 0px)) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px);
+  display: grid;
+  min-height: 0;
+}
+.stage.integratedStage {
+  width: min(100%, calc((100dvh - var(--game-header-height, 74px) - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px)) * 16 / 9));
+  height: auto;
+  max-height: none;
+  aspect-ratio: 16 / 9;
+}
+.storyPanel.integratedPanel {
+  top: 12px;
+  bottom: 12px;
+  left: 3%;
+  width: 43%;
+  max-height: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-color: rgba(191, 147, 75, 0.52) transparent;
+}
+.integratedPanel > * { flex-shrink: 0; }
+.integratedPanel .dialogueExcerpt { max-height: none; overflow: visible; }
+.integratedPanel .sequenceActions { flex-wrap: wrap; }
+.integratedPanel .begButton { min-width: 0; max-width: 100%; min-height: 44px; flex-shrink: 0; }
+
+@media (min-width: 921px) {
+  .storyPanel.integratedPanel { width: 34%; }
+}
+.integratedStage .corpseLayer :global(.ti-figure) {
+  width: 30%;
+  right: 23%;
+  bottom: 23%;
+}
+.integratedStage .corpseLayer :global(.corpse-toggle) {
+  right: 25%;
+  bottom: 34%;
+  max-width: 28%;
+  white-space: normal;
+}
