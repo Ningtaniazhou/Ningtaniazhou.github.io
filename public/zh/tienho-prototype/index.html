@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#17130d" />
+    <title>天河村</title>
+    <link rel="stylesheet" href="styles.css?v=6" />
+  </head>
+  <body>
+    <main class="prototype" id="prototype">
+      <div class="scene" id="scene" aria-live="polite">
+        <img class="scene-image dream-image" src="assets/tienho-dream.webp" alt="黄昏中的天河村客栈，村民排队领米并点起灯笼" />
+        <img class="scene-image reality-image" src="assets/tienho-reality.webp" alt="月夜中的天河村客栈，人群包围了装满行李的车辆" />
+
+        <div class="color-wash" aria-hidden="true"></div>
+        <div class="vignette" aria-hidden="true"></div>
+        <div class="petals" id="petals" aria-hidden="true"></div>
+        <div class="crowd-signal" id="crowdSignal" aria-hidden="true"></div>
+
+        <header class="chapter-mark">
+          <p class="chapter-kicker">第六幕 · 远东</p>
+          <h1 class="chapter-title">天河村</h1>
+        </header>
+
+        <button class="sound-toggle" id="soundToggle" type="button" aria-pressed="false">声音：开</button>
+
+        <section class="narrative-card" id="narrativeCard">
+          <p class="eyebrow" id="eyebrow">客栈</p>
+          <blockquote id="storyText">茶还温着。萨托说起明天的计划：找到狄鑫福的遗孀，把钱和米送过去。</blockquote>
+          <p class="instruction" id="instruction">困意渐渐袭来。</p>
+          <button class="primary-action" id="startButton" type="button">饮尽茶，合上眼睛 <span>→</span></button>
+        </section>
+
+        <aside class="rumor-card" id="rumorCard" aria-label="村民对陌生人的称呼">
+          <span>人群低语</span>
+          <strong id="rumorText">一位远道而来的陌生人</strong>
+          <div class="rumor-track"><i id="rumorFill"></i></div>
+        </aside>
+
+        <div class="interaction-layer" id="interactionLayer">
+          <button class="hotspot coin-source" id="coinSource" type="button" aria-label="拿起金币">
+            <span class="coin">✦</span>
+            <em>拖动金币</em>
+          </button>
+
+          <button class="hotspot widow-target" id="widowTarget" type="button" aria-label="把金币放进寡妇的碗里">
+            <span></span><em>碗</em>
+          </button>
+
+          <button class="hotspot rice-target" id="riceTarget" type="button" aria-label="点击粮袋分发大米">
+            <span></span><em>分发米粮</em>
+          </button>
+
+          <button class="hotspot lantern lantern-one" data-lantern="0" type="button" aria-label="点亮第一盏灯笼"><span></span></button>
+          <button class="hotspot lantern lantern-two" data-lantern="1" type="button" aria-label="点亮第二盏灯笼"><span></span></button>
+          <button class="hotspot lantern lantern-three" data-lantern="2" type="button" aria-label="点亮第三盏灯笼"><span></span></button>
+
+          <button class="money-bag" id="moneyBag" type="button" aria-label="钱袋">
+            <span class="grip-progress"></span>
+            <em>按住钱袋</em>
+          </button>
+        </div>
+
+        <div class="chant" id="chant" aria-hidden="true">再给一些！</div>
+        <div class="impact-flash" aria-hidden="true"></div>
+
+        <section class="identity-panel" id="identityPanel" hidden>
+          <div class="identity-heading">
+            <p class="eyebrow">客栈门外</p>
+            <h2>门外的人要我解释身份和来由。</h2>
+            <p>语言不通。我只能从行李中拿出一样东西当做证明。</p>
+          </div>
+          <div class="evidence-grid" id="evidenceGrid">
+            <button class="evidence-card" type="button" data-evidence="letter">
+              <span class="evidence-icon letter-icon">R</span>
+              <strong>官员介绍信</strong>
+              <small>有使馆印章的葡萄牙文信件</small>
+            </button>
+            <button class="evidence-card" type="button" data-evidence="cross">
+              <span class="evidence-icon cross-icon">✝</span>
+              <strong>十字架</strong>
+              <small>证明自己的信仰与来历</small>
+            </button>
+            <button class="evidence-card" type="button" data-evidence="gold">
+              <span class="evidence-icon gold-icon">✦</span>
+              <strong>金币</strong>
+              <small>证明自己有能力兑现接济村民。</small>
+            </button>
+            <button class="evidence-card" type="button" data-evidence="sato">
+              <span class="evidence-icon sato-icon">萨</span>
+              <strong>让萨托翻译</strong>
+              <small>让懂中文的萨托来解释。</small>
+            </button>
+          </div>
+          <div class="causal-chain" id="causalChain" hidden>
+            <div><span>我的意思</span><strong id="intentText"></strong></div>
+            <i>→</i>
+            <div><span>他们眼中</span><strong id="perceptionText"></strong></div>
+            <i>→</i>
+            <div class="chain-danger"><span>人群传开</span><strong id="outcomeText"></strong></div>
+          </div>
+          <blockquote class="translation-line" id="translationLine" hidden></blockquote>
+          <div class="motive-strip" id="motiveStrip" hidden aria-label="不同人物推动冲突的原因">
+            <div><span>饥饿的人</span><q>他说会分给全村的人。</q></div>
+            <div><span>旅店主人</span><q>若有人闯入，损失算谁的？</q></div>
+            <div><span>地方差役</span><q>天亮以前，先把东西扣下。</q></div>
+          </div>
+          <div class="pressure-line">
+            <span>门外人群</span><b><i id="pressureFill"></i></b><strong id="pressureValue">68%</strong>
+          </div>
+          <button class="primary-action identity-continue" id="identityContinue" type="button" hidden>从后窗逃走 <span>→</span></button>
+        </section>
+
+        <section class="escape-stage" id="escapeStage" hidden>
+          <div class="pursuit-crowd" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+          <img class="runner" src="assets/teodoro-run.webp" alt="特奥多罗抱着沉重的钱袋奔逃" />
+          <div class="escape-copy">
+            <p class="eyebrow">逃出客栈</p>
+            <h2 id="escapeHeading">钱袋拖慢了脚步。</h2>
+            <p id="escapeInstruction"></p>
+          </div>
+          <div class="escape-hud">
+            <div><span>离后窗</span><b><i id="distanceFill"></i></b><strong id="distanceValue">0%</strong></div>
+            <div><span>钱袋</span><b><i id="goldFill"></i></b><strong id="goldValue">100%</strong></div>
+            <div><span>追来的人</span><b><i id="crowdFill"></i></b><strong id="crowdValue">36%</strong></div>
+          </div>
+          <div class="escape-bag-control">
+            <div class="escape-bag-help">
+              <span><b>按住</b>带着金币，但脚步更慢</span>
+              <span><b>松开</b>金币会洒落，逃跑更快</span>
+            </div>
+            <button class="escape-bag" id="escapeBag" type="button" aria-label="按住带着金币，松开金币洒落并加快逃跑">
+              <span class="escape-bag-art">✦</span>
+            </button>
+          </div>
+          <div class="escape-coins" id="escapeCoins" aria-hidden="true"></div>
+          <section class="wall-gate" id="wallGate" hidden>
+            <p class="eyebrow">客栈后窗</p>
+            <h2>皮绳挂在了窗栅上。</h2>
+            <p>带着钱袋，翻不过去。</p>
+            <button class="cut-action" id="cutBagButton" type="button"><span>割断钱袋</span></button>
+          </section>
+        </section>
+
+        <section class="wilderness-stage" id="wildernessStage" hidden>
+          <img class="wilderness-image" src="assets/wilderness-teodoro-v2.webp" alt="月夜荒野中，身穿黑色礼服、浑身湿透的特奥多罗独自走过泥地，马匹已经逃远" />
+          <div class="wilderness-cold" aria-hidden="true"></div>
+          <div class="wilderness-copy">
+            <p class="eyebrow">天河村外的荒野</p>
+            <h2 id="wildernessHeading">马匹已经跑远，空马镫在风里甩动。</h2>
+            <p id="wildernessNarration">潮湿的衣服冻在皮肤上，钱袋被留在了客栈，马也跑远了。</p>
+          </div>
+
+          <div class="body-signals" id="bodySignals" aria-hidden="true">
+            <span data-signal="0">衣服 · 湿透</span>
+            <span data-signal="1">左耳 · 温热</span>
+            <span data-signal="2">双脚 · 失去知觉</span>
+            <span data-signal="3">呼吸 · 结霜</span>
+          </div>
+
+          <button class="wilderness-action" id="wildernessAction" type="button">
+            <span class="wake-ring"></span>
+            <strong id="wildernessActionLabel">向前走</strong>
+          </button>
+
+          <div class="blackout" id="blackout" aria-hidden="true"></div>
+        </section>
+
+        <section class="mission-entry" id="missionEntry" hidden>
+          <img src="assets/mission-cloister.webp" alt="清晨的修道院回廊，一位老修士站在井边" />
+          <div class="mission-entry-shade" aria-hidden="true"></div>
+          <div class="mission-entry-copy">
+            <p class="eyebrow">遣使会修道院 · 清晨</p>
+            <h2>钟声从很远的地方传来。</h2>
+            <p>有人正在清洗我耳边凝固的血。</p>
+          </div>
+        </section>
+
+        <div class="phase-dots" aria-label="体验进度">
+          <span class="active"></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+    </main>
+    <script src="script.js?v=7"></script>
+  </body>
+</html>

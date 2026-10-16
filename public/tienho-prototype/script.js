@@ -78,40 +78,40 @@ let wakePointerDown = false;
 
 const evidenceOutcomes = {
   letter: {
-    intent: "我受官府委托而来",
-    perception: "无人能读的外国字与红印",
-    outcome: "来历不明的外国文书",
-    quote: "信在人群中传了一圈，没人读得懂，有人指着红印摇头。",
+    intent: "Venho com o apoio das autoridades",
+    perception: "Letras estrangeiras ilegíveis e um selo vermelho",
+    outcome: "Um documento estrangeiro de origem incerta",
+    quote: "A carta passou de mão em mão. Ninguém a soube ler. Alguém apontou para o selo vermelho e abanou a cabeça.",
     pressure: 84,
   },
   cross: {
-    intent: "我的信仰约束着我的行为",
-    perception: "一个陌生的金属刑具",
-    outcome: "陌生的异邦法器",
-    quote: "十字架举起，人群先退了一步，随后有人弯腰捡起石块。",
+    intent: "A minha fé rege os meus atos",
+    perception: "Um estranho instrumento de suplício em metal",
+    outcome: "Um objeto ritual estrangeiro",
+    quote: "Ergui o crucifixo. A multidão recuou um passo; depois alguém se baixou para apanhar pedras.",
     pressure: 88,
   },
   gold: {
-    intent: "我确实有能力帮助你们",
-    perception: "传闻中的财宝就在眼前",
-    outcome: "传闻中的黄金",
-    quote: "金币一露出来，人群安静了，随即扑向金币。",
+    intent: "Tenho realmente meios para vos ajudar",
+    perception: "O tesouro dos rumores está à vista",
+    outcome: "O ouro de que todos falavam",
+    quote: "Assim que viram o ouro, calaram-se. Logo a seguir, precipitaram-se sobre as moedas.",
     pressure: 100,
   },
   sato: {
-    intent: "我们只是来帮助穷人",
-    perception: "萨托说：他要把财物给全村",
-    outcome: "要分给全村的财物",
-    quote: "萨托说我们是来帮助穷人的，村民却已经开始搬动我们的行李。",
+    intent: "Viemos apenas ajudar os pobres",
+    perception: "Sá-Tó diz: ele vai dar os bens à aldeia inteira",
+    outcome: "Bens para distribuir por toda a aldeia",
+    quote: "Sá-Tó explicou que vínhamos ajudar os pobres, mas os aldeões já começavam a carregar a nossa bagagem.",
     pressure: 96,
   },
 };
 
 const scoreCues = {
-  dream: { src: "/audio/apparitions-ball.mp3", volume: .16 },
-  danger: { src: "/audio/pursuit.mp3", volume: .18 },
-  wilderness: { src: "/audio/i-swear-i-saw-it.ogg", volume: .13 },
-  monastery: { src: "/audio/contemplation.mp3", volume: .2 },
+  dream: { src: "../audio/apparitions-ball.mp3", volume: .16 },
+  danger: { src: "../audio/pursuit.mp3", volume: .18 },
+  wilderness: { src: "../audio/i-swear-i-saw-it.ogg", volume: .13 },
+  monastery: { src: "../audio/contemplation.mp3", volume: .2 },
 };
 
 const phaseScores = {
@@ -206,7 +206,7 @@ function crossfadeScore(incoming, outgoing, target, duration = 1400) {
   const started = performance.now();
   const outgoingStart = outgoing?.volume || 0;
   const step = (now) => {
-    const ratio = Math.min(1, (now - started) / duration);
+    const ratio = Math.max(0, Math.min(1, (now - started) / duration));
     incoming.volume = target * ratio;
     if (outgoing) outgoing.volume = outgoingStart * (1 - ratio);
     if (ratio < 1) {
@@ -276,7 +276,7 @@ function silenceScore(duration = 1800) {
   const started = performance.now();
   const startVolume = active.volume;
   const step = (now) => {
-    const ratio = Math.min(1, (now - started) / duration);
+    const ratio = Math.max(0, Math.min(1, (now - started) / duration));
     active.volume = startVolume * (1 - ratio);
     if (ratio < 1) scoreFadeFrame = requestAnimationFrame(step);
     else {
@@ -417,11 +417,11 @@ function beginDream() {
   resonantTap({ frequency: 920, duration: .18, volume: .012, when: .035 });
   setPhase("coin");
   setDot(0);
-  eyebrow.textContent = "天河村";
-  storyText.textContent = "狄鑫福的遗孀站在晨光里。她没有开口，只是把一只空碗捧向我。";
-  instruction.textContent = "把金币放进她的碗里。";
+  eyebrow.textContent = "Tien-Hó";
+  storyText.textContent = "A viúva de Ti Chin-Fu está à luz da manhã. Sem dizer palavra, estende-me uma tigela vazia.";
+  instruction.textContent = "Põe a moeda na tigela.";
   startButton.hidden = true;
-  setRumor("一位远道而来的陌生人", 12);
+  setRumor("Um estranho vindo de longe", 12);
   addCrowd(3);
 }
 
@@ -429,10 +429,10 @@ function completeCoin() {
   if (phase !== "coin") return;
   coinSource.style.opacity = "0";
   playCoinClink(2, .9);
-  setRumor("慷慨的陌生人", 38);
+  setRumor("Um estranho generoso", 38);
   addCrowd(4);
-  storyText.textContent = "金币落入碗底，她笑了笑，人群让出路来让粮车通过。";
-  instruction.textContent = "点击车上的粮袋，开始分发米粮。";
+  storyText.textContent = "A moeda cai na tigela. Ela sorri. A multidão abre caminho ao carro de arroz.";
+  instruction.textContent = "Seleciona o saco no carro para distribuir arroz.";
   setPhase("rice");
   setDot(1);
 }
@@ -441,10 +441,10 @@ function completeRice() {
   if (phase !== "rice") return;
   playRicePour();
   riceTarget.classList.add("is-complete");
-  setRumor("富有的陌生人", 67);
+  setRumor("Um estranho rico", 67);
   addCrowd(5);
-  storyText.textContent = "队伍向前移动。每只装满的碗后面又多出了几张脸。";
-  instruction.textContent = "点亮三盏灯笼。";
+  storyText.textContent = "A fila avança. Atrás de cada tigela cheia, surgem mais rostos.";
+  instruction.textContent = "Acende as três lanternas.";
   setPhase("lantern");
   setDot(2);
 }
@@ -454,13 +454,13 @@ function lightLantern(button) {
   button.classList.add("is-lit");
   lanternCount += 1;
   playLanternLight(lanternCount);
-  instruction.textContent = `灯笼 ${lanternCount} / 3`;
+  instruction.textContent = `Lanternas ${lanternCount} / 3`;
   addCrowd(2);
   if (lanternCount === 3) {
     scene.classList.add("celebrating");
-    setRumor("带着财物的外国人", 100);
-    storyText.textContent = "最后一盏灯亮起。欢呼声从近处传来。";
-    instruction.textContent = "鼓点从人群深处传来……";
+    setRumor("Um estrangeiro com riquezas", 100);
+    storyText.textContent = "A última luz. A multidão aclama.";
+    instruction.textContent = "Ouvem-se tambores…";
     later(beginBridge, 850);
   }
 }
@@ -468,7 +468,7 @@ function lightLantern(button) {
 function beginBridge() {
   setPhase("bridge");
   setDot(3);
-  document.querySelector("#narrativeCard").classList.add("is-quiet");
+  // Keep the short lantern cue readable during the transition.
   const beats = [0, 560, 1080, 1540, 1940, 2290];
   beats.forEach((delay, index) => later(() => playHandDrum(0.78 + index * .1), delay));
   later(() => scene.classList.add("wake-1"), 520);
@@ -480,10 +480,10 @@ function beginBridge() {
 
 function beginReality() {
   setPhase("reality");
-  eyebrow.textContent = "客栈";
-  storyText.textContent = "鼓声没有停，变成了撞门声，门外有很多人在叫喊。我一出门，就有人抓住了我的钱袋。";
-  instruction.textContent = "抓住钱袋。";
-  setRumor("带着财物的外国人", 100);
+  eyebrow.textContent = "Estalagem";
+  storyText.textContent = "Os tambores não pararam: tornaram-se pancadas na porta. Lá fora, muitos gritam. Mal saio, alguém agarra a minha bolsa.";
+  instruction.textContent = "Segura a bolsa.";
+  setRumor("Um estrangeiro com riquezas", 100);
   document.querySelector("#narrativeCard").classList.remove("is-quiet");
 }
 
@@ -511,7 +511,7 @@ function cancelGrip() {
   scene.classList.remove("is-gripping");
   moneyBag.classList.remove("is-held");
   moneyBag.style.setProperty("--hold", 0);
-  instruction.textContent = "那只手没有松开。抓紧钱袋。";
+  instruction.textContent = "A mão não larga. Segura com força.";
 }
 
 function finishGrip() {
@@ -524,7 +524,7 @@ function finishGrip() {
   document.querySelector("#narrativeCard").style.opacity = "0";
   identityPanel.hidden = false;
   setDot(4);
-  setRumor("带着财物的外国人", 100);
+  setRumor("Um estrangeiro com riquezas", 100);
 }
 
 function chooseEvidence(card) {
@@ -672,7 +672,7 @@ function cutBag() {
   updateEscapeHud();
   scatterCoin(true);
   cutBagButton.disabled = true;
-  cutBagButton.querySelector("span").textContent = "皮绳断开";
+  cutBagButton.querySelector("span").textContent = "Correia cortada";
   later(finishEscape, 750);
 }
 
@@ -683,29 +683,29 @@ function finishEscape() {
 
 const wildernessMoments = [
   {
-    action: "向前走",
-    heading: "马匹已经跑远，空马镫在风里甩动。",
-    narration: "潮湿的衣服冻在皮肤上，钱袋被留在了客栈，马也跑远了。",
+    action: "Avançar",
+    heading: "O cavalo fugiu. Os estribos vazios baloiçam ao vento.",
+    narration: "A roupa molhada gela-me a pele. Deixei a bolsa na estalagem, e o cavalo fugiu.",
   },
   {
-    action: "站稳",
-    heading: "泥水没过鞋底，我每走一步，都要把脚从泥地里拔出来。",
-    narration: "身后的喊声已经听不见了，但荒野并没有因此变得安全。",
+    action: "Firmar os pés",
+    heading: "A lama cobre-me as solas. A cada passo, tenho de arrancar os pés do chão.",
+    narration: "Já não ouço os gritos atrás de mim. Mas isso não torna estes ermos seguros.",
   },
   {
-    action: "抬起脚",
-    heading: "受伤的左耳在流血，一直淌到肩上。",
-    narration: "远处有一点白光，它没有靠近，也没有消失。",
+    action: "Erguer o pé",
+    heading: "A orelha esquerda sangra. O sangue escorre até ao ombro.",
+    narration: "Ao longe há um ponto de luz branca. Não se aproxima nem desaparece.",
   },
   {
-    action: "呼吸",
-    heading: "寒气把呼吸留在眼前，路已经从脚下消失。",
-    narration: "我已经思考不了要往哪里走，只能努力保持身体平衡。",
+    action: "Respirar",
+    heading: "O frio suspende-me o bafo diante dos olhos. O caminho desapareceu debaixo dos pés.",
+    narration: "Já não consigo pensar para onde ir. Esforço-me apenas por manter o equilíbrio.",
   },
   {
-    action: "保持清醒",
-    heading: "我努力地保持清醒。",
-    narration: "每一次呼吸都比上一次更沉重。",
+    action: "Resistir",
+    heading: "Luto para não perder os sentidos.",
+    narration: "Cada respiração pesa mais do que a anterior.",
   },
 ];
 
@@ -789,7 +789,7 @@ function updateWakeHold(now) {
     wakeRound += 1;
     playHeartbeat(Math.max(.35, .72 - wakeRound * .13));
     pulseConsciousness();
-    const nextAction = wakeRound === 1 ? "呼吸" : "不要睡去";
+    const nextAction = wakeRound === 1 ? "Respirar" : "Não adormecer";
     later(() => {
       wildernessActionLabel.textContent = nextAction;
     }, 390);
@@ -805,7 +805,7 @@ function cancelWakeHold() {
   cancelAnimationFrame(wakeFrame);
   wildernessAction.classList.remove("is-holding");
   wildernessAction.style.setProperty("--wake-hold", 0);
-  wildernessActionLabel.textContent = wakeRound === 0 ? "保持清醒" : wakeRound === 1 ? "呼吸" : "不要睡去";
+  wildernessActionLabel.textContent = wakeRound === 0 ? "Resistir" : wakeRound === 1 ? "Respirar" : "Não adormecer";
   playBreath(.38);
 }
 
@@ -864,9 +864,9 @@ function reset() {
   scene.querySelectorAll(".lantern").forEach((lantern) => lantern.classList.remove("is-lit"));
   document.querySelector("#narrativeCard").className = "narrative-card";
   document.querySelector("#narrativeCard").style.opacity = "";
-  eyebrow.textContent = "客栈";
-  storyText.textContent = "茶还温着。萨托说起明天的计划：找到狄鑫福的遗孀，把钱和米送过去。";
-  instruction.textContent = "困意渐渐袭来。";
+  eyebrow.textContent = "Estalagem";
+  storyText.textContent = "O chá ainda está quente. Sá-Tó fala dos planos para amanhã: encontrar a viúva de Ti Chin-Fu e levar-lhe dinheiro e arroz.";
+  instruction.textContent = "O sono começa a vencer-me.";
   startButton.hidden = false;
   coinSource.style.opacity = "";
   riceTarget.classList.remove("is-complete");
@@ -889,13 +889,13 @@ function reset() {
   escapeCoins.innerHTML = "";
   wallGate.hidden = true;
   cutBagButton.disabled = false;
-  cutBagButton.querySelector("span").textContent = "割断钱袋";
+  cutBagButton.querySelector("span").textContent = "Cortar a correia";
   wildernessAction.disabled = false;
   wildernessAction.classList.remove("is-holding");
   wildernessAction.style.setProperty("--wake-hold", 0);
   crowdSignal.innerHTML = "";
   moneyBag.style.setProperty("--hold", 0);
-  setRumor("一位远道而来的陌生人", 12);
+  setRumor("Um estranho vindo de longe", 12);
   setDot(0);
   setupPetals();
 }
@@ -941,7 +941,7 @@ coinSource.addEventListener("pointermove", coinPointerMove);
 coinSource.addEventListener("pointerup", coinPointerUp);
 coinSource.addEventListener("pointercancel", cancelCoinDrag);
 coinSource.addEventListener("click", () => {
-  if (phase === "coin") instruction.textContent = "点击寡妇的碗，或把金币拖进碗里。";
+  if (phase === "coin") instruction.textContent = "Seleciona a tigela da viúva ou arrasta a moeda para lá.";
 });
 widowTarget.addEventListener("click", completeCoin);
 riceTarget.addEventListener("click", completeRice);
@@ -992,7 +992,7 @@ wildernessAction.addEventListener("keyup", (event) => {
 
 soundToggle.addEventListener("click", () => {
   soundOn = !soundOn;
-  soundToggle.textContent = `声音：${soundOn ? "开" : "关"}`;
+  soundToggle.textContent = `Som: ${soundOn ? "ligado" : "desligado"}`;
   soundToggle.setAttribute("aria-pressed", String(!soundOn));
   if (soundOn) {
     getAudioContext();
@@ -1012,7 +1012,7 @@ if (previewStage === "identity") {
   document.querySelector("#narrativeCard").style.opacity = "0";
   identityPanel.hidden = false;
   setDot(4);
-  setRumor("带着财物的外国人", 100);
+  setRumor("Um estrangeiro com riquezas", 100);
   phase = "identity";
 } else if (previewStage === "escape") {
   startButton.hidden = true;

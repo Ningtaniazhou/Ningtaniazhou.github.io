@@ -1,0 +1,6 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": { "incremental": false },
+  "include": ["github-pages/main.tsx", "github-pages/main-zh.tsx", "app/asset-path.ts", "vite.github-pages.config.ts", "next-env.d.ts"],
+  "exclude": ["node_modules", "worker", "db", "examples"]
+}

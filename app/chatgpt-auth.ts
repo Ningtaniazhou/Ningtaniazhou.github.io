@@ -1,3 +1,4 @@
+import { asset } from "./asset-path";
 import { headers } from "next/headers";
 import { redirect } from "next/navigation";
 
@@ -53,22 +54,22 @@ export function chatGPTSignInPath(returnTo: string): string {
   return `${SIGN_IN_PATH}?return_to=${encodeURIComponent(safeReturnTo)}`;
 }
 
-export function chatGPTSignOutPath(returnTo = "/"): string {
+export function chatGPTSignOutPath(returnTo = asset("/")): string {
   const safeReturnTo = safeRelativeReturnPath(returnTo);
   return `${SIGN_OUT_PATH}?return_to=${encodeURIComponent(safeReturnTo)}`;
 }
 
 function safeRelativeReturnPath(value: string): string {
-  if (!value.startsWith("/") || value.startsWith("//")) return "/";
+  if (!value.startsWith(asset("/")) || value.startsWith("//")) return asset("/");
 
   let url: URL;
   try {
     url = new URL(value, "https://app.local");
   } catch {
-    return "/";
+    return asset("/");
   }
-  if (url.origin !== "https://app.local") return "/";
-  if (isReservedAuthPath(url.pathname)) return "/";
+  if (url.origin !== "https://app.local") return asset("/");
+  if (isReservedAuthPath(url.pathname)) return asset("/");
 
   return `${url.pathname}${url.search}${url.hash}`;
 }

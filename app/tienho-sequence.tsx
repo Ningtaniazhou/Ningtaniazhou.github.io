@@ -1,4 +1,6 @@
 "use client";
+import { asset } from "./asset-path";
+
 
 import { useEffect, useRef } from "react";
 
@@ -23,8 +25,8 @@ export default function TienhoSequence({ onComplete }: Props) {
     <iframe
       ref={frameRef}
       className="tienho-prototype-frame"
-      src="/tienho-prototype/index.html?embedded=1"
-      title="天河村"
+      src={asset("/tienho-prototype/index.html?embedded=1")}
+      title="Tien-Hó"
       allow="autoplay"
     />
   );

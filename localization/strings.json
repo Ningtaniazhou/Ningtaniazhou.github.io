@@ -1,0 +1,6832 @@
+[
+  {
+    "id": 0,
+    "zh": "第五幕 · 北京",
+    "locations": [
+      {
+        "file": "app/beijing-curtain-scene.tsx",
+        "start": 10410
+      },
+      {
+        "file": "app/camilloff-intercut.tsx",
+        "start": 5891
+      },
+      {
+        "file": "app/curtain-prototype/page.tsx",
+        "start": 12435
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 3492
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 3556
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 3637
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 3715
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 3788
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "zh": "起轿",
+    "locations": [
+      {
+        "file": "app/beijing-curtain-scene.tsx",
+        "start": 10615
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "zh": "特奥多罗坐在轿厢中",
+    "locations": [
+      {
+        "file": "app/beijing-curtain-scene.tsx",
+        "start": 10986
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "zh": "的轿帘外景",
+    "locations": [
+      {
+        "file": "app/beijing-curtain-scene.tsx",
+        "start": 11130
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "zh": "动手拉开轿帘",
+    "locations": [
+      {
+        "file": "app/beijing-curtain-scene.tsx",
+        "start": 11685
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "zh": "轿帘已打开",
+    "locations": [
+      {
+        "file": "app/beijing-curtain-scene.tsx",
+        "start": 11812
+      },
+      {
+        "file": "app/curtain-prototype/page.tsx",
+        "start": 11795
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "zh": "帘外的世界展现在眼前",
+    "locations": [
+      {
+        "file": "app/beijing-curtain-scene.tsx",
+        "start": 12087
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "zh": "按住手，向左拖动",
+    "locations": [
+      {
+        "file": "app/beijing-curtain-scene.tsx",
+        "start": 12102
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "zh": "繁文缛节/情愫暗生",
+    "locations": [
+      {
+        "file": "app/camilloff-intercut.tsx",
+        "start": 382
+      },
+      {
+        "file": "app/camilloff-intercut.tsx",
+        "start": 1126
+      },
+      {
+        "file": "app/camilloff-intercut.tsx",
+        "start": 1958
+      },
+      {
+        "file": "app/camilloff-intercut.tsx",
+        "start": 2801
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "zh": "府邸",
+    "locations": [
+      {
+        "file": "app/camilloff-intercut.tsx",
+        "start": 468
+      },
+      {
+        "file": "app/camilloff-intercut.tsx",
+        "start": 1212
+      },
+      {
+        "file": "app/camilloff-intercut.tsx",
+        "start": 2887
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "zh": "将军夫人",
+    "locations": [
+      {
+        "file": "app/camilloff-intercut.tsx",
+        "start": 489
+      },
+      {
+        "file": "app/camilloff-intercut.tsx",
+        "start": 2073
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "zh": "弗拉基米拉梦想住在巴黎；她动作轻柔地煮沸茶水，请我讲讲聪慧的风流女子的故事……",
+    "locations": [
+      {
+        "file": "app/camilloff-intercut.tsx",
+        "start": 651
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "zh": "茶杯被放到托碟上。她没有移开目光，只问巴黎是否真像我说的那样浪漫。",
+    "locations": [
+      {
+        "file": "app/camilloff-intercut.tsx",
+        "start": 706
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "zh": "衙门",
+    "locations": [
+      {
+        "file": "app/camilloff-intercut.tsx",
+        "start": 819
+      },
+      {
+        "file": "app/camilloff-intercut.tsx",
+        "start": 1681
+      },
+      {
+        "file": "app/camilloff-intercut.tsx",
+        "start": 2519
+      },
+      {
+        "file": "app/camilloff-intercut.tsx",
+        "start": 3267
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "zh": "书吏",
+    "locations": [
+      {
+        "file": "app/camilloff-intercut.tsx",
+        "start": 840
+      },
+      {
+        "file": "app/camilloff-intercut.tsx",
+        "start": 3288
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "zh": "您要查问一位老官员的住处，必须先证明这并非危害国家安全的阴谋……",
+    "locations": [
+      {
+        "file": "app/camilloff-intercut.tsx",
+        "start": 1010
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "zh": "印章落下。书吏收走第一份文书，却说还需另一份文书证明这番查问无意冒犯礼制。",
+    "locations": [
+      {
+        "file": "app/camilloff-intercut.tsx",
+        "start": 1058
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "zh": "一旁，清凉的溪流声如同甜美的歌唱（……）雕花窗边（……）一柄水晶扇片的扇子高举着，展开，微风吹入，扇片便发出温柔而忧郁的颤音。",
+    "locations": [
+      {
+        "file": "app/camilloff-intercut.tsx",
+        "start": 1488
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "zh": "她展开扇子，像是在遮住迷人的笑容。我的目光越过扇沿，继续和她讲巴黎。",
+    "locations": [
+      {
+        "file": "app/camilloff-intercut.tsx",
+        "start": 1567
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "zh": "数百名面色苍白的书吏披星戴月，在宣纸上写下一份又一份报告……",
+    "locations": [
+      {
+        "file": "app/camilloff-intercut.tsx",
+        "start": 1843
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "zh": "卡米洛夫展开刚送来的报告，从天文台到档案院，每一份报告都将他推向下一间衙署。",
+    "locations": [
+      {
+        "file": "app/camilloff-intercut.tsx",
+        "start": 1889
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "zh": "府邸 · 静憩亭门前",
+    "locations": [
+      {
+        "file": "app/camilloff-intercut.tsx",
+        "start": 2044
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "zh": "于是我拿着折扇，穿着缎鞋，轻轻走过花园的沙径，推开静憩亭的门：‘咪咪？’将军夫人的声音温柔得像一个吻：‘进来吧……’",
+    "locations": [
+      {
+        "file": "app/camilloff-intercut.tsx",
+        "start": 2333
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "zh": "门从里面打开。她伸出戴着手套的手，把我引进比客厅更私密的静憩亭。",
+    "locations": [
+      {
+        "file": "app/camilloff-intercut.tsx",
+        "start": 2407
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "zh": "门吏",
+    "locations": [
+      {
+        "file": "app/camilloff-intercut.tsx",
+        "start": 2540
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "zh": "卡米洛夫询问结果时，得到的答复总是：大人们正在查阅老子的圣书……",
+    "locations": [
+      {
+        "file": "app/camilloff-intercut.tsx",
+        "start": 2705
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "zh": "大人们正在查阅古籍，将军不能进去。",
+    "locations": [
+      {
+        "file": "app/camilloff-intercut.tsx",
+        "start": 2753
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "zh": "特奥多罗",
+    "locations": [
+      {
+        "file": "app/camilloff-intercut.tsx",
+        "start": 2908
+      },
+      {
+        "file": "app/camilloff-return-map.tsx",
+        "start": 8934
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 29671
+      },
+      {
+        "file": "app/supplication-prototype/page.tsx",
+        "start": 4061
+      },
+      {
+        "file": "app/supplication-sequence.tsx",
+        "start": 3883
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "zh": "我卷起她枯叶色绸褂的宽袖，让虔诚的吻沿着她美丽手臂上微凉的肌肤缓缓游移……",
+    "locations": [
+      {
+        "file": "app/camilloff-intercut.tsx",
+        "start": 3099
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "zh": "她离开时把一只浅色的手套忘在了我的桌上，我犹豫了一下，没有把它送回去。",
+    "locations": [
+      {
+        "file": "app/camilloff-intercut.tsx",
+        "start": 3152
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "zh": "终于查明，一位名叫狄鑫福的富有官员，曾住在蒙古边境的天河村！",
+    "locations": [
+      {
+        "file": "app/camilloff-intercut.tsx",
+        "start": 3443
+      },
+      {
+        "file": "app/camilloff-return-map.tsx",
+        "start": 6568
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "zh": "在漫长的手续后，最终报告被压缩成一个地名：天河村。",
+    "locations": [
+      {
+        "file": "app/camilloff-intercut.tsx",
+        "start": 3489
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "zh": "府邸内外双线",
+    "locations": [
+      {
+        "file": "app/camilloff-intercut.tsx",
+        "start": 5354
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "zh": "府邸内外",
+    "locations": [
+      {
+        "file": "app/camilloff-intercut.tsx",
+        "start": 5945
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 3734
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "zh": "双线进度",
+    "locations": [
+      {
+        "file": "app/camilloff-intercut.tsx",
+        "start": 6474
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "zh": "点击地球仪，切换到衙门",
+    "locations": [
+      {
+        "file": "app/camilloff-intercut.tsx",
+        "start": 6883
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "zh": "点击地球仪，切换到府邸",
+    "locations": [
+      {
+        "file": "app/camilloff-intercut.tsx",
+        "start": 6899
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "zh": "点击地球仪",
+    "locations": [
+      {
+        "file": "app/camilloff-intercut.tsx",
+        "start": 7126
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "zh": "穿梭于府邸内外",
+    "locations": [
+      {
+        "file": "app/camilloff-intercut.tsx",
+        "start": 7139
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "zh": "点击怀表，等待卡米洛夫归来",
+    "locations": [
+      {
+        "file": "app/camilloff-intercut.tsx",
+        "start": 7502
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "zh": "点击怀表，让时间推移",
+    "locations": [
+      {
+        "file": "app/camilloff-intercut.tsx",
+        "start": 7520
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "zh": "先点击地球仪查看另一处",
+    "locations": [
+      {
+        "file": "app/camilloff-intercut.tsx",
+        "start": 7536
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "zh": "点击怀表",
+    "locations": [
+      {
+        "file": "app/camilloff-intercut.tsx",
+        "start": 7889
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "zh": "让时间推移",
+    "locations": [
+      {
+        "file": "app/camilloff-intercut.tsx",
+        "start": 7901
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "zh": "这一段的宅邸与衙门都已查看，可以点击怀表。",
+    "locations": [
+      {
+        "file": "app/camilloff-intercut.tsx",
+        "start": 8005
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "zh": "点击地球仪，查看另一处。",
+    "locations": [
+      {
+        "file": "app/camilloff-intercut.tsx",
+        "start": 8031
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "zh": "尼古河",
+    "locations": [
+      {
+        "file": "app/camilloff-return-map.tsx",
+        "start": 299
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "zh": "我的客人，您要先北上，抵达白河岸边的尼古河……",
+    "locations": [
+      {
+        "file": "app/camilloff-return-map.tsx",
+        "start": 381
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "zh": "密云",
+    "locations": [
+      {
+        "file": "app/camilloff-return-map.tsx",
+        "start": 498
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "zh": "然后乘平底船去密云。密云是好地方，城里还有一尊活佛……",
+    "locations": [
+      {
+        "file": "app/camilloff-return-map.tsx",
+        "start": 594
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "zh": "切希亚堡",
+    "locations": [
+      {
+        "file": "app/camilloff-return-map.tsx",
+        "start": 715
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "zh": "然后骑马前往切希亚堡。",
+    "locations": [
+      {
+        "file": "app/camilloff-return-map.tsx",
+        "start": 791
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "zh": "长城",
+    "locations": [
+      {
+        "file": "app/camilloff-return-map.tsx",
+        "start": 896
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "zh": "越过长城，那可是著名的奇观！……",
+    "locations": [
+      {
+        "file": "app/camilloff-return-map.tsx",
+        "start": 967
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "zh": "古北口",
+    "locations": [
+      {
+        "file": "app/camilloff-return-map.tsx",
+        "start": 1077
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "zh": "然后在古北口堡垒歇息修整。您还可以在那儿打猎瞪羚（……）",
+    "locations": [
+      {
+        "file": "app/camilloff-return-map.tsx",
+        "start": 1162
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "zh": "天河",
+    "locations": [
+      {
+        "file": "app/camilloff-return-map.tsx",
+        "start": 1284
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "zh": "然后再走两天就到天河村了……怎么样，不错吧？……您想什么时候动身？明天？",
+    "locations": [
+      {
+        "file": "app/camilloff-return-map.tsx",
+        "start": 1407
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "zh": "北京到天河的路线，已绘制",
+    "locations": [
+      {
+        "file": "app/camilloff-return-map.tsx",
+        "start": 2162
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "zh": "段",
+    "locations": [
+      {
+        "file": "app/camilloff-return-map.tsx",
+        "start": 2182
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "zh": "北京",
+    "locations": [
+      {
+        "file": "app/camilloff-return-map.tsx",
+        "start": 3054
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 1676
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "zh": "看向桌角的女士手套",
+    "locations": [
+      {
+        "file": "app/camilloff-return-map.tsx",
+        "start": 5541
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "zh": "我的视线停了一瞬，手刚伸过去，又缩了回来。",
+    "locations": [
+      {
+        "file": "app/camilloff-return-map.tsx",
+        "start": 5752
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "zh": "一天早晨，我正和梅里斯科夫抽着烟斗作伴，卡米洛夫走进了秘书处。他把硕大的军刀扔到长榻上，兴高采烈地告诉我们佟亲王带来的消息。",
+    "locations": [
+      {
+        "file": "app/camilloff-return-map.tsx",
+        "start": 6160
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "zh": "自从来到北京，我再也没有看到过死去的狄鑫福。此时，门外传来车轮声，是卡米洛夫带着公文回来了；将军夫人已经离开，但桌上却还留着一件属于她的东西。",
+    "locations": [
+      {
+        "file": "app/camilloff-return-map.tsx",
+        "start": 6240
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "zh": "卡米洛夫",
+    "locations": [
+      {
+        "file": "app/camilloff-return-map.tsx",
+        "start": 6397
+      },
+      {
+        "file": "app/camilloff-return-map.tsx",
+        "start": 8846
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 11941
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 12030
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 12113
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 12180
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 30754
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 81550
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "zh": "线索指向北京以北、越过长城后的天河村。",
+    "locations": [
+      {
+        "file": "app/camilloff-return-map.tsx",
+        "start": 6633
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "zh": "卡米洛夫将军把地图推到灯下，削尖了铅笔。",
+    "locations": [
+      {
+        "file": "app/camilloff-return-map.tsx",
+        "start": 6670
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "zh": "看向卡米洛夫",
+    "locations": [
+      {
+        "file": "app/camilloff-return-map.tsx",
+        "start": 6786
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "zh": "卡米洛夫绘制北京到天河的路线",
+    "locations": [
+      {
+        "file": "app/camilloff-return-map.tsx",
+        "start": 6925
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "zh": "寻访路线",
+    "locations": [
+      {
+        "file": "app/camilloff-return-map.tsx",
+        "start": 7013
+      }
+    ]
+  },
+  {
+    "id": 71,
+    "zh": "纸上的道路",
+    "locations": [
+      {
+        "file": "app/camilloff-return-map.tsx",
+        "start": 7067
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 3829
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "zh": "点击持笔的手",
+    "locations": [
+      {
+        "file": "app/camilloff-return-map.tsx",
+        "start": 7124
+      }
+    ]
+  },
+  {
+    "id": 73,
+    "zh": "六段道路已经连在一起。",
+    "locations": [
+      {
+        "file": "app/camilloff-return-map.tsx",
+        "start": 7135
+      }
+    ]
+  },
+  {
+    "id": 74,
+    "zh": "点击卡米洛夫持笔的手，绘制下一段路线",
+    "locations": [
+      {
+        "file": "app/camilloff-return-map.tsx",
+        "start": 7503
+      }
+    ]
+  },
+  {
+    "id": 75,
+    "zh": "卡米洛夫握着铅笔的手",
+    "locations": [
+      {
+        "file": "app/camilloff-return-map.tsx",
+        "start": 7694
+      }
+    ]
+  },
+  {
+    "id": 76,
+    "zh": "卡米洛夫 ·",
+    "locations": [
+      {
+        "file": "app/camilloff-return-map.tsx",
+        "start": 7920
+      }
+    ]
+  },
+  {
+    "id": 77,
+    "zh": "铅笔悬在北京上方。第一段路还没有出现。",
+    "locations": [
+      {
+        "file": "app/camilloff-return-map.tsx",
+        "start": 8129
+      }
+    ]
+  },
+  {
+    "id": 78,
+    "zh": "抬头看向卡米洛夫",
+    "locations": [
+      {
+        "file": "app/camilloff-return-map.tsx",
+        "start": 8298
+      }
+    ]
+  },
+  {
+    "id": 79,
+    "zh": "然而，热心的卡米洛夫已经拿起铅笔，在地图上一点点标出我前往天河村的路线！",
+    "locations": [
+      {
+        "file": "app/camilloff-return-map.tsx",
+        "start": 8724
+      }
+    ]
+  },
+  {
+    "id": 80,
+    "zh": "“什么时候动身？明天？”",
+    "locations": [
+      {
+        "file": "app/camilloff-return-map.tsx",
+        "start": 8872
+      }
+    ]
+  },
+  {
+    "id": 81,
+    "zh": "“明天……”我闷闷不乐地回答。",
+    "locations": [
+      {
+        "file": "app/camilloff-return-map.tsx",
+        "start": 8960
+      }
+    ]
+  },
+  {
+    "id": 82,
+    "zh": "与萨托一同前往天河村",
+    "locations": [
+      {
+        "file": "app/camilloff-return-map.tsx",
+        "start": 9077
+      }
+    ]
+  },
+  {
+    "id": 83,
+    "zh": "特奥多罗坐在织金轿厢中",
+    "locations": [
+      {
+        "file": "app/curtain-prototype/page.tsx",
+        "start": 10809
+      }
+    ]
+  },
+  {
+    "id": 84,
+    "zh": "拖动手拉开轿帘",
+    "locations": [
+      {
+        "file": "app/curtain-prototype/page.tsx",
+        "start": 11667
+      }
+    ]
+  },
+  {
+    "id": 85,
+    "zh": "《满大人》",
+    "locations": [
+      {
+        "file": "app/curtain-prototype/page.tsx",
+        "start": 12062
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 2733
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 56097
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 92624
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 93274
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 93958
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 94238
+      }
+    ]
+  },
+  {
+    "id": 86,
+    "zh": "声音：开",
+    "locations": [
+      {
+        "file": "app/curtain-prototype/page.tsx",
+        "start": 12259
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 56633
+      },
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 1113
+      }
+    ]
+  },
+  {
+    "id": 87,
+    "zh": "声音：关",
+    "locations": [
+      {
+        "file": "app/curtain-prototype/page.tsx",
+        "start": 12268
+      }
+    ]
+  },
+  {
+    "id": 88,
+    "zh": "轿中北京",
+    "locations": [
+      {
+        "file": "app/curtain-prototype/page.tsx",
+        "start": 12462
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 3575
+      }
+    ]
+  },
+  {
+    "id": 89,
+    "zh": "宫墙、车轮与人群的声浪涌入轿中。",
+    "locations": [
+      {
+        "file": "app/curtain-prototype/page.tsx",
+        "start": 12562
+      }
+    ]
+  },
+  {
+    "id": 90,
+    "zh": "按住手，向左拖动轿帘。",
+    "locations": [
+      {
+        "file": "app/curtain-prototype/page.tsx",
+        "start": 12597
+      }
+    ]
+  },
+  {
+    "id": 91,
+    "zh": "轿帘",
+    "locations": [
+      {
+        "file": "app/curtain-prototype/page.tsx",
+        "start": 12946
+      }
+    ]
+  },
+  {
+    "id": 92,
+    "zh": "街声 · 马蹄 · 人群",
+    "locations": [
+      {
+        "file": "app/curtain-prototype/page.tsx",
+        "start": 13334
+      }
+    ]
+  },
+  {
+    "id": 93,
+    "zh": "合上轿帘",
+    "locations": [
+      {
+        "file": "app/curtain-prototype/page.tsx",
+        "start": 13492
+      }
+    ]
+  },
+  {
+    "id": 94,
+    "zh": "现在，替你自己选一次。",
+    "locations": [
+      {
+        "file": "app/final-reader-address.tsx",
+        "start": 433
+      }
+    ]
+  },
+  {
+    "id": 95,
+    "zh": "你会摇响这柄铃吗？",
+    "locations": [
+      {
+        "file": "app/final-reader-address.tsx",
+        "start": 450
+      }
+    ]
+  },
+  {
+    "id": 96,
+    "zh": "读者——我的同类，我的兄弟。",
+    "locations": [
+      {
+        "file": "app/final-reader-address.tsx",
+        "start": 465
+      }
+    ]
+  },
+  {
+    "id": 97,
+    "zh": "版本说明与片尾字幕",
+    "locations": [
+      {
+        "file": "app/final-reader-address.tsx",
+        "start": 1875
+      }
+    ]
+  },
+  {
+    "id": 98,
+    "zh": "特奥多罗向读者发问",
+    "locations": [
+      {
+        "file": "app/final-reader-address.tsx",
+        "start": 1889
+      }
+    ]
+  },
+  {
+    "id": 99,
+    "zh": "返回故事的开始",
+    "locations": [
+      {
+        "file": "app/final-reader-address.tsx",
+        "start": 2400
+      }
+    ]
+  },
+  {
+    "id": 100,
+    "zh": "版本说明与制作人员",
+    "locations": [
+      {
+        "file": "app/final-reader-address.tsx",
+        "start": 2475
+      }
+    ]
+  },
+  {
+    "id": 101,
+    "zh": "《满大人》· 交互叙事",
+    "locations": [
+      {
+        "file": "app/final-reader-address.tsx",
+        "start": 2535
+      },
+      {
+        "file": "app/layout.tsx",
+        "start": 779
+      },
+      {
+        "file": "app/layout.tsx",
+        "start": 859
+      },
+      {
+        "file": "app/layout.tsx",
+        "start": 1121
+      },
+      {
+        "file": "github-pages/index.html",
+        "start": 182
+      },
+      {
+        "file": "github-pages/index.html",
+        "start": 365
+      }
+    ]
+  },
+  {
+    "id": 102,
+    "zh": "分幕配乐",
+    "locations": [
+      {
+        "file": "app/final-reader-address.tsx",
+        "start": 2780
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 97705
+      }
+    ]
+  },
+  {
+    "id": 103,
+    "zh": "终",
+    "locations": [
+      {
+        "file": "app/final-reader-address.tsx",
+        "start": 3151
+      }
+    ]
+  },
+  {
+    "id": 104,
+    "zh": "《满大人》是一部根据葡萄牙作家埃萨·德·凯罗斯同名小说改编的交互叙事游戏。如果你能让一个遥远国度的陌生人立刻死去，并继承他的千万遗产，你会毫不犹豫地杀掉这个素未谋面的人吗？那么，代价又会是什么呢？建议开启声音，并使用横屏或电脑游玩。",
+    "locations": [
+      {
+        "file": "app/layout.tsx",
+        "start": 139
+      }
+    ]
+  },
+  {
+    "id": 105,
+    "zh": "《满大人》交互叙事游戏封面",
+    "locations": [
+      {
+        "file": "app/layout.tsx",
+        "start": 1031
+      }
+    ]
+  },
+  {
+    "id": 106,
+    "zh": "紫禁城",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 1246
+      }
+    ]
+  },
+  {
+    "id": 107,
+    "zh": "宫墙、权贵与金色屋顶",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 1276
+      }
+    ]
+  },
+  {
+    "id": 108,
+    "zh": "老百姓的街巷",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 1312
+      }
+    ]
+  },
+  {
+    "id": 109,
+    "zh": "泥泞、尘土与拥挤的人群",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 1345
+      }
+    ]
+  },
+  {
+    "id": 110,
+    "zh": "里斯本",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 1450
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 2109
+      }
+    ]
+  },
+  {
+    "id": 111,
+    "zh": "一个夜晚，我动身前往马赛，决意亲赴北京寻找狄鑫福的家族。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 1457
+      }
+    ]
+  },
+  {
+    "id": 112,
+    "zh": "马赛",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 1493
+      }
+    ]
+  },
+  {
+    "id": 113,
+    "zh": "我包下整艘“锡兰号”邮船，从马赛向东方启航。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 1499
+      }
+    ]
+  },
+  {
+    "id": 114,
+    "zh": "上海",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 1529
+      }
+    ]
+  },
+  {
+    "id": 115,
+    "zh": "“锡兰号”航行到上海，一路风平浪静，但我丝毫没有观光的兴致，心中只想着此行的目的。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 1535
+      }
+    ]
+  },
+  {
+    "id": 116,
+    "zh": "天津",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 1584
+      }
+    ]
+  },
+  {
+    "id": 117,
+    "zh": "我从上海沿河乘罗素公司的小轮船抵达天津。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 1590
+      }
+    ]
+  },
+  {
+    "id": 118,
+    "zh": "通州",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 1618
+      }
+    ]
+  },
+  {
+    "id": 119,
+    "zh": "又从天津换乘低矮的平底船，穿过白河两岸的稻田抵达通州，卡米洛夫派出的翻译萨托在此处迎接。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 1624
+      }
+    ]
+  },
+  {
+    "id": 120,
+    "zh": "我骑上卡米洛夫送来的满洲小马，在哥萨克人萨托的护送下穿过尘土飞扬的平原，赶往北京。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 1682
+      }
+    ]
+  },
+  {
+    "id": 121,
+    "zh": "火车",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 1782
+      }
+    ]
+  },
+  {
+    "id": 122,
+    "zh": "里斯本 → 马赛",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 1795
+      }
+    ]
+  },
+  {
+    "id": 123,
+    "zh": "“锡兰号”邮船",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 1840
+      }
+    ]
+  },
+  {
+    "id": 124,
+    "zh": "马赛 → 上海",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 1858
+      }
+    ]
+  },
+  {
+    "id": 125,
+    "zh": "罗素公司小轮船",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 1903
+      }
+    ]
+  },
+  {
+    "id": 126,
+    "zh": "上海 → 天津",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 1921
+      }
+    ]
+  },
+  {
+    "id": 127,
+    "zh": "平底船",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 1961
+      }
+    ]
+  },
+  {
+    "id": 128,
+    "zh": "天津 → 通州",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 1975
+      }
+    ]
+  },
+  {
+    "id": 129,
+    "zh": "满洲小马",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 2011
+      }
+    ]
+  },
+  {
+    "id": 130,
+    "zh": "通州 → 北京",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 2026
+      }
+    ]
+  },
+  {
+    "id": 131,
+    "zh": "新加坡",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 2074
+      }
+    ]
+  },
+  {
+    "id": 132,
+    "zh": "锡兰",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 2081
+      }
+    ]
+  },
+  {
+    "id": 133,
+    "zh": "苏伊士",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 2087
+      }
+    ]
+  },
+  {
+    "id": 134,
+    "zh": "马耳他",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 2094
+      }
+    ]
+  },
+  {
+    "id": 135,
+    "zh": "直布罗陀",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 2101
+      }
+    ]
+  },
+  {
+    "id": 136,
+    "zh": "我已经走过半个世界。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 2177
+      }
+    ]
+  },
+  {
+    "id": 137,
+    "zh": "漫长的路已经足以证明诚意。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 2197
+      }
+    ]
+  },
+  {
+    "id": 138,
+    "zh": "我险些死在天河村。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 2240
+      }
+    ]
+  },
+  {
+    "id": 139,
+    "zh": "干涸的血迹停在这一行旁边。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 2259
+      }
+    ]
+  },
+  {
+    "id": 140,
+    "zh": "两个地址都无法确认。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 2305
+      }
+    ]
+  },
+  {
+    "id": 141,
+    "zh": "我们离真相是不是越来越远了？",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 2325
+      }
+    ]
+  },
+  {
+    "id": 142,
+    "zh": "狄鑫福已经很久没有出现。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 2370
+      }
+    ]
+  },
+  {
+    "id": 143,
+    "zh": "死者的沉默仿佛也是一种回答。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 2392
+      }
+    ]
+  },
+  {
+    "id": 144,
+    "zh": "我已经留下了足够的捐款。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 2438
+      }
+    ]
+  },
+  {
+    "id": 145,
+    "zh": "真金白银最能说明诚意。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 2460
+      }
+    ]
+  },
+  {
+    "id": 146,
+    "zh": "再寻找也未必能找到狄鑫福真正的家人。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 2506
+      }
+    ]
+  },
+  {
+    "id": 147,
+    "zh": "停下无用功吧。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 2534
+      }
+    ]
+  },
+  {
+    "id": 148,
+    "zh": "一声轻响",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 2752
+      }
+    ]
+  },
+  {
+    "id": 149,
+    "zh": "第一幕 · 里斯本",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 2779
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 2847
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 2908
+      }
+    ]
+  },
+  {
+    "id": 150,
+    "zh": "抄写员的白昼",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 2799
+      }
+    ]
+  },
+  {
+    "id": 151,
+    "zh": "王国内政部",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 2819
+      }
+    ]
+  },
+  {
+    "id": 152,
+    "zh": "寻宝",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 2867
+      }
+    ]
+  },
+  {
+    "id": 153,
+    "zh": "旧货市场",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 2883
+      }
+    ]
+  },
+  {
+    "id": 154,
+    "zh": "抄写员的夜晚",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 2928
+      }
+    ]
+  },
+  {
+    "id": 155,
+    "zh": "特奥多罗的房间",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 2948
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 4240
+      }
+    ]
+  },
+  {
+    "id": 156,
+    "zh": "第一幕 · 旧书",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 2976
+      }
+    ]
+  },
+  {
+    "id": 157,
+    "zh": "发亮的字句",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 2995
+      }
+    ]
+  },
+  {
+    "id": 158,
+    "zh": "第一幕 · 诱惑",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 3035
+      }
+    ]
+  },
+  {
+    "id": 159,
+    "zh": "魔鬼的提议",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 3054
+      }
+    ]
+  },
+  {
+    "id": 160,
+    "zh": "桌上的铃",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 3073
+      }
+    ]
+  },
+  {
+    "id": 161,
+    "zh": "第一幕 · 远方",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 3101
+      }
+    ]
+  },
+  {
+    "id": 162,
+    "zh": "狄鑫福之死",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 3120
+      }
+    ]
+  },
+  {
+    "id": 163,
+    "zh": "遥远的中国",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 3139
+      }
+    ]
+  },
+  {
+    "id": 164,
+    "zh": "特别结局",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 3174
+      }
+    ]
+  },
+  {
+    "id": 165,
+    "zh": "坚定的拒绝",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 3189
+      }
+    ]
+  },
+  {
+    "id": 166,
+    "zh": "第二幕 · 财富",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 3236
+      }
+    ]
+  },
+  {
+    "id": 167,
+    "zh": "陌生人的遗产",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 3255
+      }
+    ]
+  },
+  {
+    "id": 168,
+    "zh": "第三幕 · 黄金",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 3298
+      }
+    ]
+  },
+  {
+    "id": 169,
+    "zh": "百万富翁",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 3317
+      }
+    ]
+  },
+  {
+    "id": 170,
+    "zh": "洛雷托宫殿",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 3335
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 4172
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 4309
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 4507
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 89315
+      }
+    ]
+  },
+  {
+    "id": 171,
+    "zh": "第三幕 · 亡者",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 3362
+      }
+    ]
+  },
+  {
+    "id": 172,
+    "zh": "宴席上的客人",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 3381
+      }
+    ]
+  },
+  {
+    "id": 173,
+    "zh": "狄鑫福",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 3401
+      }
+    ]
+  },
+  {
+    "id": 174,
+    "zh": "第四幕 · 远行",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 3424
+      }
+    ]
+  },
+  {
+    "id": 175,
+    "zh": "向东方去",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 3443
+      }
+    ]
+  },
+  {
+    "id": 176,
+    "zh": "从里斯本到北京",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 3461
+      }
+    ]
+  },
+  {
+    "id": 177,
+    "zh": "城门之前",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 3511
+      }
+    ]
+  },
+  {
+    "id": 178,
+    "zh": "东直门外",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 3529
+      }
+    ]
+  },
+  {
+    "id": 179,
+    "zh": "宫墙与老百姓的街巷",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 3593
+      }
+    ]
+  },
+  {
+    "id": 180,
+    "zh": "临行嘱托",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 3656
+      }
+    ]
+  },
+  {
+    "id": 181,
+    "zh": "卡米洛夫府邸前",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 3674
+      }
+    ]
+  },
+  {
+    "id": 182,
+    "zh": "两地之间",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 3752
+      }
+    ]
+  },
+  {
+    "id": 183,
+    "zh": "与卡米洛夫的会谈",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 3807
+      }
+    ]
+  },
+  {
+    "id": 184,
+    "zh": "第六幕 · 远东",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 3857
+      },
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 947
+      }
+    ]
+  },
+  {
+    "id": 185,
+    "zh": "天河村",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 3876
+      },
+      {
+        "file": "app/tienho-sequence.tsx",
+        "start": 755
+      },
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 212
+      },
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 996
+      },
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 15200
+      }
+    ]
+  },
+  {
+    "id": 186,
+    "zh": "客栈外的人群",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 3893
+      }
+    ]
+  },
+  {
+    "id": 187,
+    "zh": "第七幕 · 修道院",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 3923
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 3990
+      }
+    ]
+  },
+  {
+    "id": 188,
+    "zh": "修道院的清晨",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 3943
+      }
+    ]
+  },
+  {
+    "id": 189,
+    "zh": "晨祷钟声",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 3963
+      }
+    ]
+  },
+  {
+    "id": 190,
+    "zh": "卡米洛夫的信",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 4010
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 30933
+      }
+    ]
+  },
+  {
+    "id": 191,
+    "zh": "特奥多罗的小房间",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 4030
+      }
+    ]
+  },
+  {
+    "id": 192,
+    "zh": "第七幕 · 返航",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 4061
+      }
+    ]
+  },
+  {
+    "id": 193,
+    "zh": "死者同行",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 4080
+      }
+    ]
+  },
+  {
+    "id": 194,
+    "zh": "从中国返回欧洲",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 4098
+      }
+    ]
+  },
+  {
+    "id": 195,
+    "zh": "第八幕 · 里斯本",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 4131
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 4202
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 4270
+      }
+    ]
+  },
+  {
+    "id": 196,
+    "zh": "无法平息的亡灵",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 4151
+      }
+    ]
+  },
+  {
+    "id": 197,
+    "zh": "重返贫穷",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 4222
+      }
+    ]
+  },
+  {
+    "id": 198,
+    "zh": "谄媚与奉承",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 4290
+      }
+    ]
+  },
+  {
+    "id": 199,
+    "zh": "第八幕 · 夜路",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 4342
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 4413
+      },
+      {
+        "file": "app/supplication-prototype/page.tsx",
+        "start": 3937
+      },
+      {
+        "file": "app/supplication-sequence.tsx",
+        "start": 3733
+      }
+    ]
+  },
+  {
+    "id": 200,
+    "zh": "与魔鬼的重逢",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 4361
+      }
+    ]
+  },
+  {
+    "id": 201,
+    "zh": "小巷里",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 4381
+      }
+    ]
+  },
+  {
+    "id": 202,
+    "zh": "乞求",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 4432
+      },
+      {
+        "file": "app/supplication-prototype/page.tsx",
+        "start": 3964
+      },
+      {
+        "file": "app/supplication-prototype/page.tsx",
+        "start": 4901
+      },
+      {
+        "file": "app/supplication-sequence.tsx",
+        "start": 3786
+      },
+      {
+        "file": "app/supplication-sequence.tsx",
+        "start": 4680
+      }
+    ]
+  },
+  {
+    "id": 203,
+    "zh": "正篇结局",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 4474
+      }
+    ]
+  },
+  {
+    "id": 204,
+    "zh": "弥留之际",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 4489
+      }
+    ]
+  },
+  {
+    "id": 205,
+    "zh": "无法载入图片：",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 9256
+      }
+    ]
+  },
+  {
+    "id": 206,
+    "zh": "无法载入音频：",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 10090
+      }
+    ]
+  },
+  {
+    "id": 207,
+    "zh": "你把良心称作原则，不过是因为今晚的价钱还没有说得足够具体。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 10958
+      }
+    ]
+  },
+  {
+    "id": 208,
+    "zh": "别急着自豪，我亲爱的先生。饥饿很会替哲学修改措辞。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 10993
+      }
+    ]
+  },
+  {
+    "id": 209,
+    "zh": "关于走廊灯油定额之呈报",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 11087
+      }
+    ]
+  },
+  {
+    "id": 210,
+    "zh": "第 174/B 号 · 行政庶务科",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 11114
+      }
+    ]
+  },
+  {
+    "id": 211,
+    "zh": "西翼三层本月多耗四分之一品脱灯油，查因阴雨提早点灯，并非保管疏失。自下月起，每盏灯的灯芯略短一分；旧灯芯仍须登记入库。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 11180
+      }
+    ]
+  },
+  {
+    "id": 212,
+    "zh": "本案不增加开支。《灯油领取簿》改用浅褐色封面，以别旧册。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 11249
+      }
+    ]
+  },
+  {
+    "id": 213,
+    "zh": "公文纸左侧页边距统一办法",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 11332
+      }
+    ]
+  },
+  {
+    "id": 214,
+    "zh": "第 208/C 号 · 文书格式委员会",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 11360
+      }
+    ]
+  },
+  {
+    "id": 215,
+    "zh": "委员会第六次讨论公文纸左侧留白。七人中，四人赞成一指半，两人赞成一指又四分之一，一人因墨水未干没有表态。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 11429
+      }
+    ]
+  },
+  {
+    "id": 216,
+    "zh": "决定仍用一指半。略窄者不必重抄，只在目录注明；月底另报直尺刻度是否清楚。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 11491
+      }
+    ]
+  },
+  {
+    "id": 217,
+    "zh": "雨伞架编号复核清册",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 11583
+      }
+    ]
+  },
+  {
+    "id": 218,
+    "zh": "第 39/A 号 · 财产保管处",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 11608
+      }
+    ]
+  },
+  {
+    "id": 219,
+    "zh": "正门雨伞架第四、十九、三十一号铜牌已经磨损。木工房须照一八七二年式样重刻；施工时以麻绳封住三孔，不得借用相邻号码。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 11674
+      }
+    ]
+  },
+  {
+    "id": 220,
+    "zh": "无主黑伞已存六十日。下月一日仍无人认领，便与断柄鸡毛掸一并移交旧物室。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 11741
+      }
+    ]
+  },
+  {
+    "id": 221,
+    "zh": "在豪华饭店喝着香槟，被侍者环绕……",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 11830
+      }
+    ]
+  },
+  {
+    "id": 222,
+    "zh": "维纳斯温柔的手向我伸来，把我揽入怀中……",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 11853
+      }
+    ]
+  },
+  {
+    "id": 223,
+    "zh": "我先去佟亲王府禀告来意，如果亲王准许调查，就去衙门和档案院打听情况，再找管旧籍的书吏问问。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 11959
+      }
+    ]
+  },
+  {
+    "id": 224,
+    "zh": "事情恐怕很麻烦，我要证明这番查问既不是危害国家安全的阴谋，也无意冒犯神圣礼制。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 12048
+      }
+    ]
+  },
+  {
+    "id": 225,
+    "zh": "弗拉基米拉，我亲爱的夫人，请替我好好招待客人。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 12131
+      }
+    ]
+  },
+  {
+    "id": 226,
+    "zh": "特奥多罗，您在我府里安心等候。我会尽力查办，帮您找到狄鑫福的家人。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 12198
+      }
+    ]
+  },
+  {
+    "id": 227,
+    "zh": "旧望远镜",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 12358
+      }
+    ]
+  },
+  {
+    "id": 228,
+    "zh": "黄铜镜筒上沾着海盐般的白斑。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 12393
+      }
+    ]
+  },
+  {
+    "id": 229,
+    "zh": "瓷制圣母像",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 12443
+      }
+    ]
+  },
+  {
+    "id": 230,
+    "zh": "一尊巴掌大小的瓷制圣母像，蓝釉已从圣母的衣褶上剥落。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 12479
+      }
+    ]
+  },
+  {
+    "id": 231,
+    "zh": "鎏金圣物匣",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 12541
+      }
+    ]
+  },
+  {
+    "id": 232,
+    "zh": "鎏金匣门只剩下一扇，里面没有圣骨，只有略微潮湿的天鹅绒。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 12577
+      }
+    ]
+  },
+  {
+    "id": 233,
+    "zh": "停摆的怀表",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 12637
+      }
+    ]
+  },
+  {
+    "id": 234,
+    "zh": "指针停在四点十七分，表冠已经锈死。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 12673
+      }
+    ]
+  },
+  {
+    "id": 235,
+    "zh": "虫蛀的旧书",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 12727
+      }
+    ]
+  },
+  {
+    "id": 236,
+    "zh": "古老庄严的字体、虫蛀且泛黄的纸张、修道院式的厚重装帧，还有夹在书中的绿色丝带——都令我着迷。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 12763
+      }
+    ]
+  },
+  {
+    "id": 237,
+    "zh": "绿色灯罩",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 12855
+      }
+    ]
+  },
+  {
+    "id": 238,
+    "zh": "在灯罩的遮掩下，灯光显得更加昏黄。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 12889
+      }
+    ]
+  },
+  {
+    "id": 239,
+    "zh": "旧书",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 12938
+      }
+    ]
+  },
+  {
+    "id": 240,
+    "zh": "古老庄严的字体、被虫蛀的黄纸、修道院式的厚重装帧，还有夹在那一页的绿色丝带——都令我着迷！",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 12971
+      }
+    ]
+  },
+  {
+    "id": 241,
+    "zh": "黄铜摇铃",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 13047
+      }
+    ]
+  },
+  {
+    "id": 242,
+    "zh": "铃安安静静地放在我面前的一本法语词典上。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 13082
+      }
+    ]
+  },
+  {
+    "id": 243,
+    "zh": "彩票",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 13136
+      }
+    ]
+  },
+  {
+    "id": 244,
+    "zh": "自从购买彩票以来，我每晚都会向圣母祈祷中奖。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 13169
+      }
+    ]
+  },
+  {
+    "id": 245,
+    "zh": "圣母像",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 13225
+      }
+    ]
+  },
+  {
+    "id": 246,
+    "zh": "这幅悲苦圣母石版画是母亲留给我的。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 13259
+      }
+    ]
+  },
+  {
+    "id": 247,
+    "zh": "金床",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 13328
+      }
+    ]
+  },
+  {
+    "id": 248,
+    "zh": "床沿铺满錾花金片，趣味夸张而野蛮。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 13361
+      }
+    ]
+  },
+  {
+    "id": 249,
+    "zh": "酒与水晶",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 13413
+      }
+    ]
+  },
+  {
+    "id": 250,
+    "zh": "世上最好的勃艮第葡萄酒，例如一八五八年的罗曼尼·康帝和一八六一年的香贝丹。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 13448
+      }
+    ]
+  },
+  {
+    "id": 251,
+    "zh": "金币",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 13517
+      },
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 3960
+      }
+    ]
+  },
+  {
+    "id": 252,
+    "zh": "有了这个，整个世界都拜倒在我的脚下。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 13550
+      }
+    ]
+  },
+  {
+    "id": 253,
+    "zh": "红绸轿子",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 13619
+      }
+    ]
+  },
+  {
+    "id": 254,
+    "zh": "一乘华贵的轿子正在东直门外等我，猩红色的丝帘上满是金线刺绣。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 13654
+      }
+    ]
+  },
+  {
+    "id": 255,
+    "zh": "绷带",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 13736
+      }
+    ]
+  },
+  {
+    "id": 256,
+    "zh": "两位遣使会神父正在清洗我受伤的耳朵。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 13769
+      }
+    ]
+  },
+  {
+    "id": 257,
+    "zh": "井",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 13818
+      }
+    ]
+  },
+  {
+    "id": 258,
+    "zh": "井上的滑轮吱呀作响。晨祷的钟声响了起来。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 13850
+      }
+    ]
+  },
+  {
+    "id": 259,
+    "zh": "《日课经》",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 13905
+      }
+    ]
+  },
+  {
+    "id": 260,
+    "zh": "我把一卷英格兰银行钞票放在《日课经》上，那书正翻到《贫穷福音》的某一页。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 13941
+      }
+    ]
+  },
+  {
+    "id": 261,
+    "zh": "神父捡到的弃婴",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 14015
+      }
+    ]
+  },
+  {
+    "id": 262,
+    "zh": "洛里奥神父在路旁发现了这个奄奄一息的孩子。把他抱回修道院喂养。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 14053
+      }
+    ]
+  },
+  {
+    "id": 263,
+    "zh": "雨中的窗口",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 14136
+      }
+    ]
+  },
+  {
+    "id": 264,
+    "zh": "窗外的里斯本一如既往，我却再也回不到从前的平静。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 14172
+      }
+    ]
+  },
+  {
+    "id": 265,
+    "zh": "报纸",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 14232
+      }
+    ]
+  },
+  {
+    "id": 266,
+    "zh": "报纸把我的穷困当作一场应得的笑话。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 14265
+      }
+    ]
+  },
+  {
+    "id": 267,
+    "zh": "仍在桌上的铃",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 14321
+      }
+    ]
+  },
+  {
+    "id": 268,
+    "zh": "这柄摇铃没有消失，它像一笔无法注销的旧账，留在桌上。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 14358
+      }
+    ]
+  },
+  {
+    "id": 269,
+    "zh": "狄鑫福身穿黄绸、仰卧而死，冷臂抱着纸鸢",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 24905
+      }
+    ]
+  },
+  {
+    "id": 270,
+    "zh": "还是不看见为好",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 25098
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 25207
+      }
+    ]
+  },
+  {
+    "id": 271,
+    "zh": "显出狄鑫福的尸体",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 25110
+      }
+    ]
+  },
+  {
+    "id": 272,
+    "zh": "魔鬼：黑衣、高礼帽、黑手套，双手按在雨伞柄上",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 25347
+      }
+    ]
+  },
+  {
+    "id": 273,
+    "zh": "身穿黑衣、戴高礼帽、双手戴黑手套并按着雨伞柄的魔鬼",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 25488
+      }
+    ]
+  },
+  {
+    "id": 274,
+    "zh": "物件",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 26047
+      }
+    ]
+  },
+  {
+    "id": 275,
+    "zh": "场景中的可检查物件",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 26356
+      }
+    ]
+  },
+  {
+    "id": 276,
+    "zh": "检查：",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 26696
+      }
+    ]
+  },
+  {
+    "id": 277,
+    "zh": "俄罗斯公使馆 · 北京",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 29600
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 30697
+      }
+    ]
+  },
+  {
+    "id": 278,
+    "zh": "致卡米洛夫将军",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 29637
+      }
+    ]
+  },
+  {
+    "id": 279,
+    "zh": "已封缄",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 29698
+      }
+    ]
+  },
+  {
+    "id": 280,
+    "zh": "好吧，狄鑫福已经满意了。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 29794
+      }
+    ]
+  },
+  {
+    "id": 281,
+    "zh": "返回欧洲",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 29894
+      }
+    ]
+  },
+  {
+    "id": 282,
+    "zh": "桌上的来信",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 30163
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 30405
+      }
+    ]
+  },
+  {
+    "id": 283,
+    "zh": "拿起桌上的来信",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 30366
+      }
+    ]
+  },
+  {
+    "id": 284,
+    "zh": "拆开卡米洛夫的来信",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 30669
+      }
+    ]
+  },
+  {
+    "id": 285,
+    "zh": "致特奥多罗先生",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 30729
+      }
+    ]
+  },
+  {
+    "id": 286,
+    "zh": "拆信",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 30777
+      }
+    ]
+  },
+  {
+    "id": 287,
+    "zh": "关于狄鑫福的遗孀和家人，事情弄错了……",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 31166
+      }
+    ]
+  },
+  {
+    "id": 288,
+    "zh": "他们住在中国南方的广东省。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 31397
+      }
+    ]
+  },
+  {
+    "id": 289,
+    "zh": "但长城之外也有一个狄鑫福家族……",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 31646
+      }
+    ]
+  },
+  {
+    "id": 290,
+    "zh": "继续读信",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 31829
+      }
+    ]
+  },
+  {
+    "id": 291,
+    "zh": "合上信",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 31838
+      }
+    ]
+  },
+  {
+    "id": 292,
+    "zh": "已经合上的卡米洛夫来信",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 32080
+      }
+    ]
+  },
+  {
+    "id": 293,
+    "zh": "卡米洛夫的来信",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 32112
+      }
+    ]
+  },
+  {
+    "id": 294,
+    "zh": "已读",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 32129
+      }
+    ]
+  },
+  {
+    "id": 295,
+    "zh": "写回信",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 32300
+      }
+    ]
+  },
+  {
+    "id": 296,
+    "zh": "撰写回信",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 32469
+      }
+    ]
+  },
+  {
+    "id": 297,
+    "zh": "狄鑫福和他的纸鸢始终没有再出现。死者的沉默，渐渐变成了允许我离开的理由。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 32534
+      }
+    ]
+  },
+  {
+    "id": 298,
+    "zh": "从中选取三个念头，写进信里",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 32595
+      }
+    ]
+  },
+  {
+    "id": 299,
+    "zh": "特奥多罗心中浮现的六个念头",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 32688
+      }
+    ]
+  },
+  {
+    "id": 300,
+    "zh": "特奥多罗写给卡米洛夫的回信",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 33745
+      }
+    ]
+  },
+  {
+    "id": 301,
+    "zh": "回信的三道折面",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 33815
+      }
+    ]
+  },
+  {
+    "id": 302,
+    "zh": "移除理由：",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 34359
+      }
+    ]
+  },
+  {
+    "id": 303,
+    "zh": "第",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 34383
+      }
+    ]
+  },
+  {
+    "id": 304,
+    "zh": "道空白折面",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 34397
+      }
+    ]
+  },
+  {
+    "id": 305,
+    "zh": "第一段",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 34452
+      }
+    ]
+  },
+  {
+    "id": 306,
+    "zh": "第二段",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 34459
+      }
+    ]
+  },
+  {
+    "id": 307,
+    "zh": "第三段",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 34466
+      }
+    ]
+  },
+  {
+    "id": 308,
+    "zh": "把念头写在这里",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 34547
+      }
+    ]
+  },
+  {
+    "id": 309,
+    "zh": "所以，我已经尽力了。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 34761
+      }
+    ]
+  },
+  {
+    "id": 310,
+    "zh": "所以，",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 34880
+      }
+    ]
+  },
+  {
+    "id": 311,
+    "zh": "我已经尽力了。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 34898
+      }
+    ]
+  },
+  {
+    "id": 312,
+    "zh": "另请您把我存放在清佛商人处的那笔钱寄给狄鑫福的遗孀。清佛商号在茶瓜大道，佟牌楼旁、观音庙附近。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 34934
+      }
+    ]
+  },
+  {
+    "id": 313,
+    "zh": "装入信封",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 35183
+      }
+    ]
+  },
+  {
+    "id": 314,
+    "zh": "场景暂时没有显影，请检查网络后重试。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 41065
+      }
+    ]
+  },
+  {
+    "id": 315,
+    "zh": "仍未能载入场景，请稍后再试。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 41886
+      }
+    ]
+  },
+  {
+    "id": 316,
+    "zh": "测试场景暂时没有显影，请检查网络后重试。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 54457
+      }
+    ]
+  },
+  {
+    "id": 317,
+    "zh": "请将手机横过来",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 55029
+      }
+    ]
+  },
+  {
+    "id": 318,
+    "zh": "《满大人》的场景与物件交互需要横屏显示。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 55057
+      }
+    ]
+  },
+  {
+    "id": 319,
+    "zh": "重新准备场景",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 55420
+      }
+    ]
+  },
+  {
+    "id": 320,
+    "zh": "车轮声渐远",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 55922
+      }
+    ]
+  },
+  {
+    "id": 321,
+    "zh": "回到游戏封面",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 56089
+      }
+    ]
+  },
+  {
+    "id": 322,
+    "zh": "· 交互叙事",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 56108
+      }
+    ]
+  },
+  {
+    "id": 323,
+    "zh": "← 返回上一页",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 56271
+      }
+    ]
+  },
+  {
+    "id": 324,
+    "zh": "关闭音乐和音效",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 56471
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 56517
+      }
+    ]
+  },
+  {
+    "id": 325,
+    "zh": "打开音乐和音效",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 56483
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 56529
+      }
+    ]
+  },
+  {
+    "id": 326,
+    "zh": "开启声音",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 56642
+      }
+    ]
+  },
+  {
+    "id": 327,
+    "zh": "作品说明",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 56761
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 56774
+      }
+    ]
+  },
+  {
+    "id": 328,
+    "zh": "故事进度",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 56906
+      }
+    ]
+  },
+  {
+    "id": 329,
+    "zh": "桌上的公文",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 57331
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 63518
+      }
+    ]
+  },
+  {
+    "id": 330,
+    "zh": "展开公文：",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 57716
+      }
+    ]
+  },
+  {
+    "id": 331,
+    "zh": "特奥多罗的白日梦",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 58021
+      }
+    ]
+  },
+  {
+    "id": 332,
+    "zh": "白日梦",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 58311
+      }
+    ]
+  },
+  {
+    "id": 333,
+    "zh": "合上公文",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 58939
+      }
+    ]
+  },
+  {
+    "id": 334,
+    "zh": "葡萄牙王国内政部",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 58974
+      }
+    ]
+  },
+  {
+    "id": 335,
+    "zh": "谨呈部长阁下核阅",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 59239
+      }
+    ]
+  },
+  {
+    "id": 336,
+    "zh": "里斯本中央书记处",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 59256
+      }
+    ]
+  },
+  {
+    "id": 337,
+    "zh": "卡米洛夫的府邸位于紫禁城的军人和贵族街区，有种庄重而安宁的氛围。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 59875
+      }
+    ]
+  },
+  {
+    "id": 338,
+    "zh": "金钉高轮马车和官轿从宽阔的街道上掠过，富丽堂皇的店铺中陈列着明代瓷器、铜器、珐琅彩、象牙和丝绸。在紫禁城的高墙之后，帝宫明黄色的屋顶在树海间发亮，贵族弓手、佩戴孔雀翎的官员和飘在高空的巨大纸鸢共同维护着一个不可接近的世界。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 59929
+      }
+    ]
+  },
+  {
+    "id": 339,
+    "zh": "那就是辽阔的帝宫，掩映在神秘的树木之间，屋顶闪着鲜明的金黄色！",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 60206
+      }
+    ]
+  },
+  {
+    "id": 340,
+    "zh": "我们从巨大的前门进入老百姓的街坊，商人和平民都住在这里。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 60489
+      }
+    ]
+  },
+  {
+    "id": 341,
+    "zh": "石板铺就的路面污秽而泥泞，饥饿的野狗在空地上哀叫，污水散发着刺鼻的气味，尘土让空气里昏黄一片。骆驼商队缓慢地挤过破旧的棚屋，经过一群群苦役和乞丐。越靠近天坛，贫困越像是一堵没有尽头的墙。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 60539
+      }
+    ]
+  },
+  {
+    "id": 342,
+    "zh": "人群川流不息，大多穿着土黄色或蓝色的衣服，喧闹而拥挤……灰尘把一切都笼罩在一层黄雾中，黑色的污水沟散发出刺鼻的恶臭。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 60876
+      }
+    ]
+  },
+  {
+    "id": 343,
+    "zh": "一柄摇铃，一场去往远东的旅行，",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 62179
+      }
+    ]
+  },
+  {
+    "id": 344,
+    "zh": "以及一笔永远无法还清的债。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 62200
+      }
+    ]
+  },
+  {
+    "id": 345,
+    "zh": "进入故事世界",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 62348
+      }
+    ]
+  },
+  {
+    "id": 346,
+    "zh": "根据埃萨·德·凯罗斯的小说改编",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 62424
+      }
+    ]
+  },
+  {
+    "id": 347,
+    "zh": "我的生活平稳而安宁。每周，我都戴着黑亮的护袖伏在部门书桌前，用漂亮的花体字在公文纸上写下熟套的句子……",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 62811
+      }
+    ]
+  },
+  {
+    "id": 348,
+    "zh": "我只须毕恭毕敬、一笔一划地誊抄，便可安稳地领到每月两万雷斯的薪俸。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 62882
+      }
+    ]
+  },
+  {
+    "id": 349,
+    "zh": "桌上的三份公文",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 62985
+      }
+    ]
+  },
+  {
+    "id": 350,
+    "zh": "三份公文均已抄写完毕",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 63657
+      }
+    ]
+  },
+  {
+    "id": 351,
+    "zh": "点击纸页",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 63672
+      }
+    ]
+  },
+  {
+    "id": 352,
+    "zh": "醒来",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 63825
+      }
+    ]
+  },
+  {
+    "id": 353,
+    "zh": "打瞌睡",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 63832
+      }
+    ]
+  },
+  {
+    "id": 354,
+    "zh": "下班",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 63983
+      }
+    ]
+  },
+  {
+    "id": 355,
+    "zh": "我有这么一个不为人知的习惯：我会去旧货市场淘些孤本旧书，晚上回到房间后，拿它们当作精神食粮。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 64338
+      }
+    ]
+  },
+  {
+    "id": 356,
+    "zh": "旧货市场的摊位沿着斜坡铺开。旧望远镜、失去圣骨的匣子、剥釉的圣像与停摆的怀表挤在一起。书摊上那些稀奇古怪的旧书，总比一顿晚餐更容易落入我的预算。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 64404
+      }
+    ]
+  },
+  {
+    "id": 357,
+    "zh": "古老庄严的字体、虫蛀且泛黄的纸张、修道院式的厚重装帧，还有夹在书中的绿色丝带——都令我着迷！",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 65189
+      }
+    ]
+  },
+  {
+    "id": 358,
+    "zh": "我数出几个铜币，然后把那本旧书夹在腋下，带回了孔塞桑巷一百零六号。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 65259
+      }
+    ]
+  },
+  {
+    "id": 359,
+    "zh": "回家",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 65375
+      }
+    ]
+  },
+  {
+    "id": 360,
+    "zh": "已查看",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 65467
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 66189
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 74120
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 78881
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 85196
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 86497
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 90057
+      }
+    ]
+  },
+  {
+    "id": 361,
+    "zh": "刚从旧货市场带回的书摊在桌上，正翻至绿色缎带所在的那一页。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 65657
+      }
+    ]
+  },
+  {
+    "id": 362,
+    "zh": "仔细翻阅旧书",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 66340
+      }
+    ]
+  },
+  {
+    "id": 363,
+    "zh": "《灵魂的裂缝》",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 66564
+      }
+    ]
+  },
+  {
+    "id": 364,
+    "zh": "“在中国内陆有一位满大人，他比传说又或者历史中的所有国王都要富有。你对他一无所知：不知道他姓甚名何，长得什么模样，身上穿的又是怎样的绸缎。不过，你只须摇响放在你身旁书上的那只摇铃，便能继承他数不胜数的财产。他只会在遥远的蒙古边境发出一声叹息，然后就一命呜呼，而你的脚下会堆满黄金，多得连守财奴都不敢想象。读到这段文字的你，作为凡人的你——会摇响铃吗？”",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 67160
+      }
+    ]
+  },
+  {
+    "id": 365,
+    "zh": "桌旁传来声音",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 67489
+      }
+    ]
+  },
+  {
+    "id": 366,
+    "zh": "魔鬼",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 67700
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 68180
+      },
+      {
+        "file": "app/supplication-prototype/page.tsx",
+        "start": 4555
+      },
+      {
+        "file": "app/supplication-sequence.tsx",
+        "start": 4378
+      }
+    ]
+  },
+  {
+    "id": 367,
+    "zh": "“来吧，特奥多罗，我的朋友，伸手，摇铃，勇敢一些！”",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 67973
+      }
+    ]
+  },
+  {
+    "id": 368,
+    "zh": "摇铃发出的金属余音不绝于耳，远方的那声叹息再也无法被撤回。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 68395
+      }
+    ]
+  },
+  {
+    "id": 369,
+    "zh": "铃声抵达远方",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 68510
+      }
+    ]
+  },
+  {
+    "id": 370,
+    "zh": "摇铃",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 68755
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 69085
+      }
+    ]
+  },
+  {
+    "id": 371,
+    "zh": "一柄精致的十九世纪欧洲黄铜手摇铃",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 68885
+      }
+    ]
+  },
+  {
+    "id": 372,
+    "zh": "拒绝",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 69198
+      }
+    ]
+  },
+  {
+    "id": 373,
+    "zh": "狄鑫福在花园溪流旁的草岸上听见铃声后倒地身亡的剪纸动画",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 69563
+      }
+    ]
+  },
+  {
+    "id": 374,
+    "zh": "肥胖、白胡子的狄鑫福身穿黄绸，怀抱纸鸢，站在溪流旁的草岸上",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 69750
+      }
+    ]
+  },
+  {
+    "id": 375,
+    "zh": "狄鑫福仰面倒在溪边草地上，冰冷的双臂仍抱着纸鸢",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 69943
+      }
+    ]
+  },
+  {
+    "id": 376,
+    "zh": "“现在他身穿黄绸，死在潺潺溪水旁的绿草地上，仰面朝天，冰冷的双臂仍抱着他的纸鸢，而那纸鸢看起来也和他一样毫无生气。”",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 70494
+      }
+    ]
+  },
+  {
+    "id": 377,
+    "zh": "再看一次",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 70651
+      },
+      {
+        "file": "app/supplication-prototype/page.tsx",
+        "start": 4878
+      },
+      {
+        "file": "app/supplication-sequence.tsx",
+        "start": 4929
+      }
+    ]
+  },
+  {
+    "id": 378,
+    "zh": "一个月之后",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 70750
+      }
+    ]
+  },
+  {
+    "id": 379,
+    "zh": "“好极了，我亲爱的朋友。你保住了良心——也保住了贫困。但这只是今天，但愿你未来不会后悔。”",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 71053
+      }
+    ]
+  },
+  {
+    "id": 380,
+    "zh": "魔鬼消失了。今晚，他的蛊惑没有对你奏效。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 71153
+      }
+    ]
+  },
+  {
+    "id": 381,
+    "zh": "（以上为游戏原创台词，并非埃萨原文。）",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 71179
+      }
+    ]
+  },
+  {
+    "id": 382,
+    "zh": "合上旧书",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 71289
+      }
+    ]
+  },
+  {
+    "id": 383,
+    "zh": "一个月过去了。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 71561
+      }
+    ]
+  },
+  {
+    "id": 384,
+    "zh": "八月的一个星期日早晨，我正穿着衬衫躺在床上打盹，熄灭的香烟还粘在唇边。这时门轻轻地响了，我迷迷糊糊地半睁开眼睛，看见一个秃顶的老先生在我的床前俯下身。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 71592
+      }
+    ]
+  },
+  {
+    "id": 385,
+    "zh": "西尔维斯特",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 71749
+      }
+    ]
+  },
+  {
+    "id": 386,
+    "zh": "您就是特奥多罗先生？……王国内政部的特奥多罗先生？",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 71869
+      }
+    ]
+  },
+  {
+    "id": 387,
+    "zh": "他矮胖身型，白色的络腮胡摩擦着黑色呢外套的翻领，金丝眼镜在圆脸上微微发颤；双手捧着一只鼓胀的信封，上面打着黑蜡的封印。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 71920
+      }
+    ]
+  },
+  {
+    "id": 388,
+    "zh": "拆开黑蜡封缄的信",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 72107
+      }
+    ]
+  },
+  {
+    "id": 389,
+    "zh": "拆开",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 72323
+      }
+    ]
+  },
+  {
+    "id": 390,
+    "zh": "一共十万六千孔托，先生！……是满大人狄鑫福留下的遗产！",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 72565
+      }
+    ]
+  },
+  {
+    "id": 391,
+    "zh": "西尔维斯特商号与澳门、香港的商行有往来，消息由南安普敦邮船送到。一个月前还是穷抄写员的我，如今成了这位陌生死者的唯一继承人。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 72616
+      }
+    ]
+  },
+  {
+    "id": 392,
+    "zh": "孔托",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 72743
+      }
+    ]
+  },
+  {
+    "id": 393,
+    "zh": "——可怜的狄鑫福！…… ——他死了？ ——他死前正安安静静地待在自己的花园里，扎着一只准备放飞的纸鸢……",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 72932
+      }
+    ]
+  },
+  {
+    "id": 394,
+    "zh": "此时，陌生的死者终于有了名字。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 73008
+      }
+    ]
+  },
+  {
+    "id": 395,
+    "zh": "搬入洛雷托宫殿",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 73108
+      }
+    ]
+  },
+  {
+    "id": 396,
+    "zh": "于是，我的百万富翁生活开始了。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 73353
+      }
+    ]
+  },
+  {
+    "id": 397,
+    "zh": "人世间的享乐我应有尽有，可那时不时便向我显现的不详身影使一切都变得索然无味。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 73388
+      }
+    ]
+  },
+  {
+    "id": 398,
+    "zh": "我无法忽视……",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 74041
+      }
+    ]
+  },
+  {
+    "id": 399,
+    "zh": "那个身影不是躺在门槛上，就是歪倒在金床上——肥胖的身躯穿着黄袍，拖着一条黑辫子，怀里还抱着他的纸鸢……正是满大人狄鑫福！",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 74521
+      }
+    ]
+  },
+  {
+    "id": 400,
+    "zh": "我试着用音乐、酒宴和彻夜的狂欢淹没愧疚，但宾客散去后，狄鑫福的尸体仍横陈在我的门口。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 74705
+      }
+    ]
+  },
+  {
+    "id": 401,
+    "zh": "我出钱请神父做弥撒、修建教堂，但祷告并不能让狄鑫福离开。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 74777
+      }
+    ]
+  },
+  {
+    "id": 402,
+    "zh": "我四处旅行，但无论我走到哪里，尸影都跟随着我。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 74810
+      }
+    ]
+  },
+  {
+    "id": 403,
+    "zh": "我要去北京，找到狄鑫福的家人……",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 74950
+      }
+    ]
+  },
+  {
+    "id": 404,
+    "zh": "前往中国",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 75048
+      }
+    ]
+  },
+  {
+    "id": 405,
+    "zh": "我在远方摇响了一柄铃，这就杀了人（……）我谋杀了一个老人！",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 75268
+      }
+    ]
+  },
+  {
+    "id": 406,
+    "zh": "沉湎享乐",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 75462
+      }
+    ]
+  },
+  {
+    "id": 407,
+    "zh": "求助教会",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 75583
+      }
+    ]
+  },
+  {
+    "id": 408,
+    "zh": "远行排遣",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 75704
+      }
+    ]
+  },
+  {
+    "id": 409,
+    "zh": "我无比渴望踏上中国的土地！（……）我将船头对准了东方。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 75998
+      }
+    ]
+  },
+  {
+    "id": 410,
+    "zh": "一个夜晚，我动身前往马赛，在那里花重金包下“锡兰号”邮船，船头直指东方。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 76045
+      }
+    ]
+  },
+  {
+    "id": 411,
+    "zh": "旅程进度：",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 76145
+      }
+    ]
+  },
+  {
+    "id": 412,
+    "zh": "继续旅程",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 77738
+      }
+    ]
+  },
+  {
+    "id": 413,
+    "zh": "进入北京",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 77864
+      }
+    ]
+  },
+  {
+    "id": 414,
+    "zh": "北京就在我眼前！那是一道辽阔、雄伟而粗犷的城墙，暗沉发黑，一直伸向视线尽头……",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 78193
+      }
+    ]
+  },
+  {
+    "id": 415,
+    "zh": "城门层叠的飞檐衬在血色紫红的落日上；北面，蒙古群山像悬在淡紫烟霭中。黑墙脚下挤着一片异国集市，摇曳的灯笼把暮色割成血红斑块，白色棚布像停在墙边的一群蝴蝶。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 78252
+      }
+    ]
+  },
+  {
+    "id": 416,
+    "zh": "一乘华贵的轿子正在东直门外等我，要载我穿过北京，前往卡米洛夫将军的府邸。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 79144
+      }
+    ]
+  },
+  {
+    "id": 417,
+    "zh": "坐进轿子，穿过东直门",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 79265
+      }
+    ]
+  },
+  {
+    "id": 418,
+    "zh": "我感到一阵悲凉，于是坐进轿子，拉上绣满金线的红丝帘，在哥萨克骑兵的护送下进入了古老的北京城……",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 79700
+      }
+    ]
+  },
+  {
+    "id": 419,
+    "zh": "车轮、轿杠、马蹄和骆驼的声音在帘外徐徐而过。每到一处，我都可以命轿夫停下，拉开轿帘看看北京城的热闹奢华，又或者是穷困凄惨。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 79771
+      }
+    ]
+  },
+  {
+    "id": 420,
+    "zh": "再去",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 80255
+      }
+    ]
+  },
+  {
+    "id": 421,
+    "zh": "前往",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 80262
+      }
+    ]
+  },
+  {
+    "id": 422,
+    "zh": "前往卡米洛夫府邸",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 80689
+      }
+    ]
+  },
+  {
+    "id": 423,
+    "zh": "卡米洛夫府邸",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 81083
+      }
+    ]
+  },
+  {
+    "id": 424,
+    "zh": "——“尊贵的客人，您会说中文吗？”卡米洛夫用他那聪慧的双眼盯着我，突然问道。——“将军，我会说两个重要的词：‘满大人’和‘茶’。”",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 81304
+      }
+    ]
+  },
+  {
+    "id": 425,
+    "zh": "回到卡米洛夫府邸，我把那柄摇铃、狄鑫福的死与此行的目的告诉了他。卡米洛夫没有多说，只问这笔补偿应当交到谁的手中。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 81393
+      }
+    ]
+  },
+  {
+    "id": 426,
+    "zh": "请帮我做一件事，帮我寻找狄鑫福的家人……",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 81663
+      }
+    ]
+  },
+  {
+    "id": 427,
+    "zh": "只有找到死者的家人，补偿才可能真正抵达被夺去财富的人。卡米洛夫答应亲自去佟亲王的衙门查问。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 81709
+      }
+    ]
+  },
+  {
+    "id": 428,
+    "zh": "听他安排查访",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 81888
+      }
+    ]
+  },
+  {
+    "id": 429,
+    "zh": "门扉合拢，马蹄与车轮声沿着石路渐渐远去。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 82098
+      }
+    ]
+  },
+  {
+    "id": 430,
+    "zh": "卡米洛夫将军正在府外四处奔走，帮我寻找狄鑫福的家人，而我留在府内，享受将军夫人的热情款待。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 82142
+      }
+    ]
+  },
+  {
+    "id": 431,
+    "zh": "留在府邸等待消息",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 82283
+      }
+    ]
+  },
+  {
+    "id": 432,
+    "zh": "将军带着哥萨克卫队前往佟亲王的衙门，打听狄鑫福一家的住处……",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 82556
+      }
+    ]
+  },
+  {
+    "id": 433,
+    "zh": "继续听他说",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 83214
+      }
+    ]
+  },
+  {
+    "id": 434,
+    "zh": "送卡米洛夫到门前",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 83346
+      }
+    ]
+  },
+  {
+    "id": 435,
+    "zh": "晨祷的钟声响了起来（……）两滴无声的泪从我的眼中滚落。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 84160
+      }
+    ]
+  },
+  {
+    "id": 436,
+    "zh": "两位遣使会神父清晨在路上发现了昏迷的我，用担架把我抬回了修道院。后来我才知道，萨托虽然负了伤，但总算是逃回了北京。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 84207
+      }
+    ]
+  },
+  {
+    "id": 437,
+    "zh": "遣使会的院长是善良的朱利奥神父（……）他身着紫袍，留着长辫和庄严的胡须，此时正缓缓扇动着一把大折扇（……）",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 84467
+      }
+    ]
+  },
+  {
+    "id": 438,
+    "zh": "回到房间",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 85104
+      }
+    ]
+  },
+  {
+    "id": 439,
+    "zh": "“爪哇号”载着我离开香港，向欧洲返航。直到那天，我都以为狄鑫福已经平息了怨怼；但那天晚上十一点，我走进熄灯后的船舱，月光正穿过舷窗……",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 85634
+      }
+    ]
+  },
+  {
+    "id": 440,
+    "zh": "十一点钟，我回到了自己的卧舱。灯火已经熄灭，浑圆苍白的月亮从水面升起，一道清光照在舷窗上。就在那片惨淡的半明半暗中，我看见吊床上横陈着那具肥胖的尸体，身穿黄绸，怀里抱着纸鸢！",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 86095
+      }
+    ]
+  },
+  {
+    "id": 441,
+    "zh": "又是他！阴魂不散！",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 86290
+      }
+    ]
+  },
+  {
+    "id": 442,
+    "zh": "狄鑫福是在返程的船上突然重新出现的，在随后的旅程中，他再也不愿还我清净。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 86319
+      }
+    ]
+  },
+  {
+    "id": 443,
+    "zh": "点击沿途地名，查看狄鑫福如何一路相随。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 86453
+      }
+    ]
+  },
+  {
+    "id": 444,
+    "zh": "返航地点",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 86624
+      }
+    ]
+  },
+  {
+    "id": 445,
+    "zh": "当我在里斯本的柱廊码头下船时，他肥胖的身躯填满了奥古斯塔街的整座拱门。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 87396
+      }
+    ]
+  },
+  {
+    "id": 446,
+    "zh": "回到洛雷托",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 87519
+      },
+      {
+        "file": "app/supplication-sequence.tsx",
+        "start": 5061
+      }
+    ]
+  },
+  {
+    "id": 447,
+    "zh": "于是，我确信自己再也无法平息狄鑫福的怨气了。那天晚上，我一直待在洛雷托的房间里，枝形烛台上无数的蜡烛一如往昔，把锦缎映成鲜血般的颜色。我反复思量，到底如何才能把这笔超自然的巨款像罪恶的饰物一样从身上甩掉。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 88059
+      }
+    ]
+  },
+  {
+    "id": 448,
+    "zh": "我已经走过半个世界，却没有让狄鑫福的怨念离开我。如果财富是这具尸体扑向我的道路，那我只能把它截断。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 88193
+      }
+    ]
+  },
+  {
+    "id": 449,
+    "zh": "也许这样，我就能摆脱那副大肚子和那只可憎的纸鸢！",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 88366
+      }
+    ]
+  },
+  {
+    "id": 450,
+    "zh": "抛下财产",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 88473
+      }
+    ]
+  },
+  {
+    "id": 451,
+    "zh": "我抛下了洛雷托的豪宅，也抛下富豪的生活。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 88698
+      }
+    ]
+  },
+  {
+    "id": 452,
+    "zh": "我重新租下马克斯太太家的旧房间，却再也回不到从前那种安静的贫穷。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 88738
+      }
+    ]
+  },
+  {
+    "id": 453,
+    "zh": "十万六千孔托",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 89330
+      }
+    ]
+  },
+  {
+    "id": 454,
+    "zh": "仍属于我",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 89374
+      }
+    ]
+  },
+  {
+    "id": 455,
+    "zh": "零？",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 89383
+      }
+    ]
+  },
+  {
+    "id": 456,
+    "zh": "所有曾被我的财富压过一头的人，如今都把侮辱向我泼洒，仿佛是在往一尊被推倒的王子雕像上倒垃圾。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 89616
+      }
+    ]
+  },
+  {
+    "id": 457,
+    "zh": "终于有一天，我怒不可遏，声势浩大地搬回豪宅，回到了奢侈的生活。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 89804
+      }
+    ]
+  },
+  {
+    "id": 458,
+    "zh": "推开洛雷托豪宅的大门",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 89955
+      }
+    ]
+  },
+  {
+    "id": 459,
+    "zh": "里斯本毫不迟疑地匍匐在我脚下。马克斯太太哭着称我为‘她心爱的儿子’；报纸把按古老传统本该属于神明的称号送给我，叫我全能者，全知者；贵族像面对暴君般亲吻我的手指；教士像供奉偶像般向我献香。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 90666
+      }
+    ]
+  },
+  {
+    "id": 460,
+    "zh": "洛雷托宫殿的长窗重新放出灯火，身穿黑绸制服的仆人又在其中穿行。我重新拥有了整个里斯本，却只在它的敬畏里感到厌倦。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 90791
+      }
+    ]
+  },
+  {
+    "id": 461,
+    "zh": "从那以后，一种叫人倦怠的满足感使我一连数周躺在沙发上，沉默阴郁，想着如果自己就此消失，该有多幸福……",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 91023
+      }
+    ]
+  },
+  {
+    "id": 462,
+    "zh": "独自走入夜色",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 91159
+      }
+    ]
+  },
+  {
+    "id": 463,
+    "zh": "一天夜里，我独自走在一条荒无人烟的街上，忽然看见前方有个一身黑衣、腋下夹着雨伞的人——正是他，他曾在孔塞桑巷那间幸福的小屋里，让我随着摇铃的一声轻响继承了可憎的千万财富。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 91641
+      }
+    ]
+  },
+  {
+    "id": 464,
+    "zh": "煤气灯的微光落在他的礼帽和黑色外套上。他仍然像第一次出现时那样庄重、平静，仿佛并没有对我做过任何可怕的事情。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 91758
+      }
+    ]
+  },
+  {
+    "id": 465,
+    "zh": "追上他",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 91899
+      }
+    ]
+  },
+  {
+    "id": 466,
+    "zh": "结局",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 92103
+      }
+    ]
+  },
+  {
+    "id": 467,
+    "zh": "我回到洛雷托豪宅，痛苦地坐在办公桌前。魔鬼不肯撤销交易，狄鑫福的尸体也没有离我而去。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 92127
+      }
+    ]
+  },
+  {
+    "id": 468,
+    "zh": "我一日日消沉下去，感到自己时日无多，便把自己的经历写成了书，并且立好了遗嘱。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 92191
+      }
+    ]
+  },
+  {
+    "id": 469,
+    "zh": "查看遗嘱",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 92458
+      }
+    ]
+  },
+  {
+    "id": 470,
+    "zh": "遗嘱",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 92464
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 93044
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 93654
+      }
+    ]
+  },
+  {
+    "id": 471,
+    "zh": "查看《满大人》",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 92615
+      }
+    ]
+  },
+  {
+    "id": 472,
+    "zh": "合上最后一页。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 92735
+      }
+    ]
+  },
+  {
+    "id": 473,
+    "zh": "桌上的物件",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 92832
+      }
+    ]
+  },
+  {
+    "id": 474,
+    "zh": "展开",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 93008
+      }
+    ]
+  },
+  {
+    "id": 475,
+    "zh": "查看",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 93238
+      }
+    ]
+  },
+  {
+    "id": 476,
+    "zh": "特奥多罗的遗嘱",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 93455
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 93683
+      }
+    ]
+  },
+  {
+    "id": 477,
+    "zh": "收起",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 93597
+      }
+    ]
+  },
+  {
+    "id": 478,
+    "zh": "我把我的百万家财遗赠给魔鬼，那笔钱本就该属于他。",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 93717
+      }
+    ]
+  },
+  {
+    "id": 479,
+    "zh": "《满大人》封面",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 94153
+      }
+    ]
+  },
+  {
+    "id": 480,
+    "zh": "特奥多罗著",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 94194
+      }
+    ]
+  },
+  {
+    "id": 481,
+    "zh": "翻开",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 94369
+      }
+    ]
+  },
+  {
+    "id": 482,
+    "zh": "翻开的书",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 94523
+      }
+    ]
+  },
+  {
+    "id": 483,
+    "zh": "只有我们每日用双手挣来的面包才真正香甜：千万别杀害满大人！",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 94849
+      }
+    ]
+  },
+  {
+    "id": 484,
+    "zh": "合上",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 95036
+      }
+    ]
+  },
+  {
+    "id": 485,
+    "zh": "晨祷钟声响起，特奥多罗第",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 96738
+      }
+    ]
+  },
+  {
+    "id": 486,
+    "zh": "次艰难睁眼",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 96771
+      }
+    ]
+  },
+  {
+    "id": 487,
+    "zh": "一八八〇 / 二〇二六",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 97038
+      }
+    ]
+  },
+  {
+    "id": 488,
+    "zh": "声音开启",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 97153
+      }
+    ]
+  },
+  {
+    "id": 489,
+    "zh": "静音模式",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 97162
+      }
+    ]
+  },
+  {
+    "id": 490,
+    "zh": "版本说明",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 97341
+      },
+      {
+        "file": "app/page.tsx",
+        "start": 97496
+      }
+    ]
+  },
+  {
+    "id": 491,
+    "zh": "关闭",
+    "locations": [
+      {
+        "file": "app/page.tsx",
+        "start": 97439
+      }
+    ]
+  },
+  {
+    "id": 492,
+    "zh": "特奥多罗乞求魔鬼的独立动画样片",
+    "locations": [
+      {
+        "file": "app/supplication-prototype/page.tsx",
+        "start": 3144
+      }
+    ]
+  },
+  {
+    "id": 493,
+    "zh": "煤气灯照亮的湿石路",
+    "locations": [
+      {
+        "file": "app/supplication-prototype/page.tsx",
+        "start": 3308
+      },
+      {
+        "file": "app/supplication-sequence.tsx",
+        "start": 3393
+      }
+    ]
+  },
+  {
+    "id": 494,
+    "zh": "← 返回《满大人》",
+    "locations": [
+      {
+        "file": "app/supplication-prototype/page.tsx",
+        "start": 3543
+      }
+    ]
+  },
+  {
+    "id": 495,
+    "zh": "声音：",
+    "locations": [
+      {
+        "file": "app/supplication-prototype/page.tsx",
+        "start": 3721
+      },
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 33888
+      }
+    ]
+  },
+  {
+    "id": 496,
+    "zh": "开",
+    "locations": [
+      {
+        "file": "app/supplication-prototype/page.tsx",
+        "start": 3751
+      },
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 33904
+      }
+    ]
+  },
+  {
+    "id": 497,
+    "zh": "关",
+    "locations": [
+      {
+        "file": "app/supplication-prototype/page.tsx",
+        "start": 3757
+      },
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 33910
+      }
+    ]
+  },
+  {
+    "id": 498,
+    "zh": "独立动画样片",
+    "locations": [
+      {
+        "file": "app/supplication-prototype/page.tsx",
+        "start": 3801
+      }
+    ]
+  },
+  {
+    "id": 499,
+    "zh": "“把我从这笔财富中救出来！让满大人复活！把贫穷的安宁还给我！”",
+    "locations": [
+      {
+        "file": "app/supplication-prototype/page.tsx",
+        "start": 4217
+      }
+    ]
+  },
+  {
+    "id": 500,
+    "zh": "他庄重地把雨伞移到另一只胳膊下，和善地回答：",
+    "locations": [
+      {
+        "file": "app/supplication-prototype/page.tsx",
+        "start": 4470
+      }
+    ]
+  },
+  {
+    "id": 501,
+    "zh": "“不行，我亲爱的先生，不行……”",
+    "locations": [
+      {
+        "file": "app/supplication-prototype/page.tsx",
+        "start": 4676
+      },
+      {
+        "file": "app/supplication-sequence.tsx",
+        "start": 4499
+      }
+    ]
+  },
+  {
+    "id": 502,
+    "zh": "魔鬼站在煤气灯下",
+    "locations": [
+      {
+        "file": "app/supplication-prototype/page.tsx",
+        "start": 5035
+      },
+      {
+        "file": "app/supplication-sequence.tsx",
+        "start": 5253
+      }
+    ]
+  },
+  {
+    "id": 503,
+    "zh": "身穿黑衣、戴高礼帽并夹着雨伞的魔鬼",
+    "locations": [
+      {
+        "file": "app/supplication-prototype/page.tsx",
+        "start": 5165
+      },
+      {
+        "file": "app/supplication-sequence.tsx",
+        "start": 5383
+      }
+    ]
+  },
+  {
+    "id": 504,
+    "zh": "特奥多罗冲向魔鬼",
+    "locations": [
+      {
+        "file": "app/supplication-prototype/page.tsx",
+        "start": 5678
+      },
+      {
+        "file": "app/supplication-sequence.tsx",
+        "start": 5896
+      }
+    ]
+  },
+  {
+    "id": 505,
+    "zh": "特奥多罗跪地伸手试图抱住魔鬼的小腿",
+    "locations": [
+      {
+        "file": "app/supplication-prototype/page.tsx",
+        "start": 5757
+      },
+      {
+        "file": "app/supplication-sequence.tsx",
+        "start": 5975
+      }
+    ]
+  },
+  {
+    "id": 506,
+    "zh": "特奥多罗失去支撑后扑倒在湿石路上",
+    "locations": [
+      {
+        "file": "app/supplication-prototype/page.tsx",
+        "start": 5779
+      },
+      {
+        "file": "app/supplication-sequence.tsx",
+        "start": 5997
+      }
+    ]
+  },
+  {
+    "id": 507,
+    "zh": "特奥多罗跪求魔鬼",
+    "locations": [
+      {
+        "file": "app/supplication-sequence.tsx",
+        "start": 3236
+      }
+    ]
+  },
+  {
+    "id": 508,
+    "zh": "“让我从这笔财富里解脱吧！让满大人复活！把贫穷的安宁还给我！”",
+    "locations": [
+      {
+        "file": "app/supplication-sequence.tsx",
+        "start": 4039
+      }
+    ]
+  },
+  {
+    "id": 509,
+    "zh": "他庄重地把雨伞移到另一只胳膊下，和善地回答道：",
+    "locations": [
+      {
+        "file": "app/supplication-sequence.tsx",
+        "start": 4292
+      }
+    ]
+  },
+  {
+    "id": 510,
+    "zh": "本交互叙事游戏根据埃萨·德·凯罗斯一八八〇年的小说《满大人》改编。它保留埃萨原作的故事主线，在此基础上，如果三次拒绝魔鬼的摇铃提议则触发特别结局，特别结局为原创内容，与原作无关。本作中涉及的中国是埃萨作为十九世纪的欧洲人对于东方的想象，并非历史中国的现实复原。",
+    "locations": [
+      {
+        "file": "app/version-copy.ts",
+        "start": 31
+      }
+    ]
+  },
+  {
+    "id": 511,
+    "zh": "游戏中的“满大人”和“狄鑫福”两个译名使用周汉军译本《满大人》中的译法；除这两个译名外，游戏内的原作引文均由游戏制作者翻译。",
+    "locations": [
+      {
+        "file": "app/version-copy.ts",
+        "start": 167
+      }
+    ]
+  },
+  {
+    "id": 512,
+    "zh": "制作者：周宁 使用模型：chatgpt sol 5.6",
+    "locations": [
+      {
+        "file": "app/version-copy.ts",
+        "start": 274
+      }
+    ]
+  },
+  {
+    "id": 513,
+    "zh": "一部根据葡萄牙作家埃萨·德·凯罗斯同名小说改编的交互叙事游戏。",
+    "locations": [
+      {
+        "file": "github-pages/index.html",
+        "start": 240
+      }
+    ]
+  },
+  {
+    "id": 514,
+    "zh": "如果你能让一个遥远国度的陌生人立刻死去，并继承他的千万遗产，你会怎么选择？",
+    "locations": [
+      {
+        "file": "github-pages/index.html",
+        "start": 426
+      }
+    ]
+  },
+  {
+    "id": 515,
+    "zh": "客栈",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 1230
+      },
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 17047
+      },
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 28897
+      }
+    ]
+  },
+  {
+    "id": 516,
+    "zh": "茶还温着。萨托说起明天的计划：找到狄鑫福的遗孀，把钱和米送过去。",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 1274
+      },
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 28929
+      }
+    ]
+  },
+  {
+    "id": 517,
+    "zh": "困意渐渐袭来。",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 1370
+      },
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 28993
+      }
+    ]
+  },
+  {
+    "id": 518,
+    "zh": "饮尽茶，合上眼睛",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 1454
+      }
+    ]
+  },
+  {
+    "id": 519,
+    "zh": "人群低语",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 1596
+      }
+    ]
+  },
+  {
+    "id": 520,
+    "zh": "一位远道而来的陌生人",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 1641
+      },
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 15348
+      },
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 30012
+      }
+    ]
+  },
+  {
+    "id": 521,
+    "zh": "拖动金币",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 1956
+      }
+    ]
+  },
+  {
+    "id": 522,
+    "zh": "碗",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 2119
+      }
+    ]
+  },
+  {
+    "id": 523,
+    "zh": "分发米粮",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 2275
+      }
+    ]
+  },
+  {
+    "id": 524,
+    "zh": "按住钱袋",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 2841
+      }
+    ]
+  },
+  {
+    "id": 525,
+    "zh": "再给一些！",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 2944
+      }
+    ]
+  },
+  {
+    "id": 526,
+    "zh": "客栈门外",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 3156
+      }
+    ]
+  },
+  {
+    "id": 527,
+    "zh": "门外的人要我解释身份和来由。",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 3181
+      }
+    ]
+  },
+  {
+    "id": 528,
+    "zh": "语言不通。我只能从行李中拿出一样东西当做证明。",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 3216
+      }
+    ]
+  },
+  {
+    "id": 529,
+    "zh": "官员介绍信",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 3482
+      }
+    ]
+  },
+  {
+    "id": 530,
+    "zh": "有使馆印章的葡萄牙文信件",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 3518
+      }
+    ]
+  },
+  {
+    "id": 531,
+    "zh": "十字架",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 3724
+      }
+    ]
+  },
+  {
+    "id": 532,
+    "zh": "证明自己的信仰与来历",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 3758
+      }
+    ]
+  },
+  {
+    "id": 533,
+    "zh": "证明自己有能力兑现接济村民。",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 3993
+      }
+    ]
+  },
+  {
+    "id": 534,
+    "zh": "萨",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 4168
+      }
+    ]
+  },
+  {
+    "id": 535,
+    "zh": "让萨托翻译",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 4199
+      }
+    ]
+  },
+  {
+    "id": 536,
+    "zh": "让懂中文的萨托来解释。",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 4235
+      }
+    ]
+  },
+  {
+    "id": 537,
+    "zh": "我的意思",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 4378
+      }
+    ]
+  },
+  {
+    "id": 538,
+    "zh": "他们眼中",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 4473
+      }
+    ]
+  },
+  {
+    "id": 539,
+    "zh": "人群传开",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 4593
+      }
+    ]
+  },
+  {
+    "id": 540,
+    "zh": "饥饿的人",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 4860
+      }
+    ]
+  },
+  {
+    "id": 541,
+    "zh": "他说会分给全村的人。",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 4874
+      }
+    ]
+  },
+  {
+    "id": 542,
+    "zh": "旅店主人",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 4918
+      }
+    ]
+  },
+  {
+    "id": 543,
+    "zh": "若有人闯入，损失算谁的？",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 4932
+      }
+    ]
+  },
+  {
+    "id": 544,
+    "zh": "地方差役",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 4978
+      }
+    ]
+  },
+  {
+    "id": 545,
+    "zh": "天亮以前，先把东西扣下。",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 4992
+      }
+    ]
+  },
+  {
+    "id": 546,
+    "zh": "门外人群",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 5088
+      }
+    ]
+  },
+  {
+    "id": 547,
+    "zh": "从后窗逃走",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 5290
+      }
+    ]
+  },
+  {
+    "id": 548,
+    "zh": "逃出客栈",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 5651
+      }
+    ]
+  },
+  {
+    "id": 549,
+    "zh": "钱袋拖慢了脚步。",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 5695
+      }
+    ]
+  },
+  {
+    "id": 550,
+    "zh": "离后窗",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 5827
+      }
+    ]
+  },
+  {
+    "id": 551,
+    "zh": "钱袋",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 5937
+      },
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 2772
+      }
+    ]
+  },
+  {
+    "id": 552,
+    "zh": "追来的人",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 6040
+      }
+    ]
+  },
+  {
+    "id": 553,
+    "zh": "按住",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 6248
+      }
+    ]
+  },
+  {
+    "id": 554,
+    "zh": "带着金币，但脚步更慢",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 6254
+      }
+    ]
+  },
+  {
+    "id": 555,
+    "zh": "松开",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 6295
+      }
+    ]
+  },
+  {
+    "id": 556,
+    "zh": "金币会洒落，逃跑更快",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 6301
+      }
+    ]
+  },
+  {
+    "id": 557,
+    "zh": "客栈后窗",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 6699
+      }
+    ]
+  },
+  {
+    "id": 558,
+    "zh": "皮绳挂在了窗栅上。",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 6724
+      }
+    ]
+  },
+  {
+    "id": 559,
+    "zh": "带着钱袋，翻不过去。",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 6754
+      }
+    ]
+  },
+  {
+    "id": 560,
+    "zh": "割断钱袋",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 6846
+      },
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 29776
+      }
+    ]
+  },
+  {
+    "id": 561,
+    "zh": "天河村外的荒野",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 7240
+      }
+    ]
+  },
+  {
+    "id": 562,
+    "zh": "马匹已经跑远，空马镫在风里甩动。",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 7291
+      },
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 23475
+      }
+    ]
+  },
+  {
+    "id": 563,
+    "zh": "潮湿的衣服冻在皮肤上，钱袋被留在了客栈，马也跑远了。",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 7353
+      },
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 23510
+      }
+    ]
+  },
+  {
+    "id": 564,
+    "zh": "衣服 · 湿透",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 7509
+      }
+    ]
+  },
+  {
+    "id": 565,
+    "zh": "左耳 · 温热",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 7558
+      }
+    ]
+  },
+  {
+    "id": 566,
+    "zh": "双脚 · 失去知觉",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 7607
+      }
+    ]
+  },
+  {
+    "id": 567,
+    "zh": "呼吸 · 结霜",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 7658
+      }
+    ]
+  },
+  {
+    "id": 568,
+    "zh": "向前走",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 7863
+      },
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 23455
+      }
+    ]
+  },
+  {
+    "id": 569,
+    "zh": "遣使会修道院 · 清晨",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 8275
+      }
+    ]
+  },
+  {
+    "id": 570,
+    "zh": "钟声从很远的地方传来。",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 8307
+      }
+    ]
+  },
+  {
+    "id": 571,
+    "zh": "有人正在清洗我耳边凝固的血。",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 8339
+      }
+    ]
+  },
+  {
+    "id": 572,
+    "zh": "黄昏中的天河村客栈，村民排队领米并点起灯笼",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 476
+      }
+    ]
+  },
+  {
+    "id": 573,
+    "zh": "月夜中的天河村客栈，人群包围了装满行李的车辆",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 587
+      }
+    ]
+  },
+  {
+    "id": 574,
+    "zh": "村民对陌生人的称呼",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 1568
+      }
+    ]
+  },
+  {
+    "id": 575,
+    "zh": "拿起金币",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 1893
+      }
+    ]
+  },
+  {
+    "id": 576,
+    "zh": "把金币放进寡妇的碗里",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 2077
+      }
+    ]
+  },
+  {
+    "id": 577,
+    "zh": "点击粮袋分发大米",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 2235
+      }
+    ]
+  },
+  {
+    "id": 578,
+    "zh": "点亮第一盏灯笼",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 2403
+      }
+    ]
+  },
+  {
+    "id": 579,
+    "zh": "点亮第二盏灯笼",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 2532
+      }
+    ]
+  },
+  {
+    "id": 580,
+    "zh": "点亮第三盏灯笼",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 2663
+      }
+    ]
+  },
+  {
+    "id": 581,
+    "zh": "不同人物推动冲突的原因",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 4823
+      }
+    ]
+  },
+  {
+    "id": 582,
+    "zh": "特奥多罗抱着沉重的钱袋奔逃",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 5566
+      }
+    ]
+  },
+  {
+    "id": 583,
+    "zh": "按住带着金币，松开金币洒落并加快逃跑",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 6418
+      }
+    ]
+  },
+  {
+    "id": 584,
+    "zh": "月夜荒野中，身穿黑色礼服、浑身湿透的特奥多罗独自走过泥地，马匹已经逃远",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 7064
+      }
+    ]
+  },
+  {
+    "id": 585,
+    "zh": "清晨的修道院回廊，一位老修士站在井边",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 8109
+      }
+    ]
+  },
+  {
+    "id": 586,
+    "zh": "体验进度",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/index.html",
+        "start": 8439
+      }
+    ]
+  },
+  {
+    "id": 587,
+    "zh": "我受官府委托而来",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 3676
+      }
+    ]
+  },
+  {
+    "id": 588,
+    "zh": "无人能读的外国字与红印",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 3704
+      }
+    ]
+  },
+  {
+    "id": 589,
+    "zh": "来历不明的外国文书",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 3732
+      }
+    ]
+  },
+  {
+    "id": 590,
+    "zh": "信在人群中传了一圈，没人读得懂，有人指着红印摇头。",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 3756
+      }
+    ]
+  },
+  {
+    "id": 591,
+    "zh": "我的信仰约束着我的行为",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 3831
+      }
+    ]
+  },
+  {
+    "id": 592,
+    "zh": "一个陌生的金属刑具",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 3862
+      }
+    ]
+  },
+  {
+    "id": 593,
+    "zh": "陌生的异邦法器",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 3888
+      }
+    ]
+  },
+  {
+    "id": 594,
+    "zh": "十字架举起，人群先退了一步，随后有人弯腰捡起石块。",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 3910
+      }
+    ]
+  },
+  {
+    "id": 595,
+    "zh": "我确实有能力帮助你们",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 3984
+      }
+    ]
+  },
+  {
+    "id": 596,
+    "zh": "传闻中的财宝就在眼前",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 4014
+      }
+    ]
+  },
+  {
+    "id": 597,
+    "zh": "传闻中的黄金",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 4041
+      }
+    ]
+  },
+  {
+    "id": 598,
+    "zh": "金币一露出来，人群安静了，随即扑向金币。",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 4062
+      }
+    ]
+  },
+  {
+    "id": 599,
+    "zh": "我们只是来帮助穷人",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 4132
+      }
+    ]
+  },
+  {
+    "id": 600,
+    "zh": "萨托说：他要把财物给全村",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 4161
+      }
+    ]
+  },
+  {
+    "id": 601,
+    "zh": "要分给全村的财物",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 4190
+      }
+    ]
+  },
+  {
+    "id": 602,
+    "zh": "萨托说我们是来帮助穷人的，村民却已经开始搬动我们的行李。",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 4213
+      }
+    ]
+  },
+  {
+    "id": 603,
+    "zh": "狄鑫福的遗孀站在晨光里。她没有开口，只是把一只空碗捧向我。",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 15233
+      }
+    ]
+  },
+  {
+    "id": 604,
+    "zh": "把金币放进她的碗里。",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 15294
+      }
+    ]
+  },
+  {
+    "id": 605,
+    "zh": "慷慨的陌生人",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 15512
+      }
+    ]
+  },
+  {
+    "id": 606,
+    "zh": "金币落入碗底，她笑了笑，人群让出路来让粮车通过。",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 15568
+      }
+    ]
+  },
+  {
+    "id": 607,
+    "zh": "点击车上的粮袋，开始分发米粮。",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 15624
+      }
+    ]
+  },
+  {
+    "id": 608,
+    "zh": "富有的陌生人",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 15809
+      }
+    ]
+  },
+  {
+    "id": 609,
+    "zh": "队伍向前移动。每只装满的碗后面又多出了几张脸。",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 15865
+      }
+    ]
+  },
+  {
+    "id": 610,
+    "zh": "点亮三盏灯笼。",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 15920
+      }
+    ]
+  },
+  {
+    "id": 611,
+    "zh": "灯笼",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 16193
+      }
+    ]
+  },
+  {
+    "id": 612,
+    "zh": "带着财物的外国人",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 16315
+      },
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 17170
+      },
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 18502
+      },
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 34398
+      }
+    ]
+  },
+  {
+    "id": 613,
+    "zh": "最后一盏灯亮起。欢呼声从近处传来。",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 16361
+      }
+    ]
+  },
+  {
+    "id": 614,
+    "zh": "鼓点从人群深处传来……",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 16412
+      }
+    ]
+  },
+  {
+    "id": 615,
+    "zh": "鼓声没有停，变成了撞门声，门外有很多人在叫喊。我一出门，就有人抓住了我的钱袋。",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 17079
+      }
+    ]
+  },
+  {
+    "id": 616,
+    "zh": "抓住钱袋。",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 17150
+      }
+    ]
+  },
+  {
+    "id": 617,
+    "zh": "那只手没有松开。抓紧钱袋。",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 18135
+      }
+    ]
+  },
+  {
+    "id": 618,
+    "zh": "皮绳断开",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 23293
+      }
+    ]
+  },
+  {
+    "id": 619,
+    "zh": "站稳",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 23561
+      }
+    ]
+  },
+  {
+    "id": 620,
+    "zh": "泥水没过鞋底，我每走一步，都要把脚从泥地里拔出来。",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 23580
+      }
+    ]
+  },
+  {
+    "id": 621,
+    "zh": "身后的喊声已经听不见了，但荒野并没有因此变得安全。",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 23624
+      }
+    ]
+  },
+  {
+    "id": 622,
+    "zh": "抬起脚",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 23674
+      }
+    ]
+  },
+  {
+    "id": 623,
+    "zh": "受伤的左耳在流血，一直淌到肩上。",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 23694
+      }
+    ]
+  },
+  {
+    "id": 624,
+    "zh": "远处有一点白光，它没有靠近，也没有消失。",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 23729
+      }
+    ]
+  },
+  {
+    "id": 625,
+    "zh": "呼吸",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 23774
+      },
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 26550
+      },
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 27137
+      }
+    ]
+  },
+  {
+    "id": 626,
+    "zh": "寒气把呼吸留在眼前，路已经从脚下消失。",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 23793
+      }
+    ]
+  },
+  {
+    "id": 627,
+    "zh": "我已经思考不了要往哪里走，只能努力保持身体平衡。",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 23831
+      }
+    ]
+  },
+  {
+    "id": 628,
+    "zh": "保持清醒",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 23880
+      },
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 27110
+      }
+    ]
+  },
+  {
+    "id": 629,
+    "zh": "我努力地保持清醒。",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 23901
+      }
+    ]
+  },
+  {
+    "id": 630,
+    "zh": "每一次呼吸都比上一次更沉重。",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 23929
+      }
+    ]
+  },
+  {
+    "id": 631,
+    "zh": "不要睡去",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 26557
+      },
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 27144
+      }
+    ]
+  },
+  {
+    "id": 632,
+    "zh": "点击寡妇的碗，或把金币拖进碗里。",
+    "locations": [
+      {
+        "file": "public/tienho-prototype/script.js",
+        "start": 31730
+      }
+    ]
+  }
+]

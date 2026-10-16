@@ -1,0 +1,102 @@
+O MANDARIM — PT-PT working edition (14 October 2026)
+HISTORICAL DEVELOPMENT RECORD: see RELEASE.txt for the current shared-site
+deployment. The independent-repository instructions below are superseded.
+
+ISOLATION
+Chinese source: Ningtaniazhou/Ningtaniazhou.github.io, main,
+commit 482a0fc244bd5ac8b98350efe0bf62c424229d70.
+Independent development directory: 《满大人》-PT-PT
+Branch: codex/pt-pt-port. No remote configured. Chinese source not edited.
+The copied Sites hosting project ID has been cleared. Pages deployment is
+guarded to the proposed new repository Ningtaniazhou/o-mandarim-pt-pt.
+No new public repository or website has been published by this migration.
+
+RUN
+npm ci
+npm test
+npm run typecheck
+npm start
+Preview: http://127.0.0.1:4185/o-mandarim-pt-pt/
+The root opens in Chinese by default. The cover's 中文 / Português control
+links to the Portuguese edition at pt/ and back. Each page loads its own
+story and styles; no in-game progress is transferred between editions.
+editions/zh preserves the frozen Chinese baseline with only cover navigation
+and asset-path integration. The existing published Chinese site is untouched.
+For editing with automatic reload: npm run dev (use the URL printed by Vite).
+Only dist/github-pages is a release artifact. The legacy server, database and
+old Chinese-text tests are retained for provenance, not the PT release path.
+The full legacy tsc check requires Cloudflare worker types; the standalone
+Pages typecheck intentionally covers only the deployed application's imports.
+
+TEXT POLICY AND COVERAGE
+633 unique Chinese text segments were catalogued (including metadata, ARIA,
+dynamic labels and embedded Tien-Hó). localization/strings.json keeps the
+Chinese baseline and original offsets; pt-PT.json records the first translation
+pass. Empty translations mark a removed Chinese duplicate of a Portuguese
+quotation. These dictionaries are an audit trail, not a runtime language switch.
+Subsequent editorial changes must be made in the actual TSX/HTML/JS sources.
+Migration scripts localize/prepare-port/finish-port/single-language are one-time
+audit records and MUST NOT be rerun on the Portuguese tree.
+
+Three editorial categories:
+1. Source quotation: retain PDF wording; remove duplicate Chinese rendering.
+   source-quotes.json records 63 source passages, their PDF page indexes and
+   matching status. All 63 passages have text and visual PDF review across
+   37 pages. Eleven corrections restore punctuation/case or mark omissions.
+   PDF p.59 has oiro; p.46 prints E (not É), retained as printed.
+   Editorial omissions use […]; original author ellipses retain ... .
+   This verifies the supplied PDF, not differences between critical editions.
+2. Adaptation / invented dialogue: translated from the existing Chinese game
+   into PT-PT, without presenting new dialogue as Eça's verbatim words.
+   The alternative refusal ending remains explicitly labelled as invented.
+3. Interface: concise action-based labels and PT-PT terminology; glossary.json
+   contains the reference links and terminology. Cover-only language control.
+   The ghost control now reads “É melhor não o ver…” (adaptation, not quotation).
+
+LAYOUT AND TIMING
+Single-language quotations; single-page final book; narrower cover title;
+PT spacing and wrapping; final ghost toggle moved clear of book hotspot and
+hidden while final artifacts are open. No scene IDs/navigation targets changed.
+Final address: lines at 0.7/3.2/5.9 seconds; bell at 12.5; credits at 16.3.
+Credits can pause/resume. Reduced-motion credits retain a readable duration.
+Final lantern cue remains readable through the bridge animation. Other timed
+transitions have not been globally slowed. Most reading still advances by click.
+Current game has no localStorage/sessionStorage save system in the shipped path.
+
+QA
+Final desktop run: qa/desktop/results.json. Installed Google Chrome, visible
+window, 1440x900, real mouse clicks/drags and no preview-stage shortcuts:
+Chinese default / Portuguese cover round-trip, full mainline, both Beijing
+curtains, all four intercut days, return-map controls, Tien-Ho escape and
+mission, reply letter, six return stops, supplication, final artifacts,
+credits pause/resume/restart, then a second formal start and three refusals.
+Passed with no runtime exceptions or HTTP failures. Animated return buttons
+are tested with mouse coordinates and state assertions, not forced clicks.
+Earlier diagnostic failure.json records test-harness failures; results.json
+is the final result. Screenshot timeouts are logged separately from gameplay.
+Additional 27-stage layout previews at 1024x600 and 1280x720 are recorded in
+qa/desktop/size-report.json: no unexpected Han text or resource/runtime errors.
+These previews do not replace the uninterrupted desktop interaction run.
+npm test: seven checks: text coverage, no unintended PT Han text, stable
+navigation/object IDs, visually reviewed quotes, isolated paths/deployment,
+cover selector/ghost wording, and timing.
+npm run typecheck: standalone application's TypeScript check.
+qa/pt-PT/preview-report.json: 27 stage previews at 1440x900, 844x390, 667x375.
+Mobile contexts include touch/coarse pointer. No runtime or HTTP errors.
+Overflow report includes deliberate out-of-button hotspot labels, decorative
+envelope folds, globe arrows and screen-reader-only text; it is a review aid,
+not a claim that every scrollable panel fits into one screen.
+Browser click checks: formal start through documents/doze/market/room/book;
+letter opening/unfolding/three reasons/sealing; final book/testament/address/
+pause/resume/restart. Screenshots are in qa/pt-PT.
+Embedded Tien-Hó also passed real interactions: coin/rice/three lanterns,
+bag grip, letter evidence, escape, wilderness holds and transition back to
+the parent's mission scene. No runtime/HTTP errors in this sequence.
+
+RELEASE GATES STILL OPEN
+All four identity choices (the desktop mainline covers the letter choice);
+real-device Safari and audio listening; editorial proofreading of adapted
+Portuguese. Source quotation proofreading is complete against the supplied
+PDF. First playable working edition, not a
+certified public release. Create the separate remote and enable Pages only
+after these checks; do not attach this directory to the Chinese remote.

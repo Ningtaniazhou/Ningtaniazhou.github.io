@@ -1,0 +1,45 @@
+Chinese / European Portuguese production release — 2026-10-16
+
+PRODUCTION
+Repository: https://github.com/Ningtaniazhou/Ningtaniazhou.github.io
+Chinese default: https://ningtaniazhou.github.io/
+Portuguese: https://ningtaniazhou.github.io/pt/
+The cover-only selector navigates between independent story/style bundles.
+No persisted game state or cross-language progress transfer is introduced.
+The Chinese narrative remains the frozen canonical source plus asset routing,
+cover navigation and the audio safety fix described below.
+Its embedded scene is /zh/tienho-prototype/index.html;
+Portuguese uses /tienho-prototype/index.html. Shared audio/images live at /.
+
+BASELINE / ROLLBACK
+Previous working main: 482a0fc244bd5ac8b98350efe0bf62c424229d70
+Backup tag: stable-zh-before-bilingual-2026-10-16
+Before merging, recheck origin/main. Do not force push.
+If production verification fails, revert the single bilingual release commit
+on top of main and push the revert; wait for the Pages deployment to finish.
+This restores the prior build/workflow without rewriting public history.
+Do not merge unrelated prototype work from the parent Chinese workspace.
+
+CHECKS
+npm ci; npm test; npm run typecheck
+PORT=4190 npm start
+scripts/qa-desktop.mjs: QA_LOCALE=zh or pt, QA_URL for local/live root.
+Browser tests use installed Chrome and PLAYWRIGHT_MODULE / CHROME_PATH.
+Screenshots and reports live in ignored qa/release, not the published assets.
+The Pages workflow fetches history because source regressions compare against
+the baseline commit. Only dist/github-pages is uploaded.
+Full desktop regression exposed a pre-existing intermittent negative audio
+volume during fades: requestAnimationFrame timestamps can precede the fade
+start time. Both parent editions and embedded scenes now clamp progress to
+[0,1]. A deterministic test covers early, middle and late timestamps. No
+narrative, navigation or timing durations were changed for this correction.
+Original migration scripts are historical records; never rerun them on this
+release tree. PORTUGUESE-EDITION.txt records the earlier isolated development
+phase; this file supersedes its independent-repository deployment instructions.
+
+LIMITS
+Chrome desktop and simulated small-window checks do not certify real Safari
+or physical mobile devices. Full desktop path uses the letter identity choice.
+The 63 quotation records retain the completed PDF review, unchanged here.
+Production dependency audit: no known advisories on 2026-10-16. Existing
+development-tool advisories were not auto-fixed during this scoped release.

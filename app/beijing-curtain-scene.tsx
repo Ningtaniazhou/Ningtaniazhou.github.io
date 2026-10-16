@@ -1,4 +1,6 @@
 "use client";
+import { asset } from "./asset-path";
+
 
 import type { CSSProperties, PointerEvent as ReactPointerEvent, ReactNode } from "react";
 import { useCallback, useEffect, useRef, useState } from "react";
@@ -310,11 +312,10 @@ export default function BeijingCurtainScene({
   return (
     <div className={styles.overlay}>
       <section className={styles.copy} aria-live="polite">
-        <p className={`${styles.chapter} chapter-kicker`}>第五幕 · 北京</p>
+        <p className={`${styles.chapter} chapter-kicker`}>Ato V · Pequim</p>
         <h1 className="chapter-title">{title}</h1>
         <div className={styles.copyScroll}>{children}</div>
-        <button className={styles.departButton} type="button" onClick={onDepart}>
-          起轿 <span>→</span>
+        <button className={styles.departButton} type="button" onClick={onDepart}>Partir <span>→</span>
         </button>
       </section>
 
@@ -323,30 +324,30 @@ export default function BeijingCurtainScene({
         className={`${styles.stage} ${isDragging ? styles.dragging : ""} ${isSettling ? styles.settling : ""} ${progress === 1 ? styles.open : ""}`}
         style={sceneStyle}
       >
-        <img className={styles.interior} src="/curtain-prototype-interior-v1.webp" alt="特奥多罗坐在轿厢中" draggable={false} />
+        <img className={styles.interior} src={asset("/curtain-prototype-interior-v1.webp")} alt="Teodoro sentado na liteira" draggable={false} />
         <div className={styles.window}>
-          <img className={styles.exterior} src={exterior} alt={`${title}的轿帘外景`} draggable={false} />
+          <img className={styles.exterior} src={exterior} alt={`${title} — vista para lá da cortina`} draggable={false} />
           <div className={styles.windowHush} aria-hidden="true" />
-          <img className={styles.curtain} src="/curtain-prototype-panel-v1.webp" alt="" draggable={false} aria-hidden="true" />
+          <img className={styles.curtain} src={asset("/curtain-prototype-panel-v1.webp")} alt="" draggable={false} aria-hidden="true" />
           <div className={styles.windowGrain} aria-hidden="true" />
         </div>
-        <img className={styles.dragHand} src="/curtain-prototype-hand-v1.webp" alt="" draggable={false} aria-hidden="true" />
+        <img className={styles.dragHand} src={asset("/curtain-prototype-hand-v1.webp")} alt="" draggable={false} aria-hidden="true" />
         <div
           className={styles.handHandle}
           role="slider"
           tabIndex={0}
-          aria-label="动手拉开轿帘"
+          aria-label="Puxar a cortina"
           aria-valuemin={0}
           aria-valuemax={100}
           aria-valuenow={percent}
-          aria-valuetext={`轿帘已打开 ${percent}%`}
+          aria-valuetext={`Cortina aberta${percent}%`}
           onPointerDown={handlePointerDown}
           onKeyDown={handleKeyDown}
         >
           <span className={styles.handPulse} />
         </div>
         <div className={styles.gestureCaption} aria-hidden="true">
-          <span>{progress === 1 ? "帘外的世界展现在眼前" : "按住手，向左拖动"}</span>
+          <span>{progress === 1 ? "O mundo revela-se para lá da cortina" : "Segura a mão e arrasta para a esquerda"}</span>
           <strong>{String(percent).padStart(2, "0")}%</strong>
           <i><b style={{ width: `${percent}%` }} /></i>
         </div>

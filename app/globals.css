@@ -950,7 +950,7 @@ blockquote {
   display: block;
 }
 
-.bilingual-quote > span[lang="pt"] {
+.bilingual-quote > span[lang="pt-PT"] {
   color: #ead8b4;
 }
 
@@ -1224,7 +1224,7 @@ blockquote {
 .hotspot-index::before {
   grid-column: 1 / -1;
   color: rgba(224, 200, 135, 0.75);
-  content: "眼前的物件";
+  content: "Objetos à vista";
   font: 700 10px Arial, "Noto Sans CJK SC", sans-serif;
   letter-spacing: 0.18em;
 }
@@ -2210,7 +2210,7 @@ blockquote {
   line-height: 1.75;
 }
 
-.official-paper p[lang="pt"] {
+.official-paper p[lang="pt-PT"] {
   font-style: italic;
 }
 
@@ -4249,7 +4249,7 @@ blockquote {
   text-align: center;
 }
 
-.final-book-leaf p[lang="pt"] {
+.final-book-leaf p[lang="pt-PT"] {
   font-style: italic;
 }
 
@@ -6141,7 +6141,7 @@ blockquote {
 
 .letter-fact-panel:last-child { border-right: 0; }
 .letter-fact-panel p { margin: 24px 0 0; font-size: 16px; line-height: 1.85; }
-.letter-fact-panel p[lang="pt"] { color: rgba(43, 33, 23, 0.74); font-style: italic; }
+.letter-fact-panel p[lang="pt-PT"] { color: rgba(43, 33, 23, 0.74); font-style: italic; }
 .unfold-1 .fact-cantao,
 .unfold-1 .fact-kaoli,
 .unfold-2 .fact-kaoli { filter: blur(5px); opacity: 0; pointer-events: none; transform: rotateY(-86deg) scaleX(0.25); }

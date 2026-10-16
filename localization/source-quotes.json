@@ -1,0 +1,806 @@
+{
+  "source": "O Mandarim - Eca de Queiros.pdf",
+  "pageConvention": "PDF page index, 1-based; not printed pagination",
+  "limits": "Final review against the user-supplied PDF, not a critical-edition collation. PDF spelling retained, including E on p.46. Editorial omissions use […]; quotation wrappers and line reflow are presentation, not new wording.",
+  "quotes": [
+    {
+      "id": "OM-0078",
+      "file": "app/page.tsx",
+      "kind": "source-quotation",
+      "quote": "A habitação de Camilloff ficava na Cidade Tártara, nos bairros militares e nobres. Há aqui uma tranquilidade austera.",
+      "pdfPages": [
+        54
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Wording, case, punctuation and omission boundaries checked against the cited PDF pages. Display quotation marks and reflowed line breaks are editorial typography.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0080",
+      "file": "app/page.tsx",
+      "kind": "source-quotation",
+      "quote": "Aqui está o vasto palácio imperial, entre arvoredos misteriosos, com os seus telhados de um amarelo de oiro vivo!",
+      "pdfPages": [
+        59
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Visually checked PDF p. 59: oiro.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0081",
+      "file": "app/page.tsx",
+      "kind": "source-quotation",
+      "quote": "E lá fomos penetrando na Cidade Chinesa, pela porta monstruosa de Tchin-Men. Aqui habita a burguesia, o mercador, a populaça.",
+      "pdfPages": [
+        56
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Wording, case, punctuation and omission boundaries checked against the cited PDF pages. Display quotation marks and reflowed line breaks are editorial typography.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0083",
+      "file": "app/page.tsx",
+      "kind": "source-quotation",
+      "quote": "Uma multidão rumorosa e espessa, onde domina o tom pardo e azulado dos trajes, circula sem cessar; a poeira envolve tudo de uma névoa amarelada; um fedor acre exala-se dos enxurros negros […]",
+      "pdfPages": [
+        57
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Wording, case, punctuation and omission boundaries checked against the cited PDF pages. Display quotation marks and reflowed line breaks are editorial typography.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0101",
+      "file": "app/page.tsx",
+      "kind": "source-quotation",
+      "quote": "tinha tomado o hábito discreto de comprar na Feira da Ladra antigos volumes desirmanados, e à noite, no meu quarto, repastava-me dessas leituras curiosas.",
+      "pdfPages": [
+        8
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Retain source lowercase at the start of this mid-sentence excerpt.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0103",
+      "file": "app/page.tsx",
+      "kind": "source-quotation",
+      "quote": "O tipo venerando, o papel amarelado com picadas de traça, a grave encadernação freirática, a fitinha verde marcando a página — encantavam-me!",
+      "pdfPages": [
+        8
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Wording, case, punctuation and omission boundaries checked against the cited PDF pages. Display quotation marks and reflowed line breaks are editorial typography.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0123",
+      "file": "app/page.tsx",
+      "kind": "source-quotation",
+      "quote": "«No fundo da China existe um mandarim mais rico que todos os reis de que a fábula ou a história contam. Dele nada conheces, nem o nome, nem o semblante, nem a seda de que se veste. Para que tu herdes os seus cabedais infindáveis, basta que toques essa campainha, posta a teu lado, sobre um livro. Ele soltará apenas um suspiro, nesses confins da Mongólia. Será então um cadáver: e tu verás a teus pés mais ouro do que pode sonhar a ambição de um avaro. Tu, que me lês e és um homem mortal, tocarás tu a campainha?»",
+      "pdfPages": [
+        9
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Wording, case, punctuation and omission boundaries checked against the cited PDF pages. Display quotation marks and reflowed line breaks are editorial typography.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0126",
+      "file": "app/page.tsx",
+      "kind": "source-quotation",
+      "quote": "“Vamos, Teodoro, meu amigo, estenda a mão, toque a campainha, seja um forte!”",
+      "pdfPages": [
+        10
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Wording, case, punctuation and omission boundaries checked against the cited PDF pages. Display quotation marks and reflowed line breaks are editorial typography.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0160",
+      "file": "app/page.tsx",
+      "kind": "source-quotation",
+      "quote": "“Agora jaz à beira de um arroio cantante, todo vestido de seda amarela, morto, de pança ao ar, sobre a relva verde: e nos braços frios tem o seu papagaio de papel, que parece tão morto como ele.”",
+      "pdfPages": [
+        17
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Restore colon from PDF p.17.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0184",
+      "file": "app/page.tsx",
+      "kind": "source-quotation",
+      "quote": "Decorreu um mês.",
+      "pdfPages": [
+        19
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Wording, case, punctuation and omission boundaries checked against the cited PDF pages. Display quotation marks and reflowed line breaks are editorial typography.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0187",
+      "file": "app/page.tsx",
+      "kind": "source-quotation",
+      "quote": "O Sr. Teodoro?... O Sr. Teodoro do Ministério do Reino?",
+      "pdfPages": [
+        20
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Wording, case, punctuation and omission boundaries checked against the cited PDF pages. Display quotation marks and reflowed line breaks are editorial typography.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0191",
+      "file": "app/page.tsx",
+      "kind": "source-quotation",
+      "quote": "São cento e seis mil contos, senhor! […] da herança depositada do mandarim Ti Chin-Fu!",
+      "pdfPages": [
+        21
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Wording, case, punctuation and omission boundaries checked against the cited PDF pages. Display quotation marks and reflowed line breaks are editorial typography.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0195",
+      "file": "app/page.tsx",
+      "kind": "source-quotation",
+      "quote": "— Pobre Ti Chin-Fu!... — Morreu? — Estava no seu jardim, sossegado, armando, para o lançar ao ar, um papagaio de papel […]",
+      "pdfPages": [
+        17
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Wording, case, punctuation and omission boundaries checked against the cited PDF pages. Display quotation marks and reflowed line breaks are editorial typography.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0206",
+      "file": "app/page.tsx",
+      "kind": "source-quotation",
+      "quote": "Então começou a minha vida de milionário.",
+      "pdfPages": [
+        29
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Wording, case, punctuation and omission boundaries checked against the cited PDF pages. Display quotation marks and reflowed line breaks are editorial typography.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0210",
+      "file": "app/page.tsx",
+      "kind": "source-quotation",
+      "quote": "ou estirada no limiar da porta, ou atravessada sobre o leito de ouro — lá jazia a figura bojuda, de rabicho negro e túnica amarela, com o seu papagaio nos braços... Era o mandarim Ti Chin-Fu!",
+      "pdfPages": [
+        34
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Wording, case, punctuation and omission boundaries checked against the cited PDF pages. Display quotation marks and reflowed line breaks are editorial typography.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0214",
+      "file": "app/page.tsx",
+      "kind": "source-quotation",
+      "quote": "Partiria para Pequim; descobriria a família de Ti Chin-Fu […]",
+      "pdfPages": [
+        42,
+        43
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Truncated before source semicolon; mark editorial omission.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0216",
+      "file": "app/page.tsx",
+      "kind": "source-quotation",
+      "quote": "Tinha eliminado a criatura, de longe, com uma campainha. […] eu assassinara um velho!",
+      "pdfPages": [
+        35
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Wording, case, punctuation and omission boundaries checked against the cited PDF pages. Display quotation marks and reflowed line breaks are editorial typography.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0223",
+      "file": "app/camilloff-intercut.tsx",
+      "kind": "source-quotation",
+      "quote": "O sonho de Vladimira era habitar Paris; e fazendo ferver delicadamente as folhas de chá, pedia-me histórias ladinas de cocottes […]",
+      "pdfPages": [
+        67
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Source continues with a comma; mark editorial omission.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0227",
+      "file": "app/camilloff-intercut.tsx",
+      "kind": "source-quotation",
+      "quote": "teve de provar primeiro que o desejo de conhecer a morada de um velho mandarim não encobria uma conspiração contra a segurança do Império […]",
+      "pdfPages": [
+        65
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Retain lowercase and mark editorial omission before semicolon.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0229",
+      "file": "app/camilloff-intercut.tsx",
+      "kind": "source-quotation",
+      "quote": "ao lado um arroio fresco ia cantando docemente […] e junto à janela rendilhada […] pousava aberto ao alto um leque formado de lâminas de cristal separadas, que a aragem entrando fazia vibrar, numa modulação melancólica e terna.",
+      "pdfPages": [
+        66
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Retain source lowercase. Existing bracketed omissions are accurate.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0231",
+      "file": "app/camilloff-intercut.tsx",
+      "kind": "source-quotation",
+      "quote": "centenares de escribas empalideceram noite e dia, de pincel na mão, desenhando relatórios sobre papel de arroz […]",
+      "pdfPages": [
+        65
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Retain lowercase; source continues with a semicolon.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0234",
+      "file": "app/camilloff-intercut.tsx",
+      "kind": "source-quotation",
+      "quote": "Eu então, de leque na mão, pisando subtilmente na ponta das babouches de cetim as ruazinhas areadas do jardim, ia entreabrir a porta do Repouso Discreto: — Mimi? E a voz da generala respondia, suave como um beijo: — All right...",
+      "pdfPages": [
+        67
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Wording, case, punctuation and omission boundaries checked against the cited PDF pages. Display quotation marks and reflowed line breaks are editorial typography.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0237",
+      "file": "app/camilloff-intercut.tsx",
+      "kind": "source-quotation",
+      "quote": "Quando Camilloff perguntava pelo resultado, vinha-lhe a resposta satisfatória que se estavam consultando os Livros Santos de Lao-Tsé […]",
+      "pdfPages": [
+        65
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Source continues with a comma; mark editorial omission.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0240",
+      "file": "app/camilloff-intercut.tsx",
+      "kind": "source-quotation",
+      "quote": "Eu arregaçava-lhe a larga manga do casabeque de seda cor de folha morta, e ia fazendo viajar os meus lábios devotos pela pele fresca dos seus belos braços; […]",
+      "pdfPages": [
+        68
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Wording, case, punctuation and omission boundaries checked against the cited PDF pages. Display quotation marks and reflowed line breaks are editorial typography.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0242",
+      "file": "app/camilloff-intercut.tsx",
+      "kind": "source-quotation",
+      "quote": "Descobrira-se enfim que um opulento mandarim, de nome Ti Chin-Fu, vivera outrora nos confins da Mongólia, na vila de Tien-Hó!",
+      "pdfPages": [
+        68,
+        69
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Wording, case, punctuation and omission boundaries checked against the cited PDF pages. Display quotation marks and reflowed line breaks are editorial typography.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0260",
+      "file": "app/page.tsx",
+      "kind": "source-quotation",
+      "quote": "Anelei, suspirei por pisar a terra da China! […] pus a proa ao Oriente.",
+      "pdfPages": [
+        43
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Wording, case, punctuation and omission boundaries checked against the cited PDF pages. Display quotation marks and reflowed line breaks are editorial typography.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0262",
+      "file": "app/camilloff-return-map.tsx",
+      "kind": "source-quotation",
+      "quote": "O meu hóspede sobe até Ni Ku-Hé, na margem do Pei-Hó...",
+      "pdfPages": [
+        70
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Wording, case, punctuation and omission boundaries checked against the cited PDF pages. Display quotation marks and reflowed line breaks are editorial typography.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0264",
+      "file": "app/camilloff-return-map.tsx",
+      "kind": "source-quotation",
+      "quote": "Daí, em barcos chatos, vai a My-Yun. Boa cidade, há lá um Buda vivo...",
+      "pdfPages": [
+        70
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Wording, case, punctuation and omission boundaries checked against the cited PDF pages. Display quotation marks and reflowed line breaks are editorial typography.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0266",
+      "file": "app/camilloff-return-map.tsx",
+      "kind": "source-quotation",
+      "quote": "Daí, a cavalo, segue até à fortaleza de Ché-Hia.",
+      "pdfPages": [
+        70
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Wording, case, punctuation and omission boundaries checked against the cited PDF pages. Display quotation marks and reflowed line breaks are editorial typography.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0268",
+      "file": "app/camilloff-return-map.tsx",
+      "kind": "source-quotation",
+      "quote": "Passa a Grande Muralha, famoso espetáculo!...",
+      "pdfPages": [
+        70
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Wording, case, punctuation and omission boundaries checked against the cited PDF pages. Display quotation marks and reflowed line breaks are editorial typography.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0270",
+      "file": "app/camilloff-return-map.tsx",
+      "kind": "source-quotation",
+      "quote": "Descansa no forte de Ku Pi-Hó. Pode lá caçar a gazela. […]",
+      "pdfPages": [
+        70
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Wording, case, punctuation and omission boundaries checked against the cited PDF pages. Display quotation marks and reflowed line breaks are editorial typography.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0272",
+      "file": "app/camilloff-return-map.tsx",
+      "kind": "source-quotation",
+      "quote": "E com dois dias de caminhada está em Tien-Hó... Brilhante, hem?... Quando quer partir? Amanhã?...",
+      "pdfPages": [
+        70
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Wording, case, punctuation and omission boundaries checked against the cited PDF pages. Display quotation marks and reflowed line breaks are editorial typography.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0280",
+      "file": "app/camilloff-return-map.tsx",
+      "kind": "source-quotation",
+      "quote": "Uma manhã, Camilloff, entrando na Chancelaria, onde eu fumava o cachimbo da amizade de companhia com Meriskoff, atirou o seu enorme sabre para um canapé, e contou-nos radiante as notícias que lhe dera o penetrante príncipe Tong.",
+      "pdfPages": [
+        68
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Wording, case, punctuation and omission boundaries checked against the cited PDF pages. Display quotation marks and reflowed line breaks are editorial typography.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0283",
+      "file": "app/camilloff-return-map.tsx",
+      "kind": "source-quotation",
+      "quote": "Descobrira-se enfim que um opulento mandarim, de nome Ti Chin-Fu, vivera outrora nos confins da Mongólia, na vila de Tien-Hó!",
+      "pdfPages": [
+        68,
+        69
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Wording, case, punctuation and omission boundaries checked against the cited PDF pages. Display quotation marks and reflowed line breaks are editorial typography.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0300",
+      "file": "app/camilloff-return-map.tsx",
+      "kind": "source-quotation",
+      "quote": "Mas já o zeloso Camilloff, de lápis na mão, ia marcando no mapa o meu itinerário para Tien-Hó!",
+      "pdfPages": [
+        70
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Wording, case, punctuation and omission boundaries checked against the cited PDF pages. Display quotation marks and reflowed line breaks are editorial typography.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0453",
+      "file": "app/page.tsx",
+      "kind": "source-quotation",
+      "quote": "Logo, Lisboa, sem hesitar, se rojou aos meus pés. A Madame Marques chamou-me, chorando, «filho do seu coração». Os jornais deram-me os qualificativos que, de antiga tradição, pertencem à Divindade: fui o Omnipotente, fui o Omnisciente! A Aristocracia beijou-me os dedos como a um tirano: e o Clero incensou-me como a um ídolo.",
+      "pdfPages": [
+        98
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Wording, case, punctuation and omission boundaries checked against the cited PDF pages. Display quotation marks and reflowed line breaks are editorial typography.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0482",
+      "file": "app/page.tsx",
+      "kind": "source-quotation",
+      "quote": "Bem, Ti Chin-Fu está contente.",
+      "pdfPages": [
+        92
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Wording, case, punctuation and omission boundaries checked against the cited PDF pages. Display quotation marks and reflowed line breaks are editorial typography.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0492",
+      "file": "app/page.tsx",
+      "kind": "source-quotation",
+      "quote": "Pequim está diante de mim! E uma vasta muralha, monumental e bárbara, de um negro baço, estendendo-se a perder de vista […]",
+      "pdfPages": [
+        46
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Visually checked PDF p. 46: source prints E, not É.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0495",
+      "file": "app/page.tsx",
+      "kind": "source-quotation",
+      "quote": "Uma rica liteira esperava-me à Porta de Tung Tsen-Men, para eu atravessar Pequim até à residência militar de Camilloff.",
+      "pdfPages": [
+        46
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Wording, case, punctuation and omission boundaries checked against the cited PDF pages. Display quotation marks and reflowed line breaks are editorial typography.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0497",
+      "file": "app/page.tsx",
+      "kind": "source-quotation",
+      "quote": "Senti-me triste; subi à liteira, cerrei as cortinas de seda escarlate todas bordadas a ouro; e cercado dos cossacos, eis-me entrando a velha Pequim […]",
+      "pdfPages": [
+        46
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Wording, case, punctuation and omission boundaries checked against the cited PDF pages. Display quotation marks and reflowed line breaks are editorial typography.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0515",
+      "file": "app/page.tsx",
+      "kind": "source-quotation",
+      "quote": "— O meu prezado hóspede sabe o chinês? — perguntou-me de repente, fixando em mim a pupila sagaz. — Sei duas palavras importantes, general: «mandarim» e «chá».",
+      "pdfPages": [
+        48
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Restore lowercase general from PDF p.48.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0518",
+      "file": "app/page.tsx",
+      "kind": "source-quotation",
+      "quote": "Faça uma coisa. Procure a família de Ti Chin-Fu...",
+      "pdfPages": [
+        51
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Wording, case, punctuation and omission boundaries checked against the cited PDF pages. Display quotation marks and reflowed line breaks are editorial typography.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0527",
+      "file": "app/page.tsx",
+      "kind": "source-quotation",
+      "quote": "quando o general saiu com a sua escolta cossaca para o Yamen do príncipe Tong, a informar-se da residência da família Ti Chin-Fu — […]",
+      "pdfPages": [
+        54
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Restore source casing from PDF p.54.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0543",
+      "file": "app/supplication-sequence.tsx",
+      "kind": "source-quotation",
+      "quote": "“Livra-me das minhas riquezas! Ressuscita o Mandarim! Restitui-me a paz da miséria!”",
+      "pdfPages": [
+        99
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Wording, case, punctuation and omission boundaries checked against the cited PDF pages. Display quotation marks and reflowed line breaks are editorial typography.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0544",
+      "file": "app/supplication-sequence.tsx",
+      "kind": "source-quotation",
+      "quote": "Ele passou gravemente o seu guarda-chuva para debaixo do outro braço, e respondeu com bondade:",
+      "pdfPages": [
+        99
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Wording, case, punctuation and omission boundaries checked against the cited PDF pages. Display quotation marks and reflowed line breaks are editorial typography.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0548",
+      "file": "app/supplication-sequence.tsx",
+      "kind": "source-quotation",
+      "quote": "“Não pode ser, meu prezado senhor, não pode ser...”",
+      "pdfPages": [
+        99
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Wording, case, punctuation and omission boundaries checked against the cited PDF pages. Display quotation marks and reflowed line breaks are editorial typography.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0561",
+      "file": "app/page.tsx",
+      "kind": "source-quotation",
+      "quote": "A minha existência era bem equilibrada e suave. Toda a semana, de mangas de lustrina à carteira da minha repartição, ia lançando, numa formosa letra cursiva, sobre o papel «Tojal» do Estado, estas frases fáceis: […]",
+      "pdfPages": [
+        5
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Wording, case, punctuation and omission boundaries checked against the cited PDF pages. Display quotation marks and reflowed line breaks are editorial typography.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0579",
+      "file": "app/page.tsx",
+      "kind": "source-quotation",
+      "quote": "[…] um sino tocava a matinas: […] rolaram-me das pálpebras duas lágrimas mudas.",
+      "pdfPages": [
+        81
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Restore colon from PDF p.81 before bracketed omission.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0581",
+      "file": "app/page.tsx",
+      "kind": "source-quotation",
+      "quote": "O superior lazarista era o excelente padre Giulio. […] com a sua túnica roxa, o rabicho longo, a barba venerável, agitando devagar um enorme leque — […]",
+      "pdfPages": [
+        83
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Wording, case, punctuation and omission boundaries checked against the cited PDF pages. Display quotation marks and reflowed line breaks are editorial typography.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0585",
+      "file": "app/page.tsx",
+      "kind": "source-quotation",
+      "quote": "Eram onze horas quando desci ao meu beliche. As luzes já estavam apagadas: mas a Lua que se erguia ao nível da água, redonda e branca, batia o vidro da cabina com um raio de claridade: e então, a essa meia-tinta pálida, lá vi, estirada sobre a maca, a figura pançuda, vestida de seda amarela, com o seu papagaio nos braços!",
+      "pdfPages": [
+        95
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Wording, case, punctuation and omission boundaries checked against the cited PDF pages. Display quotation marks and reflowed line breaks are editorial typography.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0586",
+      "file": "app/page.tsx",
+      "kind": "source-quotation",
+      "quote": "Era ele, outra vez! E foi ele, perpetuamente!",
+      "pdfPages": [
+        95
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Wording, case, punctuation and omission boundaries checked against the cited PDF pages. Display quotation marks and reflowed line breaks are editorial typography.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0590",
+      "file": "app/page.tsx",
+      "kind": "source-quotation",
+      "quote": "Quando desembarquei em Lisboa, no Cais das Colunas, a sua figura bojuda enchia todo o arco da Rua Augusta; […]",
+      "pdfPages": [
+        96
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Wording, case, punctuation and omission boundaries checked against the cited PDF pages. Display quotation marks and reflowed line breaks are editorial typography.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0592",
+      "file": "app/page.tsx",
+      "kind": "source-quotation",
+      "quote": "Então, certo que não poderia jamais aplacar Ti Chin-Fu, toda essa noite no meu quarto ao Loreto, onde como outrora as velas inumeráveis das serpentinas davam aos damascos tons de sangue fresco, meditei sacudir de mim, como um adorno de pecado, esses milhões sobrenaturais.",
+      "pdfPages": [
+        97
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Wording, case, punctuation and omission boundaries checked against the cited PDF pages. Display quotation marks and reflowed line breaks are editorial typography.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0594",
+      "file": "app/page.tsx",
+      "kind": "source-quotation",
+      "quote": "E assim me libertaria talvez daquela pança e daquele papagaio abominável!",
+      "pdfPages": [
+        97
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Wording, case, punctuation and omission boundaries checked against the cited PDF pages. Display quotation marks and reflowed line breaks are editorial typography.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0596",
+      "file": "app/page.tsx",
+      "kind": "source-quotation",
+      "quote": "Abandonei o palacete ao Loreto, a existência de nababo.",
+      "pdfPages": [
+        97
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Wording, case, punctuation and omission boundaries checked against the cited PDF pages. Display quotation marks and reflowed line breaks are editorial typography.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0602",
+      "file": "app/page.tsx",
+      "kind": "source-quotation",
+      "quote": "todos aqueles que a minha opulência humilhara cobriram-me de ofensas, como se alastra de lixo uma estátua derrubada de príncipe decaído.",
+      "pdfPages": [
+        97
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Wording, case, punctuation and omission boundaries checked against the cited PDF pages. Display quotation marks and reflowed line breaks are editorial typography.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0603",
+      "file": "app/page.tsx",
+      "kind": "source-quotation",
+      "quote": "Então, indignado, um dia subitamente reentrei com estrondo no meu palacete e no meu luxo.",
+      "pdfPages": [
+        98
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Wording, case, punctuation and omission boundaries checked against the cited PDF pages. Display quotation marks and reflowed line breaks are editorial typography.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0632",
+      "file": "app/page.tsx",
+      "kind": "source-quotation",
+      "quote": "Enquanto à viúva e família de Ti Chin-Fu, houve um engano […]",
+      "pdfPages": [
+        89
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Wording, case, punctuation and omission boundaries checked against the cited PDF pages. Display quotation marks and reflowed line breaks are editorial typography.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0633",
+      "file": "app/page.tsx",
+      "kind": "source-quotation",
+      "quote": "É no Sul da China, na província de Cantão.",
+      "pdfPages": [
+        90
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Wording, case, punctuation and omission boundaries checked against the cited PDF pages. Display quotation marks and reflowed line breaks are editorial typography.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0634",
+      "file": "app/page.tsx",
+      "kind": "source-quotation",
+      "quote": "Mas também há uma família Ti Chin-Fu para além da Grande Muralha […]",
+      "pdfPages": [
+        90
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Wording, case, punctuation and omission boundaries checked against the cited PDF pages. Display quotation marks and reflowed line breaks are editorial typography.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0659",
+      "file": "app/page.tsx",
+      "kind": "source-quotation",
+      "quote": "Desde então uma saciedade enervante mantém-me semanas inteiras num sofá, mudo e soturno, pensando na felicidade do não-ser...",
+      "pdfPages": [
+        98
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Wording, case, punctuation and omission boundaries checked against the cited PDF pages. Display quotation marks and reflowed line breaks are editorial typography.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0661",
+      "file": "app/page.tsx",
+      "kind": "source-quotation",
+      "quote": "Uma noite, recolhendo só por uma rua deserta, vi diante de mim o Personagem vestido de preto com o guarda-chuva debaixo do braço, o mesmo que no meu quarto feliz da Travessa da Conceição me fizera, a um ti-li-tim de campainha, herdar tantos milhões detestáveis.",
+      "pdfPages": [
+        98,
+        99
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Wording, case, punctuation and omission boundaries checked against the cited PDF pages. Display quotation marks and reflowed line breaks are editorial typography.",
+      "reviewDate": "2026-10-14"
+    },
+    {
+      "id": "OM-0684",
+      "file": "app/page.tsx",
+      "kind": "source-quotation",
+      "quote": "Só sabe bem o pão que dia a dia ganham as nossas mãos: nunca mates o Mandarim!",
+      "pdfPages": [
+        100
+      ],
+      "verification": "pdf-text-and-visual-reviewed",
+      "editorialNote": "Wording, case, punctuation and omission boundaries checked against the cited PDF pages. Display quotation marks and reflowed line breaks are editorial typography.",
+      "reviewDate": "2026-10-14"
+    }
+  ],
+  "reviewedPdfPages": [
+    5,
+    8,
+    9,
+    10,
+    17,
+    19,
+    20,
+    21,
+    29,
+    34,
+    35,
+    42,
+    43,
+    46,
+    48,
+    51,
+    54,
+    56,
+    57,
+    59,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    81,
+    83,
+    89,
+    90,
+    92,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100
+  ]
+}

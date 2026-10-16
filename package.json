@@ -1,16 +1,17 @@
 {
-  "name": "o-mandarim-interactive",
+  "name": "o-mandarim-pt-pt",
   "version": "0.1.0",
   "private": true,
   "engines": {
     "node": ">=22.13.0"
   },
   "scripts": {
-    "dev": "WRANGLER_LOG_PATH=.wrangler/wrangler.log vinext dev",
-    "build": "WRANGLER_LOG_PATH=.wrangler/wrangler.log vinext build",
+    "dev": "vite --config vite.github-pages.config.ts --host 127.0.0.1",
+    "build": "npm run export:github-pages",
     "export:github-pages": "vite build --config vite.github-pages.config.ts",
-    "start": "WRANGLER_LOG_PATH=.wrangler/wrangler.log vinext start",
-    "test": "npm run build && node --test tests/rendered-html.test.mjs",
+    "start": "node scripts/preview-pt.mjs",
+    "test": "npm run build && node --test tests/pt-PT.test.mjs",
+    "typecheck": "tsc --noEmit -p tsconfig.pages.json",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "db:generate": "drizzle-kit generate"
   },

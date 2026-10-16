@@ -1,8 +1,10 @@
+import { asset } from "./asset-path";
 import type { Metadata, Viewport } from "next";
 import { headers } from "next/headers";
 import "./globals.css";
+import "./pt-PT.css";
 
-const shareDescription = "《满大人》是一部根据葡萄牙作家埃萨·德·凯罗斯同名小说改编的交互叙事游戏。如果你能让一个遥远国度的陌生人立刻死去，并继承他的千万遗产，你会毫不犹豫地杀掉这个素未谋面的人吗？那么，代价又会是什么呢？建议开启声音，并使用横屏或电脑游玩。";
+const shareDescription = "Uma narrativa interativa adaptada de O Mandarim, de Eça de Queirós. Se pudesses matar um desconhecido num país distante e herdar a sua fortuna, tocarias a campainha? E qual seria o preço? Joga com som, num computador ou com o telemóvel na horizontal.";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -17,31 +19,31 @@ export async function generateMetadata(): Promise<Metadata> {
   const origin = `${protocol}://${host}`;
 
   return {
-    title: "《满大人》· 交互叙事",
+    title: "O Mandarim · Narrativa interativa",
     description: shareDescription,
     openGraph: {
-      title: "《满大人》· 交互叙事",
+      title: "O Mandarim · Narrativa interativa",
       description: shareDescription,
       type: "website",
-      locale: "zh_CN",
-      images: [{ url: `${origin}/og.webp`, width: 1728, height: 906, alt: "《满大人》交互叙事游戏封面" }],
+      locale: "pt_PT",
+      images: [{ url: `${origin}${asset("og.webp")}`, width: 1728, height: 906, alt: "Capa da narrativa interativa O Mandarim" }],
     },
     twitter: {
       card: "summary_large_image",
-      title: "《满大人》· 交互叙事",
+      title: "O Mandarim · Narrativa interativa",
       description: shareDescription,
-      images: [`${origin}/og.webp`],
+      images: [`${origin}${asset("og.webp")}`],
     },
     icons: {
-      icon: "/favicon.svg",
-      shortcut: "/favicon.svg",
+      icon: asset("/favicon.svg"),
+      shortcut: asset("/favicon.svg"),
     },
   };
 }
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="zh-CN">
+    <html lang="pt-PT">
       <body>{children}</body>
     </html>
   );

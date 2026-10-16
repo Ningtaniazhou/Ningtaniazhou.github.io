@@ -1,0 +1,19 @@
+.language-switch {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 44px;
+  padding: 8px 14px;
+  border: 1px solid rgba(208, 174, 105, .55);
+  border-radius: 24px;
+  color: #bdb39e;
+  background: rgba(4, 8, 7, .8);
+  font: 14px/1.3 Arial, sans-serif;
+  text-decoration: none;
+  letter-spacing: normal;
+  white-space: nowrap;
+}
+.language-switch .active-language { color: #f3e7cf; font-weight: 700; }
+.language-switch:hover, .language-switch:focus-visible { outline: 2px solid #b89552; outline-offset: 3px; }
+@media (max-width: 720px) { .language-switch { padding: 7px 10px; font-size: 12px; gap: 4px; } }

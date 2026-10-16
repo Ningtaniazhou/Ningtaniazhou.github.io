@@ -16,15 +16,19 @@ concurrency:
 
 jobs:
   build:
+    if: github.repository == 'Ningtaniazhou/Ningtaniazhou.github.io'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Regression tests compare against the frozen Chinese baseline.
       - uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
       - run: npm ci
-      - run: npm run export:github-pages
+      - run: npm test
+      - run: npm run typecheck
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist/github-pages

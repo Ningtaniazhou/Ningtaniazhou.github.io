@@ -195,7 +195,7 @@
   letter-spacing: 0.18em;
 }
 
-.dialogueExcerpt span[lang="pt"] {
+.dialogueExcerpt span[lang="pt-PT"] {
   color: rgba(240, 226, 197, 0.9);
   font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(14px, 1.12vw, 21px);
@@ -204,7 +204,7 @@
   line-height: 1.5;
 }
 
-.dialogueExcerpt span:not([lang="pt"]) {
+.dialogueExcerpt span:not([lang="pt-PT"]) {
   color: rgba(231, 216, 185, 0.74);
   font-size: clamp(13px, 0.96vw, 18px);
   line-height: 1.62;
@@ -544,8 +544,8 @@
   }
 
   .dialogueExcerpt p { gap: 4px; padding: 7px 0 7px 10px; }
-  .dialogueExcerpt span[lang="pt"] { font-size: 12px; line-height: 1.42; }
-  .dialogueExcerpt span:not([lang="pt"]) { font-size: 11px; line-height: 1.48; }
+  .dialogueExcerpt span[lang="pt-PT"] { font-size: 12px; line-height: 1.42; }
+  .dialogueExcerpt span:not([lang="pt-PT"]) { font-size: 11px; line-height: 1.48; }
 
   .sequenceActions {
     padding-bottom: 2px;

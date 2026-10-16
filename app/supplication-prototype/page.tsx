@@ -1,3 +1,4 @@
+import { asset } from "../asset-path";
 /* eslint-disable @next/next/no-html-link-for-pages */
 "use client";
 
@@ -89,56 +90,55 @@ export default function SupplicationPrototypePage() {
 
   return (
     <main className={styles.page}>
-      <section className={`${styles.stage} ${styles[phase]}`} aria-label="特奥多罗乞求魔鬼的独立动画样片">
+      <section className={`${styles.stage} ${styles[phase]}`} aria-label="Estudo de animação: Teodoro suplica ao Diabo">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img className={styles.street} src="/supplication-street-v1.webp" alt="煤气灯照亮的湿石路" />
+        <img className={styles.street} src={asset("/supplication-street-v1.webp")} alt="Calçada molhada à luz do gás" />
         <div className={styles.streetShade} aria-hidden="true" />
         <div className={styles.gasGlow} aria-hidden="true" />
         <header className={styles.header}>
-          <a className={styles.backLink} href="/">← 返回《满大人》</a>
+          <a className={styles.backLink} href={asset("/")}>← Voltar a O Mandarim</a>
           <div className={styles.headerActions}>
-            <button className={styles.soundButton} type="button" onClick={() => setSoundOn((current) => !current)}>
-              声音：{soundOn ? "开" : "关"}
+            <button className={styles.soundButton} type="button" onClick={() => setSoundOn((current) => !current)}>Som: {soundOn ? "ligado" : "desligado"}
             </button>
-            <span>独立动画样片</span>
+            <span>Estudo de animação</span>
           </div>
         </header>
 
         <aside className={styles.storyPanel}>
-          <p className={styles.eyebrow}>第八幕 · 夜路</p>
-          <h1>乞求</h1>
+          <p className={styles.eyebrow}>Ato VIII · A rua à noite</p>
+          <h1>A súplica</h1>
           <div className={styles.dialogueExcerpt}>
             <p>
-              <strong>特奥多罗</strong>
-              <span lang="pt">“Livra-me das minhas riquezas! Ressuscita o Mandarim! Restitui-me a paz da miséria!”</span>
-              <span>“把我从这笔财富中救出来！让满大人复活！把贫穷的安宁还给我！”</span>
+              <strong>Teodoro</strong>
+              <span lang="pt-PT">“Livra-me das minhas riquezas! Ressuscita o Mandarim! Restitui-me a paz da miséria!”</span>
+
             </p>
             <p className={styles.narration}>
-              <span lang="pt">Ele passou gravemente o seu guarda-chuva para debaixo do outro braço, e respondeu com bondade:</span>
-              <span>他庄重地把雨伞移到另一只胳膊下，和善地回答：</span>
+              <span lang="pt-PT">Ele passou gravemente o seu guarda-chuva para debaixo do outro braço, e respondeu com bondade:</span>
+
             </p>
             <p>
-              <strong>魔鬼</strong>
-              <span lang="pt">“Não pode ser, meu prezado senhor, não pode ser...”</span>
-              <span>“不行，我亲爱的先生，不行……”</span>
+              <strong>O Diabo</strong>
+              <span lang="pt-PT">“Não pode ser, meu prezado senhor, não pode ser...”</span>
+
             </p>
           </div>
           <button className={styles.begButton} type="button" onClick={beginSupplication} disabled={busy}>
-            {phase === "aftermath" ? "再看一次" : busy ? "……" : "乞求"}
+            {phase === "aftermath" ? "Rever" : busy ? "……" : "A súplica"}
             {!busy && <span>→</span>}
           </button>
         </aside>
 
-        <figure className={styles.devil} aria-label="魔鬼站在煤气灯下">
+        <figure className={styles.devil} aria-label="O Diabo sob o candeeiro de gás">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/devil-standing-v1.webp" alt="身穿黑衣、戴高礼帽并夹着雨伞的魔鬼" />
+          <img src={asset("/devil-standing-v1.webp")} alt="O Diabo de preto, com chapéu alto e guarda-chuva debaixo do braço" />
         </figure>
 
         <figure className={`${styles.teodoro} ${styles[`teodoro${visibleTeodoro[0].toUpperCase()}${visibleTeodoro.slice(1)}`]}`} aria-live="off">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src={visibleTeodoro === "running" ? "/teodoro-run-v1.webp" : visibleTeodoro === "kneeling" || visibleTeodoro === "vanishing" ? "/teodoro-kneel-v1.webp" : "/teodoro-fallen-v1.webp"}
-            alt={visibleTeodoro === "running" ? "特奥多罗冲向魔鬼" : visibleTeodoro === "kneeling" || visibleTeodoro === "vanishing" ? "特奥多罗跪地伸手试图抱住魔鬼的小腿" : "特奥多罗失去支撑后扑倒在湿石路上"}
+            src={visibleTeodoro === "running" ? asset("/teodoro-run-v1.webp") : visibleTeodoro === "kneeling" || visibleTeodoro === "vanishing" ? asset("/teodoro-kneel-v1.webp") : asset("/teodoro-fallen-v1.webp")}
+            alt={visibleTeodoro === "running" ? "Teodoro corre para o Diabo" : visibleTeodoro === "kneeling" || visibleTeodoro === "vanishing" ? "Teodoro ajoelha-se e tenta abraçar as pernas do Diabo" : "Sem apoio, Teodoro cai na calçada molhada"}
           />
         </figure>
       </section>

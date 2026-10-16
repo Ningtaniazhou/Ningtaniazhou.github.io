@@ -1,0 +1,24 @@
+{
+  "locale": "pt-PT",
+  "register": "Direct, natural European Portuguese; singular tu in instructions.",
+  "references": [
+    "https://www.playstation.com/pt-pt/games/god-of-war-ragnarok/accessibility/",
+    "https://www.playstation.com/pt-pt/games/the-last-of-us-part-ii/accessibility/",
+    "https://www.playstation.com/pt-pt/support/hardware/ps5-accessibility-settings/"
+  ],
+  "terms": {
+    "settings": "Definições",
+    "enable": "Ativar",
+    "disable": "Desativar",
+    "press-and-hold": "Manter premido",
+    "phone": "Telemóvel",
+    "screen": "Ecrã",
+    "start": "Começar",
+    "restart": "Recomeçar",
+    "back": "Voltar",
+    "continue": "Continuar",
+    "close": "Fechar",
+    "retry": "Tentar novamente"
+  },
+  "policy": "Terms are informed by these PT-PT references, not copied wholesale. Button wording follows its actual action, not literal Chinese length. Literary quotations retain source spelling."
+}

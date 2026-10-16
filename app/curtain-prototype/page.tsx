@@ -1,3 +1,4 @@
+import { asset } from "../asset-path";
 /* eslint-disable @next/next/no-html-link-for-pages */
 "use client";
 
@@ -335,22 +336,22 @@ export default function CurtainPrototypePage() {
       >
         <img
           className={styles.interior}
-          src="/curtain-prototype-interior-v1.webp"
-          alt="特奥多罗坐在织金轿厢中"
+          src={asset("/curtain-prototype-interior-v1.webp")}
+          alt="Teodoro sentado numa liteira de brocado dourado"
           draggable={false}
         />
 
         <div className={styles.window} aria-hidden="true">
           <img
             className={styles.exterior}
-            src="/pequim-arrival-v1.webp"
+            src={asset("/pequim-arrival-v1.webp")}
             alt=""
             draggable={false}
           />
           <div className={styles.windowHush} />
           <img
             className={styles.curtain}
-            src="/curtain-prototype-panel-v1.webp"
+            src={asset("/curtain-prototype-panel-v1.webp")}
             alt=""
             draggable={false}
           />
@@ -359,7 +360,7 @@ export default function CurtainPrototypePage() {
 
         <img
           className={styles.dragHand}
-          src="/curtain-prototype-hand-v1.webp"
+          src={asset("/curtain-prototype-hand-v1.webp")}
           alt=""
           draggable={false}
           aria-hidden="true"
@@ -369,11 +370,11 @@ export default function CurtainPrototypePage() {
           className={styles.handHandle}
           role="slider"
           tabIndex={0}
-          aria-label="拖动手拉开轿帘"
+          aria-label="Arrasta a mão para abrir a cortina"
           aria-valuemin={0}
           aria-valuemax={100}
           aria-valuenow={percent}
-          aria-valuetext={`轿帘已打开 ${percent}%`}
+          aria-valuetext={`Cortina aberta${percent}%`}
           onPointerDown={handlePointerDown}
           onKeyDown={handleKeyDown}
         >
@@ -381,23 +382,22 @@ export default function CurtainPrototypePage() {
         </div>
 
         <header className={styles.header}>
-          <a className={styles.backLink} href="/">
-            《满大人》
+          <a className={styles.backLink} href={asset("/")}>O Mandarim
           </a>
           <div className={styles.headerActions}>
             <button className={styles.soundButton} type="button" onClick={toggleSound}>
-              {soundOn ? "声音：开" : "声音：关"}
+              {soundOn ? "Som: ligado" : "Som: desligado"}
             </button>
           </div>
         </header>
 
         <section className={styles.intro} aria-live="polite">
-          <p className={styles.chapter}>第五幕 · 北京</p>
-          <h1>轿中北京</h1>
+          <p className={styles.chapter}>Ato V · Pequim</p>
+          <h1>Pequim de liteira</h1>
           <p className={styles.instruction}>
             {progress === 1
-              ? "宫墙、车轮与人群的声浪涌入轿中。"
-              : "按住手，向左拖动轿帘。"}
+              ? "Muralhas, rodas e vozes da multidão invadem a liteira."
+              : "Segura a mão e arrasta a cortina para a esquerda."}
           </p>
           <div className={styles.progressRail} aria-hidden="true">
             <span className={styles.progressFill} style={{ width: `${percent}%` }} />
@@ -406,19 +406,18 @@ export default function CurtainPrototypePage() {
         </section>
 
         <aside className={styles.soundMeter} aria-hidden="true">
-          <span>轿帘</span>
+          <span>Cortina</span>
           <strong>{String(percent).padStart(2, "0")}%</strong>
           <div className={styles.soundLines}>
             <i style={{ transform: `scaleX(${0.08 + progress * 0.92})` }} />
             <i style={{ transform: `scaleX(${Math.pow(progress, 1.15)})` }} />
             <i style={{ transform: `scaleX(${Math.pow(progress, 1.35)})` }} />
           </div>
-          <small>街声 · 马蹄 · 人群</small>
+          <small>Rua · Cascos · Multidão</small>
         </aside>
 
         {progress === 1 ? (
-          <button className={styles.closeButton} type="button" onClick={() => settleTo(0)}>
-            合上轿帘
+          <button className={styles.closeButton} type="button" onClick={() => settleTo(0)}>Fechar a cortina
           </button>
         ) : null}
 

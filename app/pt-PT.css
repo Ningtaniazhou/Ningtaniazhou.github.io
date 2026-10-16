@@ -1,0 +1,32 @@
+/* This standalone edition uses Latin typography; no language-switching runtime. */
+html:lang(pt-PT) { hyphens: auto; }
+html:lang(pt-PT) :is(button, .chapter-kicker, .chapter-subtitle, .scene-card p, .source-inline, .last-words) {
+  letter-spacing: normal;
+}
+html:lang(pt-PT) :is(.primary-action, .secondary-action, .final-book-action) {
+  white-space: normal;
+  line-height: 1.35;
+  min-height: 44px;
+}
+html:lang(pt-PT) :is(.scene-card h1, .scene-card h2, .chapter-title) {
+  overflow-wrap: break-word;
+}
+html:lang(pt-PT) .bilingual-quote > span[lang="pt-PT"] { color: #ead8b4; }
+html:lang(pt-PT) .final-book-page {
+  grid-template-columns: minmax(0, 1fr);
+  width: min(640px, 90vw);
+  min-height: min(420px, 64svh);
+  background: linear-gradient(105deg, #dbc79f, #f0e2c5 48%, #d5bc8d);
+}
+html:lang(pt-PT) .final-book-leaf p { line-height: 1.65; hyphens: none; }
+html:lang(pt-PT) .stage-intro .scene-card h1 { font-size: clamp(38px, 5.5vw, 80px); }
+html:lang(pt-PT) .room-letter-hotspot span { white-space: normal; width: 160px; }
+/* Keep the corpse control away from the two clickable final artifacts. */
+html:lang(pt-PT) .stage-testament .corpse-toggle { top: 110px; right: 24px; bottom: auto; left: auto; }
+html:lang(pt-PT) .stage-testament:has(.artifact-overlay) .corpse-toggle { display: none; }
+@media (max-height: 500px) and (orientation: landscape) {
+  html:lang(pt-PT) .wordmark span { display: none; }
+  html:lang(pt-PT) .final-book-page { padding: 16px 28px; }
+  html:lang(pt-PT) .final-book-leaf { padding: 12px; }
+  html:lang(pt-PT) .final-book-leaf p { font-size: 18px; }
+}

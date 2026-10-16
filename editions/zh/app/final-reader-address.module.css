@@ -1,0 +1,284 @@
+.finale {
+  position: fixed;
+  z-index: 240;
+  inset: 0;
+  overflow: hidden;
+  background: #030504;
+  color: #f1e7d1;
+  font-family: Georgia, "Noto Serif CJK SC", "Songti SC", serif;
+}
+
+.finale::after {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background: #000;
+  content: "";
+  opacity: 0;
+  pointer-events: none;
+}
+
+.portrait,
+.vignette {
+  position: absolute;
+  inset: 0;
+}
+
+.portrait {
+  background: #050605 url("/teodoro-final-address-v1.webp") center center / cover no-repeat;
+  filter: saturate(0.82) brightness(0.82) contrast(1.08);
+  transform: scale(1.015);
+  transition: filter 2.4s ease, transform 9s ease;
+}
+
+.vignette {
+  background:
+    linear-gradient(90deg, rgba(3, 5, 4, 0.93) 0%, rgba(3, 5, 4, 0.62) 31%, transparent 58%),
+    radial-gradient(circle at 64% 42%, transparent 12%, rgba(0, 0, 0, 0.2) 58%, rgba(0, 0, 0, 0.68) 100%);
+  pointer-events: none;
+}
+
+.address {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: clamp(36px, 7vw, 128px);
+  width: min(510px, 39vw);
+  transform: translateY(-50%);
+}
+
+.address p {
+  margin: 0 0 28px;
+  opacity: 0;
+  color: rgba(242, 230, 205, 0.18);
+  font-size: clamp(24px, 2.3vw, 42px);
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.9);
+  transform: translateY(10px);
+  transition: opacity 1.15s ease, color 1.15s ease, transform 1.15s ease;
+}
+
+.address p:last-child {
+  margin-top: 48px;
+  color: rgba(211, 177, 107, 0.16);
+}
+
+.address p.visible {
+  opacity: 1;
+  color: #f3e7cf;
+  transform: translateY(0);
+}
+
+.address p:last-child.visible {
+  color: #d4b06d;
+}
+
+.phaseRing .portrait {
+  animation: bellMoment 3.6s cubic-bezier(0.22, 0.72, 0.24, 1) both;
+}
+
+.phaseRing .address {
+  animation: wordsVanish 1s ease both;
+}
+
+.phaseRing::after {
+  animation: slowBlackout 3.6s ease-in-out both;
+}
+
+.phaseCredits .portrait {
+  filter: saturate(0.5) brightness(0.34) contrast(1.12);
+  transform: scale(1.045);
+}
+
+.phaseCredits .vignette {
+  background: rgba(0, 0, 0, 0.28);
+}
+
+.phaseCredits::after {
+  opacity: 0.54;
+}
+
+.restart {
+  position: absolute;
+  z-index: 5;
+  top: 28px;
+  right: 32px;
+  padding: 12px 18px;
+  border: 1px solid rgba(208, 174, 105, 0.62);
+  background: rgba(4, 8, 7, 0.72);
+  color: #eadcbe;
+  font: 600 14px/1.2 Arial, "Noto Sans CJK SC", sans-serif;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: border-color 180ms ease, background 180ms ease, color 180ms ease;
+}
+
+.restart:hover,
+.restart:focus-visible {
+  border-color: #d4b06d;
+  background: rgba(38, 29, 16, 0.9);
+  color: #fff4dc;
+}
+
+.creditsRoll {
+  position: absolute;
+  z-index: 3;
+  top: 88%;
+  left: 50%;
+  width: min(850px, 78vw);
+  padding: 12vh 5vw 25vh;
+  text-align: center;
+  animation: creditsScroll 62s 0.6s linear forwards;
+}
+
+.creditsKicker {
+  margin: 0 0 28px;
+  color: #c84d3c;
+  font: 700 13px/1.4 Arial, "Noto Sans CJK SC", sans-serif;
+  letter-spacing: 0.24em;
+}
+
+.about {
+  margin: 0 auto;
+  color: rgba(239, 228, 205, 0.82);
+  font-size: clamp(17px, 1.45vw, 23px);
+  line-height: 2;
+  text-align: left;
+}
+
+.about + .about {
+  margin-top: 2em;
+}
+
+.creator {
+  margin: 2em 0 0;
+  color: rgba(239, 228, 205, 0.82);
+  font: inherit;
+  font-size: clamp(17px, 1.45vw, 23px);
+  line-height: 2;
+  text-align: left;
+}
+
+.divider {
+  width: 72px;
+  height: 1px;
+  margin: 64px auto;
+  background: rgba(201, 166, 97, 0.58);
+}
+
+.creditsRoll h3 {
+  margin: 0 0 30px;
+  color: #c84d3c;
+  font: 700 15px/1.4 Arial, "Noto Sans CJK SC", sans-serif;
+  letter-spacing: 0.2em;
+}
+
+.musicCredits {
+  display: grid;
+  gap: 17px;
+}
+
+.musicCredits a {
+  color: rgba(231, 218, 190, 0.72);
+  font: 14px/1.5 Arial, "Noto Sans CJK SC", sans-serif;
+  text-decoration: none;
+}
+
+.endMark {
+  margin: 110px 0 0;
+  color: #d4b06d;
+  font-size: 34px;
+  letter-spacing: 0.5em;
+  text-indent: 0.5em;
+}
+
+@keyframes bellMoment {
+  0% { filter: saturate(0.82) brightness(0.82) contrast(1.08); transform: scale(1.015); }
+  7% { filter: saturate(0.95) brightness(0.98) contrast(1.06); transform: scale(1.02) rotate(-0.12deg); }
+  18% { filter: saturate(0.82) brightness(0.76) contrast(1.1); transform: scale(1.021) rotate(0.1deg); }
+  100% { filter: saturate(0.5) brightness(0.3) contrast(1.12); transform: scale(1.04); }
+}
+
+@keyframes slowBlackout {
+  from { opacity: 0; }
+  to { opacity: 0.54; }
+}
+
+@keyframes wordsVanish {
+  to { opacity: 0; filter: blur(5px); transform: translateY(-50%) scale(0.985); }
+}
+
+@keyframes creditsScroll {
+  from { transform: translate(-50%, 0); }
+  to { transform: translate(-50%, calc(-100% - 112vh)); }
+}
+
+@media (max-width: 720px) {
+  .restart {
+    top: 18px;
+    right: 18px;
+    padding: 10px 13px;
+    font-size: 12px;
+  }
+
+  .portrait {
+    background-position: 61% center;
+  }
+
+  .vignette {
+    background: linear-gradient(0deg, rgba(3, 5, 4, 0.96) 0%, rgba(3, 5, 4, 0.7) 52%, transparent 82%);
+  }
+
+  .address {
+    top: auto;
+    bottom: 8vh;
+    left: 24px;
+    width: calc(100% - 48px);
+    transform: none;
+  }
+
+  .address p {
+    margin-bottom: 14px;
+    font-size: clamp(21px, 6vw, 29px);
+  }
+
+  .address p:last-child {
+    margin-top: 24px;
+  }
+
+  .phaseRing .address {
+    animation-name: wordsVanishMobile;
+  }
+
+  .creditsRoll {
+    width: 88vw;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .about {
+    font-size: 16px;
+    line-height: 1.85;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .portrait,
+  .address p {
+    transition-duration: 0.01ms;
+  }
+
+  .phaseRing .portrait,
+  .phaseRing .address {
+    animation-duration: 0.01ms;
+  }
+
+  .creditsRoll {
+    animation-duration: 82s;
+  }
+}
+
+@keyframes wordsVanishMobile {
+  to { opacity: 0; filter: blur(5px); transform: scale(0.985); }
+}

@@ -1,0 +1,665 @@
+.page {
+  display: grid;
+  min-height: 100svh;
+  overflow: hidden;
+  place-items: center;
+  background: #010303;
+  color: #f0e4ca;
+}
+
+.integratedPage {
+  position: fixed;
+  z-index: 18;
+  inset: 74px 0 0;
+  display: grid;
+  overflow: hidden;
+  place-items: center;
+  background: #010303;
+}
+
+.integratedStage {
+  max-height: calc(100svh - 74px);
+}
+
+.integratedPanel {
+  top: 12%;
+}
+
+.stage {
+  position: relative;
+  width: min(100vw, calc(100svh * 16 / 9));
+  max-height: 100svh;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  isolation: isolate;
+  background: #030505;
+  box-shadow: 0 0 90px rgba(0, 0, 0, 0.78);
+}
+
+.street,
+.streetShade,
+.gasGlow {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.street {
+  z-index: 0;
+  object-fit: cover;
+  filter: brightness(0.84) saturate(0.78) contrast(1.07);
+  transition: filter 1.4s ease;
+}
+
+.waiting .teodoro {
+  opacity: 0;
+}
+
+.streetShade {
+  z-index: 1;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, rgba(1, 4, 4, 0.46) 0 34%, transparent 58%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.22), transparent 23% 73%, rgba(0, 0, 0, 0.6));
+  transition: background 1.4s ease;
+}
+
+.gasGlow {
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0.3;
+  mix-blend-mode: screen;
+  background:
+    radial-gradient(circle at 56.8% 18%, rgba(234, 175, 90, 0.3), transparent 12%),
+    radial-gradient(circle at 91.2% 18%, rgba(237, 181, 92, 0.23), transparent 13%);
+  animation: lampFlicker 4.5s ease-in-out infinite;
+  transition: opacity 1.5s ease;
+}
+
+/* Keep the globally positioned corpse and its toggle in one bounded layer.
+   Their own z-index values can no longer rise above the animated characters. */
+.corpseLayer {
+  position: absolute;
+  z-index: 4;
+  inset: 0;
+  pointer-events: none;
+}
+
+.corpseLayer :global(.ti-figure),
+.corpseLayer :global(.corpse-toggle) {
+  z-index: 1;
+}
+
+.corpseLayer :global(.ti-figure),
+.corpseLayer :global(.corpse-toggle) {
+  pointer-events: auto;
+}
+
+.header {
+  position: absolute;
+  z-index: 30;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: clamp(52px, 5.8vw, 76px);
+  padding: 0 clamp(22px, 3vw, 52px);
+  border-bottom: 1px solid rgba(226, 202, 157, 0.13);
+  background: linear-gradient(180deg, rgba(1, 4, 4, 0.88), rgba(1, 4, 4, 0.12));
+}
+
+.backLink {
+  color: #e6d6b5;
+  font-size: clamp(11px, 0.9vw, 15px);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-decoration: none;
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: rgba(221, 199, 156, 0.56);
+  font: 700 clamp(9px, 0.7vw, 11px) Arial, "Noto Sans CJK SC", sans-serif;
+  letter-spacing: 0.14em;
+}
+
+.soundButton,
+.headerActions > span {
+  padding: 8px 13px;
+  border: 1px solid rgba(191, 151, 80, 0.42);
+  border-radius: 999px;
+  background: rgba(3, 8, 8, 0.58);
+  color: #d7bf91;
+  font: inherit;
+}
+
+.soundButton {
+  cursor: pointer;
+}
+
+.storyPanel {
+  position: absolute;
+  z-index: 20;
+  top: 17%;
+  left: 5.2%;
+  width: min(34%, 570px);
+  padding: clamp(18px, 2.4vw, 38px);
+  border-left: 2px solid rgba(191, 147, 75, 0.72);
+  background: linear-gradient(90deg, rgba(3, 8, 8, 0.86), rgba(3, 8, 8, 0.55));
+  box-shadow: 20px 22px 58px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(7px);
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  color: var(--chapter-kicker-color, #d05242);
+  font: 700 clamp(9px, 0.78vw, 12px) Arial, "Noto Sans CJK SC", sans-serif;
+  letter-spacing: 0.25em;
+}
+
+.storyPanel h1 {
+  margin: 0 0 14px;
+  color: var(--chapter-title-color, #f3ead7);
+  font-family: var(--chapter-title-font, Georgia, "Songti SC", serif);
+  font-size: var(--chapter-title-size, clamp(42px, 6vw, 92px));
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.08em;
+}
+
+.dialogueExcerpt {
+  display: grid;
+  gap: 13px;
+  max-height: min(54svh, 520px);
+  overflow: auto;
+  padding-right: 8px;
+  scrollbar-color: rgba(191, 147, 75, 0.52) transparent;
+}
+
+.dialogueExcerpt p {
+  display: grid;
+  gap: 7px;
+  margin: 0;
+  padding: 11px 0 11px 15px;
+  border-left: 1px solid rgba(191, 147, 75, 0.46);
+}
+
+.dialogueExcerpt strong {
+  color: #d05242;
+  font: 700 clamp(11px, 0.82vw, 14px) Arial, "Noto Sans CJK SC", sans-serif;
+  letter-spacing: 0.18em;
+}
+
+.dialogueExcerpt span[lang="pt"] {
+  color: rgba(240, 226, 197, 0.9);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(14px, 1.12vw, 21px);
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.dialogueExcerpt span:not([lang="pt"]) {
+  color: rgba(231, 216, 185, 0.74);
+  font-size: clamp(13px, 0.96vw, 18px);
+  line-height: 1.62;
+}
+
+.dialogueExcerpt .narration {
+  border-left-color: rgba(191, 147, 75, 0.2);
+  background: rgba(3, 8, 8, 0.22);
+}
+
+.storyPanel blockquote {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 15px 0 15px 18px;
+  border-left: 1px solid rgba(191, 147, 75, 0.5);
+  color: rgba(240, 226, 197, 0.88);
+}
+
+.storyPanel blockquote span:first-child {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(13px, 1.18vw, 20px);
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1.55;
+}
+
+.storyPanel blockquote span:last-child {
+  color: rgba(231, 216, 185, 0.72);
+  font-size: clamp(12px, 0.98vw, 17px);
+  line-height: 1.6;
+}
+
+.status {
+  min-height: 1.7em;
+  margin: 12px 0 12px;
+  color: rgba(230, 217, 188, 0.72);
+  font-size: clamp(12px, 1vw, 17px);
+  line-height: 1.72;
+}
+
+.sequenceActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.begButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: min(100%, 180px);
+  padding: clamp(14px, 1.2vw, 20px) clamp(18px, 1.6vw, 26px);
+  border: 1px solid rgba(188, 145, 73, 0.72);
+  background: rgba(5, 10, 10, 0.72);
+  color: #f0dfbc;
+  cursor: pointer;
+  font: 600 clamp(15px, 1.3vw, 21px) "Songti SC", "Noto Serif CJK SC", serif;
+  letter-spacing: 0.13em;
+  transition: border-color 0.25s ease, background 0.25s ease, opacity 0.25s ease;
+}
+
+.begButton:hover:not(:disabled),
+.begButton:focus-visible:not(:disabled) {
+  border-color: #e0b45f;
+  background: rgba(70, 21, 16, 0.75);
+}
+
+.begButton:disabled {
+  cursor: wait;
+  opacity: 0.62;
+}
+
+.devil,
+.teodoro {
+  position: absolute;
+  z-index: 9;
+  margin: 0;
+  pointer-events: none;
+  filter: drop-shadow(8px 19px 22px rgba(0, 0, 0, 0.72));
+}
+
+.devil {
+  z-index: 13;
+  right: 11.5%;
+  bottom: 4.8%;
+  height: 74%;
+  opacity: 1;
+  transform: translateZ(0);
+  transition: opacity 1.42s ease, filter 1.42s ease, transform 1.42s ease;
+}
+
+/* A replay must explicitly clear the terminal blur/fade state. */
+.running .devil,
+.kneeling .devil {
+  opacity: 1;
+  filter: drop-shadow(8px 19px 22px rgba(0, 0, 0, 0.72));
+  transform: translateZ(0);
+}
+
+.devil img,
+.teodoro img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.teodoroRunning {
+  z-index: 11;
+  bottom: 5.1%;
+  left: 35%;
+  width: auto;
+  height: 72%;
+  aspect-ratio: 608 / 611;
+  opacity: 0.95;
+  transform: translateX(-16%);
+}
+
+.running .teodoroRunning {
+  animation: runToDevil 1.1s cubic-bezier(0.22, 0.72, 0.32, 1) forwards;
+}
+
+.teodoroKneeling,
+.teodoroVanishing {
+  z-index: 12;
+  bottom: 3.8%;
+  left: 53.2%;
+  width: auto;
+  height: 49.2%;
+  aspect-ratio: 525 / 418;
+  opacity: 1;
+  animation: kneelIn 0.48s cubic-bezier(0.2, 0.78, 0.32, 1) both;
+}
+
+.teodoroFalling,
+.teodoroAftermath {
+  z-index: 12;
+  bottom: 3.7%;
+  left: 53.6%;
+  width: auto;
+  height: 21.3%;
+  aspect-ratio: 622 / 181;
+  opacity: 1;
+  transform-origin: 15% 75%;
+  animation: fallForward 0.78s cubic-bezier(0.22, 0.7, 0.28, 1) both;
+}
+
+.vanishing .devil,
+.falling .devil,
+.aftermath .devil {
+  opacity: 0;
+  filter: blur(9px) drop-shadow(0 0 30px rgba(92, 74, 56, 0.1));
+  transform: translateY(-1.5%) scale(1.012);
+}
+
+.falling .street,
+.aftermath .street {
+  filter: brightness(0.56) saturate(0.62) contrast(1.11);
+}
+
+.falling .streetShade,
+.aftermath .streetShade {
+  background:
+    linear-gradient(90deg, rgba(1, 4, 4, 0.58) 0 34%, transparent 58%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.34), transparent 22% 66%, rgba(0, 0, 0, 0.74));
+}
+
+.falling .gasGlow,
+.aftermath .gasGlow {
+  opacity: 0.08;
+}
+
+@keyframes runToDevil {
+  0% { transform: translateX(-16%) translateY(0) rotate(-1deg); }
+  18% { transform: translateX(-8%) translateY(-1.2%) rotate(0.5deg); }
+  39% { transform: translateX(1%) translateY(0.8%) rotate(-0.5deg); }
+  62% { transform: translateX(9%) translateY(-0.9%) rotate(0.5deg); }
+  82% { transform: translateX(16%) translateY(0.5%) rotate(-0.3deg); }
+  100% { transform: translateX(20%) translateY(0) rotate(0); }
+}
+
+@keyframes kneelIn {
+  from { opacity: 0; transform: translateX(-7%) translateY(-4%) scale(1.04); }
+  to { opacity: 1; transform: translateX(0) translateY(0) scale(1); }
+}
+
+@keyframes fallForward {
+  0% { opacity: 0; transform: translateX(-5%) translateY(-19%) rotate(-5deg) scale(0.92); }
+  24% { opacity: 1; }
+  76% { transform: translateX(1%) translateY(2%) rotate(1.2deg) scale(1.01); }
+  100% { opacity: 1; transform: translateX(0) translateY(0) rotate(0) scale(1); }
+}
+
+@keyframes lampFlicker {
+  0%, 100% { opacity: 0.24; }
+  36% { opacity: 0.34; }
+  43% { opacity: 0.2; }
+  49% { opacity: 0.3; }
+  76% { opacity: 0.25; }
+}
+
+@media (max-aspect-ratio: 4 / 3) {
+  .stage {
+    width: 100vw;
+    height: 100svh;
+    aspect-ratio: auto;
+  }
+
+  .street {
+    object-position: 65% center;
+  }
+
+  .storyPanel {
+    top: 11%;
+    left: 4%;
+    width: 44%;
+    padding: 18px;
+  }
+
+  .storyPanel h1 {
+    font-size: clamp(38px, 8vw, 68px);
+  }
+
+  .devil {
+    right: 4%;
+    height: 68%;
+  }
+
+  .teodoroRunning {
+    left: 33%;
+    width: auto;
+    height: 66%;
+  }
+
+  .teodoroKneeling,
+  .teodoroVanishing {
+    left: 49%;
+    width: auto;
+    height: 45.1%;
+  }
+
+  .teodoroFalling,
+  .teodoroAftermath {
+    left: 47%;
+    width: auto;
+    height: 19.5%;
+  }
+}
+
+@media (max-width: 720px) {
+  .headerActions > span {
+    display: none;
+  }
+
+  .storyPanel {
+    top: 9%;
+    left: 4%;
+    width: 48%;
+  }
+
+  .storyPanel blockquote span:first-child {
+    display: none;
+  }
+
+  .status {
+    min-height: 4.6em;
+  }
+
+  .dialogueExcerpt {
+    max-height: 48svh;
+  }
+}
+
+@media (max-width: 1280px) {
+  .headerActions > span {
+    display: none;
+  }
+}
+
+@media (hover: none), (pointer: coarse) {
+  .begButton {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .begButton:hover:not(:disabled) {
+    border-color: rgba(188, 145, 73, 0.72);
+    background: rgba(5, 10, 10, 0.72);
+  }
+}
+
+@media (orientation: landscape) and (max-height: 540px) and (hover: none) and (pointer: coarse) {
+  .integratedPage {
+    inset: 54px 0 0;
+    display: block;
+  }
+
+  .integratedStage {
+    width: 100vw;
+    height: calc(100svh - 54px);
+    max-height: none;
+    aspect-ratio: auto;
+  }
+
+  .street {
+    object-position: 62% center;
+  }
+
+  .storyPanel,
+  .integratedPanel {
+    top: 12px;
+    bottom: 12px;
+    left: 18px;
+    display: flex;
+    width: 45vw;
+    max-height: none;
+    padding: 13px 15px;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+
+  .storyPanel h1 {
+    margin-bottom: 9px;
+    font-size: clamp(34px, 6vw, 48px);
+  }
+
+  .eyebrow { margin-bottom: 5px; }
+
+  .dialogueExcerpt {
+    gap: 7px;
+    max-height: none;
+    overflow: visible;
+    padding-right: 2px;
+  }
+
+  .dialogueExcerpt p { gap: 4px; padding: 7px 0 7px 10px; }
+  .dialogueExcerpt span[lang="pt"] { font-size: 12px; line-height: 1.42; }
+  .dialogueExcerpt span:not([lang="pt"]) { font-size: 11px; line-height: 1.48; }
+
+  .sequenceActions {
+    padding-bottom: 2px;
+    flex-wrap: nowrap;
+  }
+
+  .begButton {
+    min-height: 42px;
+    margin-top: 9px;
+    padding: 9px 12px;
+    font-size: 13px;
+  }
+
+  .devil {
+    right: 0;
+    height: 64%;
+  }
+
+  .devil img {
+    transform: translateX(24%);
+  }
+
+  .teodoroRunning {
+    left: 48%;
+    height: 60%;
+  }
+
+  .teodoroKneeling,
+  .teodoroVanishing {
+    left: 55%;
+    height: 52%;
+  }
+
+  .teodoroFalling,
+  .teodoroAftermath {
+    left: 53%;
+    height: 30%;
+  }
+}
+
+/*
+ * On desktop, keep one obvious scrolling surface. A nested, short excerpt
+ * scroller is easy to miss and can strand the action below the fold when the
+ * browser is zoomed or Windows display scaling leaves a shallow viewport.
+ */
+@media (hover: hover) and (pointer: fine) {
+  .integratedPanel {
+    top: clamp(14px, 4vh, 48px);
+    bottom: clamp(14px, 4vh, 48px);
+    max-height: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scrollbar-color: rgba(191, 147, 75, 0.52) transparent;
+  }
+
+  .integratedPanel .dialogueExcerpt {
+    max-height: none;
+    overflow: visible;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gasGlow,
+  .running .teodoroRunning,
+  .teodoroKneeling,
+  .teodoroVanishing,
+  .teodoroFalling,
+  .teodoroAftermath {
+    animation-duration: 0.01ms;
+    animation-iteration-count: 1;
+  }
+}
+
+/* One bounded reading surface on mouse, touch and hybrid devices. The artwork
+   and character cutouts retain the same 16:9 coordinate system when resized. */
+.integratedPage {
+  inset: calc(var(--game-header-height, 74px) + env(safe-area-inset-top, 0px)) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px);
+  display: grid;
+  min-height: 0;
+}
+.stage.integratedStage {
+  width: min(100%, calc((100dvh - var(--game-header-height, 74px) - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px)) * 16 / 9));
+  height: auto;
+  max-height: none;
+  aspect-ratio: 16 / 9;
+}
+.storyPanel.integratedPanel {
+  top: 12px;
+  bottom: 12px;
+  left: 3%;
+  width: 43%;
+  max-height: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-color: rgba(191, 147, 75, 0.52) transparent;
+}
+.integratedPanel > * { flex-shrink: 0; }
+.integratedPanel .dialogueExcerpt { max-height: none; overflow: visible; }
+.integratedPanel .sequenceActions { flex-wrap: wrap; }
+.integratedPanel .begButton { min-width: 0; max-width: 100%; min-height: 44px; flex-shrink: 0; }
+
+@media (min-width: 921px) {
+  .storyPanel.integratedPanel { width: 34%; }
+}
+.integratedStage .corpseLayer :global(.ti-figure) {
+  width: 30%;
+  right: 23%;
+  bottom: 23%;
+}
+.integratedStage .corpseLayer :global(.corpse-toggle) {
+  right: 25%;
+  bottom: 34%;
+  max-width: 28%;
+  white-space: normal;
+}
